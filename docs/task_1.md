@@ -1,1 +1,1 @@
-# Navigating and Setting Up Your Project
+# Navigating And Setting Up Your Project
