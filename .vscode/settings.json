@@ -1,0 +1,27 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "[!U]*/**": true,
+        "U[!s]*/**": true,
+        "Us[!e]*/**": true,
+        "Use[!r]*/**": true,
+        "User[!-]*/**": true,
+        "User-[!D]*/**": true,
+        "User-D[!o]*/**": true,
+        "User-Do[!c]*/**": true,
+        "User-Doc[!u]*/**": true,
+        "User-Docu[!m]*/**": true,
+        "User-Docum[!e]*/**": true,
+        "User-Docume[!n]*/**": true,
+        "User-Documen[!t]*/**": true,
+        "User-Document[!a]*/**": true,
+        "User-Documenta[!t]*/**": true,
+        "User-Documentat[!i]*/**": true,
+        "User-Documentati[!o]*/**": true,
+        "User-Documentatio[!n]*/**": true
+    }
+}
