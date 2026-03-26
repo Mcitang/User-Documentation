@@ -1,19 +1,46 @@
-# Welcome to MkDocs
+# Intro
+Hej! :wave: This documentation will guide you through setting up a project in the [Unity Game Engine](https://unity.com/). The objective is to learn how to navigate through Unity's basic functions and setup of your first game. 
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Intended Users
+This documentation is designed for users who want to start learning basic game development in Unity. This guide is designed for Windows, but could work for MacOS and Linux. 
 
-## Commands
+## Prerequisite Knowledge
+* Working knowledge of programming data types (e.g. string, int, float). You are expected to know what data types are, and what they represent in progamming lanugages.  
 
-- `mkdocs new [dir-name]` - Create a new project.
-- `mkdocs serve` - Start the live-reloading docs server.
-- `mkdocs build` - Build the documentation site.
-- `mkdocs -h` - Print help message and exit.
+This doc assumes the following:
+- You have unity hub installed
+- You have Visual Studio installed with the "Game development with Unity" workload installed
+- You are not dumb
 
-## Project layout
+## Software Requirements
+Before beginning, ensure you have the following installed: 
+* Unity Hub installed
+* Unity 6+ editor
+* Visual Studio with "Game development with Unity" workload installed
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Objectives 
+1. Navigate through Unity 
+2. Setup a Unity Project
+4. Create a character and move them around
+5. Create a main and pause menu
+6. Finalize game (includes complete goal e.g. collect 4 coins)
 
-I like :bread:
+## Typographical Conventions
+Temp:
+- code snippet number explanations
+
+
+## Notes and Warning Messages
+- We will use message blocks to inform you of additional relevant information. Here are each possible message block, from most important to least important. 
+
+DANGER 
+Indicates an action that could cause an error or application to crash 
+
+WARNING
+Indicates specific information that should be read before proceeding 
+
+INFO 
+indicates additional information or tips 
+
+SUCCESS
+indicates what success looks like 

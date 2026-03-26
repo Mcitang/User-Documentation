@@ -1,2 +1,8 @@
-.venv/
+# VSCode files
 .vscode/
+
+# Virtual Environment
+.venv/
+
+# Build
+site/
