@@ -77,32 +77,30 @@ void start()
 We will use message blocks to inform you of additional relevant information. Here are each possible message block, from most important to least important. 
 
 !!! danger
-    Indicates an action that could cause an error or application to crash 
-
-[comment]: <> (!!! failure)
-
-[comment]: <> (    Specifies actions that may lead to unexpected behaviour.)
-
-[comment]: <> (!!! bug)
-
-[comment]: <> (    Specifies actions that may cause an error.)
+    Indicates an action that could cause an error or application to crash
 
 !!! warning
-    Indicates specific information that should be read before proceeding 
-
-!!! info 
-    Indicates additional information or tips 
+    Indicates specific information that should be read before proceeding
 
 !!! success
-    Indicates what success looks like 
+    Indicates what success looks like
 
-???+ note "Note"
+!!! failure
+    Specifies actions that may lead to unexpected behaviour.
+
+!!! info 
+    Indicates additional information or tips
+
+!!! bug
+    Specifies actions that may cause an error.
+
+???+ note "Collapsible Note"
     Yippee
 
-???+ info "Info"
+???+ info "Collapsible Info"
     Yippee
 
-???+ question "Question"
+???+ question "Collapsible Question"
     Yippee
 
 <!-- Glossary definitions at the bottom -->
