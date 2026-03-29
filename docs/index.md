@@ -30,6 +30,9 @@ Before beginning, ensure you have the following installed:
 
 ## Typographical Conventions
 
+### Abbreviation
+Unity uses C# which uses OOP
+
 ### Code block
 ```C#
 void Start()
@@ -101,3 +104,6 @@ We will use message blocks to inform you of additional relevant information. Her
 
 ???+ question "Question"
     Yippee
+
+<!-- Glossary definitions at the bottom -->
+*[OOP]: Object-Oriented Programming
