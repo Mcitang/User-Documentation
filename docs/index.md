@@ -5,17 +5,21 @@ Hey! :wave: This documentation will guide you through setting up a project in th
 This documentation is designed for users who want to start learning basic game development in Unity. This guide is designed for Windows, but could work for MacOS and Linux. 
 
 ## Prerequisite Knowledge
-* Working knowledge of programming data types (e.g. string, int, float). You are expected to know what data types are, and what they represent in programming lanugages.  
+- Working knowledge of programming data types (e.g. string, int, float). You are expected to know what data types are, and what they represent in programming lanugages.  
 
-This doc assumes the following:
+This doc assumes the following
+
+- You have made a Unity account
 - You have the Unity Hub installed
 - You have Visual Studio with the "Game development with Unity" workload installed
+- You have an [itch.io](https://itch.io/) account
 
 ## Software Requirements
-Before beginning, ensure you have the following installed: 
-* Unity Hub installed
-* Unity 6+ editor
-* Visual Studio with "Game development with Unity" workload installed
+Before beginning, ensure you have the following installed:
+
+- Unity Hub installed
+- Unity 6+ editor
+- Visual Studio with "Game development with Unity" workload installed
 
 ## Objectives 
 1. Navigate through Unity 
@@ -30,7 +34,7 @@ Temp:
 
 
 ## Notes and Warning Messages
-- We will use message blocks to inform you of additional relevant information. Here are each possible message block, from most important to least important. 
+We will use message blocks to inform you of additional relevant information. Here are each possible message block, from most important to least important. 
 
 DANGER 
 Indicates an action that could cause an error or application to crash 
