@@ -10,6 +10,7 @@ site_name: Unity User Documentation
 
 repo_url: https://github.com/Mcitang/User-Documentation
 repo_name: Mcitang/User-Documentation
+  
 
 theme:
   name: material
@@ -56,11 +57,32 @@ theme:
         name: Light mode
 
 markdown_extensions:
+  # Adds definition tooltips to glossary words (defined at the bottom of markdown file)
+  - abbr
+
   # Allows customizing CSS by using {: #id, .class, style="property: value;" }
   - attr_list
+
   # Emojis
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+    # Makes the colored boxes for DANGER, INFO, etc with !!!
+  - admonition
+
+  # Highlights codeblocks with pretty color, and allows for code blocks in more places, such as the admonition colored boxes
+  - pymdownx.superfences
+
+  # Easy dropdowns with ??? or ???+, with icon selected with note, question or info
+  - pymdownx.details
+
+  # Wraps keys and shortcuts in UI keycaps. Syntax: ++ctrl+shift+s++
+  - pymdownx.keys
+
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+
       
-copyright: Copyright &copy; 2021 - Matthew Tang, Gustavo Rodriguez
+copyright: Copyright &copy; 2026 - Matthew Tang, Gustavo Rodriguez
