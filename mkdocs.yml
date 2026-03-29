@@ -1,24 +1,60 @@
-site_name: My Docs
-site_url: https://sitename.example
+site_name: Unity User Documentation
+nav:
+ - Home: "index.md"
+ - Set Up Unity Project: "setup-project.md"
+ - Create A Simple 2D Game: "make-game.md"
+ - Create A Menu & Set Up Transitions: "make-menus.md"
+ - Build And Upload Your Game: "build-game.md"
+ - Troubleshooting: "troubleshooting.md"
+ - Glossary: "glossary.md"
+
+repo_url: https://github.com/Mcitang/User-Documentation
+repo_name: Mcitang/User-Documentation
+
 theme:
   name: material
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - toc.integrate
+
+  icon:
+    repo: fontawesome/brands/git-alt
+
+  static_templates:
+    - 404.html
+
   font:
     text: Merriweather Sans
     code: Red Hat Mono
   palette:
-    # Palette toggle for light mode
-    - scheme: default
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: purple
       toggle:
         icon: material/brightness-7
-        name: Switch to dark mode
+        name: Dark mode
 
-    # Palette toggle for dark mode
-    - scheme: slate
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: red
+      accent: red
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode
+        name: Light mode
+
+  # Necessary for search to work properly
+  include_search_page: false
+  search_index_only: true
 
 markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      
+copyright: Copyright &copy; 2021 - Matthew Tang, Gustavo Rodriguez

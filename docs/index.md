@@ -1,16 +1,15 @@
 # Intro
-Hej! :wave: This documentation will guide you through setting up a project in the [Unity Game Engine](https://unity.com/). The objective is to learn how to navigate through Unity's basic functions and setup of your first game. 
+Hey! :wave: This documentation will guide you through setting up a project in the [Unity Game Engine](https://unity.com/). The objective is to learn how to navigate through Unity's basic functions and setup of your first game. 
 
 ## Intended Users
 This documentation is designed for users who want to start learning basic game development in Unity. This guide is designed for Windows, but could work for MacOS and Linux. 
 
 ## Prerequisite Knowledge
-* Working knowledge of programming data types (e.g. string, int, float). You are expected to know what data types are, and what they represent in progamming lanugages.  
+* Working knowledge of programming data types (e.g. string, int, float). You are expected to know what data types are, and what they represent in programming lanugages.  
 
 This doc assumes the following:
-- You have unity hub installed
-- You have Visual Studio installed with the "Game development with Unity" workload installed
-- You are not dumb
+- You have the Unity Hub installed
+- You have Visual Studio with the "Game development with Unity" workload installed
 
 ## Software Requirements
 Before beginning, ensure you have the following installed: 
