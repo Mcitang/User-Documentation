@@ -12,7 +12,7 @@ This doc assumes the following
 - You have made a Unity account
 - You have the Unity Hub installed
 - You have Visual Studio with the "Game development with Unity" workload installed
-- You have an [itch.io](https://itch.io/) account
+- You have an [itch.io](https://itch.io/ "Website for game developers to upload their games for free!") account
 
 ## Software Requirements
 Before beginning, ensure you have the following installed:
@@ -42,11 +42,15 @@ void Start()
 ```C#
 void start()
 {
-    Debug.Log("Hello World"); // (1)
+    Debug.Log("Hello"); // (1)
+    Debug.Log("Hello"); // (2)
+    Debug.Log("World"); // (3)
 }
 ```
-1. This is a tooltip to help explain what the code is doing
-(doesnt work yet)
+
+1. Explanation tooltip 1
+2. Explanation tooltip 2
+3. Explanation tooltip 3
 
 ### Keyboard shortcuts
 ++ctrl+shift+s++
