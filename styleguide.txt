@@ -1,0 +1,1 @@
+Use dashes ('-') for lists to avoid problems with formatting.
