@@ -1,12 +1,14 @@
 site_name: Unity User Documentation
-# nav:
-#  - Home: "index.md"
-#  - Set Up Unity Project: "setup-project.md"
-#  - Create A Simple 2D Game: "make-game.md"
-#  - Create A Menu & Set Up Transitions: "make-menus.md"
-#  - Build And Upload Your Game: "build-game.md"
-#  - Troubleshooting: "troubleshooting.md"
-#  - Glossary: "glossary.md"
+
+# Using it to override the page order
+nav:
+ - Home: "index.md"
+ - Set Up Unity Project: "setup-project.md"
+ - Create A Simple 2D Game: "make-game.md"
+ - Create A Menu & Set Up Transitions: "make-menus.md"
+ - Build And Upload Your Game: "build-game.md"
+ - Troubleshooting: "troubleshooting.md"
+ - Glossary: "glossary.md"
 
 repo_url: https://github.com/Mcitang/User-Documentation
 repo_name: Mcitang/User-Documentation
