@@ -56,7 +56,7 @@ theme:
         name: Light mode
 
 markdown_extensions:
-  # Allows CSS Customization
+  # Allows customizing CSS by using {: #id, .class, style="property: value;" }
   - attr_list
   # Emojis
   - pymdownx.emoji:
