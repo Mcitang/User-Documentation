@@ -24,6 +24,12 @@ theme:
     # Integrates floating right table of contents to the headers floating left
     - toc.integrate
 
+    # Allow for us to annotate code like // (1) and // (2)
+    - content.code.annotate
+
+    # Adds a copy to clipboard button to the code blocks
+    - content.code.copy
+
   icon:
     repo: fontawesome/brands/github
 
@@ -37,7 +43,7 @@ theme:
       primary: black
       accent: deep purple
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-sunny
         name: Dark mode
 
     # Dark mode
@@ -46,10 +52,13 @@ theme:
       primary: blue grey
       accent: light blue
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-night
         name: Light mode
 
 markdown_extensions:
+  # Allows CSS Customization
+  - attr_list
+  # Emojis
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
