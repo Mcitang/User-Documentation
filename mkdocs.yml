@@ -102,4 +102,7 @@ markdown_extensions:
   # {--deletion suggest--}, {++addition suggest++} {==Highlighted comment==} {>> Comment <<}
   - pymdownx.critic
 
+extra_css:
+ - stylesheets/styles.css
+
 copyright: Copyright &copy; 2026 - Matthew Tang, Gustavo Rodriguez
