@@ -1,1 +1,6 @@
 Use dashes ('-') for lists to avoid problems with formatting.
+4 spaces for markdown, CSS and JavaScript. 2 spaces for YAML
+
+Check these out:
+https://squidfunk.github.io/mkdocs-material/customization/
+https://squidfunk.github.io/mkdocs-material/plugins/
