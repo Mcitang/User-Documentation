@@ -29,21 +29,71 @@ Before beginning, ensure you have the following installed:
 6. Finalize game (includes complete goal e.g. collect 4 coins)
 
 ## Typographical Conventions
-Temp:
-- code snippet number explanations
 
+### Code block
+```C#
+void Start()
+{
+    Debug.Log("Hello World");
+}
+```
+
+### Code annotation
+```C#
+void start()
+{
+    Debug.Log("Hello World"); // (1)
+}
+```
+1. This is a tooltip to help explain what the code is doing
+(doesnt work yet)
+
+### Keyboard shortcuts
+++ctrl+shift+s++
+
+### Alternates
+=== "C Script"
+    ```js
+    int main() {
+        printf("Hello World");
+        return 0;
+    }
+    ```
+
+=== "Python File"
+    ```py
+    def main():
+        print("Hello World")
+    ```
 
 ## Notes and Warning Messages
 We will use message blocks to inform you of additional relevant information. Here are each possible message block, from most important to least important. 
 
-DANGER 
-Indicates an action that could cause an error or application to crash 
+!!! danger
+    Indicates an action that could cause an error or application to crash 
 
-WARNING
-Indicates specific information that should be read before proceeding 
+[comment]: <> (!!! failure)
 
-INFO 
-indicates additional information or tips 
+[comment]: <> (    Specifies actions that may lead to unexpected behaviour.)
 
-SUCCESS
-indicates what success looks like 
+[comment]: <> (!!! bug)
+
+[comment]: <> (    Specifies actions that may cause an error.)
+
+!!! warning
+    Indicates specific information that should be read before proceeding 
+
+!!! info 
+    Indicates additional information or tips 
+
+!!! success
+    Indicates what success looks like 
+
+???+ note "Note"
+    Yippee
+
+???+ info "Info"
+    Yippee
+
+???+ question "Question"
+    Yippee
