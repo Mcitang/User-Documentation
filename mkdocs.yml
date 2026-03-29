@@ -65,6 +65,11 @@ markdown_extensions:
   # Adds definition tooltips to glossary words (defined at the bottom of markdown file)
   - abbr
 
+  # Overrides the TOC div header and controls which header numbers to include
+  - toc:
+      title: In this page
+      toc_depth: 2
+
   # Allows customizing CSS by using {: #id, .class, style="property: value;" }
   - attr_list
 
