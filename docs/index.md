@@ -42,7 +42,7 @@ void Start()
 ```
 
 ### Code annotation
-```C#
+```C# linenums="1" hl_lines="5"
 void start()
 {
     Debug.Log("Hello"); // (1)
@@ -53,7 +53,7 @@ void start()
 
 1. Explanation tooltip 1
 2. Explanation tooltip 2
-3. Explanation tooltip 3
+3. Did you notice the numbered lines?
 
 ### Keyboard shortcuts
 ++ctrl+shift+s++
@@ -72,6 +72,9 @@ void start()
     def main():
         print("Hello World")
     ```
+
+### Image
+![alt text](assets/empty-unity-hub.png)
 
 ## Notes and Warning Messages
 We will use message blocks to inform you of additional relevant information. Here are each possible message block, from most important to least important. 
