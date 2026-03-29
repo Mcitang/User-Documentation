@@ -23,13 +23,16 @@ theme:
     - navigation.top 
 
     # Integrates floating right table of contents to the headers floating left
-    - toc.integrate
+    # - toc.integrate
 
     # Allow for us to annotate code like // (1) and // (2)
     - content.code.annotate
 
     # Adds a copy to clipboard button to the code blocks
     - content.code.copy
+
+    # Stops the page from fully reloading
+    - navigation.instant
 
   icon:
     repo: fontawesome/brands/github
@@ -71,7 +74,7 @@ markdown_extensions:
     # Makes the colored boxes for DANGER, INFO, etc with !!!
   - admonition
 
-  # Highlights codeblocks with pretty color, and allows for code blocks in more places, such as the admonition colored boxes
+  # Highlights codeblocks with pretty color, does code block annotations, and allows for code blocks in the admonition colored boxes
   - pymdownx.superfences
 
   # Easy dropdowns with ??? or ???+, with icon selected with note, question or info
@@ -80,9 +83,16 @@ markdown_extensions:
   # Wraps keys and shortcuts in UI keycaps. Syntax: ++ctrl+shift+s++
   - pymdownx.keys
 
+  # Prevents underscores in the middle of words to accidentrally get italicized
+  - pymdownx.betterem
+
+  # Allows to group related content, including code blocks, into tabs
   - pymdownx.tabbed:
       alternate_style: true
       combine_header_slug: true
 
-      
+  # Used to show collaborator's suggestions for things like deletions and additions like so:
+  # {--deletion suggest--}, {++addition suggest++} {==Highlighted comment==} {>> Comment <<}
+  - pymdownx.critic
+
 copyright: Copyright &copy; 2026 - Matthew Tang, Gustavo Rodriguez
