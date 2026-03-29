@@ -1,0 +1,29 @@
+/* Glossary Data */
+article table td:first-child {
+  font-size: 1.25em;
+  font-weight: bold;
+  white-space: nowrap;
+  text-align: center !important;
+  vertical-align: middle ! important;
+}
+
+article table td:nth-child(2) {
+  font-weight: normal;
+  text-align: left !important;
+  vertical-align: middle ! important;
+}
+
+/* Glossary Headers */
+article table th:first-child {
+  font-weight: bold;
+  white-space: nowrap;
+  text-align: center !important;
+  vertical-align: middle ! important;
+}
+
+article table th:nth-child(2) {
+  font-weight: normal;
+  white-space: nowrap;
+  text-align: left !important;
+  vertical-align: middle ! important;
+}
