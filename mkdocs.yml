@@ -1,4 +1,5 @@
 site_name: Unity User Documentation
+site_url: https://mcitang.github.io/User-Documentation/
 
 # Using it to override the page order
 nav:
@@ -9,6 +10,7 @@ nav:
  - Build And Upload Your Game: "build-game.md"
  - Troubleshooting: "troubleshooting.md"
  - Glossary: "glossary.md"
+ - Styleguide (REMOVE BEFORE DUE DATE): "styleguide.md"
 
 repo_url: https://github.com/Mcitang/User-Documentation
 repo_name: Mcitang/User-Documentation
@@ -104,7 +106,9 @@ markdown_extensions:
 
 # CSS
 extra_css:
- - stylesheets/styles.css
- - stylesheets/glossary.css
+  - stylesheets/styles.css
+  - stylesheets/util.style.css
+  # Pages
+  - stylesheets/pages/glossary.style.css
 
 copyright: Copyright &copy; 2026 - Matthew Tang, Gustavo Rodriguez
