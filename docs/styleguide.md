@@ -1,28 +1,37 @@
 # Styleguide
 
 ## General
+
 Use dashes ('-') for lists to avoid problems with formatting.
 4 spaces for markdown, CSS and JavaScript. 2 spaces for YAML
 
 ## Hyperlinks
-Give hyperlink URLs an alias, then define the alias at the bottom of the file
-```md
+
+Give hyperlink URLs an alias ending in "-url", then define the alias at the bottom of the file
+
+```MD
 Check out [Unity][unity-url]
 
 <!-- Bottom of the document -->
 [unity-url]: https://unity.com
 ```
+
 Check out [Unity][unity-url]
 
 ## Images
-Give images an empty alias, then define their path at the bottom of the file with the alt text
-```md
-![Image alt-text][]
+
+Give image paths an alias ending in "-image", then define the alias path at the bottom of the file
+
+```MD
+![An image of a volleyball][vball-image]
 
 <!-- Bottom of the document -->
-[Image alt-text]: assets/image.png
+[vball-image]: assets/image.png
 ```
-![Image alt-text][]
+
+<!-- The additional styles are for this image only, and not a styleguide specification -->
+
+![An image of a volleyball][vball-image]{: style="width: 250px; border: 5px solid black; border-radius: 15px; padding: 25px;", .center }
 
 <br/><br/>
 
@@ -37,4 +46,4 @@ Give images an empty alias, then define their path at the bottom of the file wit
 [unity-url]: https://unity.com
 
 <!-- Images -->
-[Image alt-text]: assets/image.png
+[vball-image]: assets/vball.png
