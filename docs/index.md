@@ -5,7 +5,7 @@ Hey! :wave: This documentation will guide you through setting up a project in th
 This documentation is designed for users who want to start learning basic game development in Unity. This guide is designed for Windows, but could work for MacOS and Linux. A dedicated graphics card is not recommended, but not required.
 
 ## Prerequisite Knowledge
-- Working knowledge of programming data types (e.g. string, int, float). You are expected to know what data types are, and what they represent in programming lanugages.  
+- Working knowledge of programming data types (e.g. string, int, float). You are expected to know what data types are, and what they represent in programming languages.  
 
 This doc assumes the following
 
