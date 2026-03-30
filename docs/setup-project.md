@@ -15,8 +15,13 @@ This tutorial will use Unity 6.3 LTS (6000.3.12f1)
 
 ## Import these assets
 
-[itch.io][itch-link] assets url will be here.
+[itch.io][itch-url] assets url will be here.
 
 *[LTS]: Long-Term Support, meaning it is a stable version maintained for an extended period with minimal changes.
 
-[itch-link]: https://itch.io
+
+
+<!-- Hyperlinks -->
+[itch-url]: https://itch.io
+
+<!-- Images -->

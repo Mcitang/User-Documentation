@@ -28,4 +28,9 @@ Allows users with download keys and/or a password to view the page
 - **Public:**
 Anyone can view the page
 
+
+
+<!-- Hyperlinks -->
 [itch-contact]: https://itch.io/support
+
+<!-- Images -->
