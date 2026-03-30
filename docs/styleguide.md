@@ -32,8 +32,15 @@ Give image paths an alias ending in "-image", then define the alias path at the 
 ```
 
 <!-- The additional styles are for this image only, and not a styleguide specification -->
-
 ![An image of a volleyball][vball-image]{: style="width: 250px; border: 5px solid black; border-radius: 15px; padding: 25px; background-color: white; ", .center }
+
+### GIF
+
+Give GIF paths an alias ending in "-gif", then define the alias path at the bottom of the file.
+Here is a GIF, on the house:
+
+<!-- The additional styles are for this image only, and not a styleguide specification -->
+![Hatsune Miku dancing gif][miku-dance-gif]{ .center }
 
 <br/><br/>
 
@@ -48,4 +55,7 @@ Give image paths an alias ending in "-image", then define the alias path at the 
 [unity-url]: https://unity.com
 
 <!-- Images -->
-[vball-image]: assets/vball.png
+[vball-image]: assets/styleguide/vball.png
+
+<!-- GIFs -->
+[miku-dance-gif]: assets/styleguide/randommiku.gif
