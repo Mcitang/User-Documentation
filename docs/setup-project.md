@@ -1,27 +1,54 @@
 # Navigating And Setting Up Your Project
 
-## Install the Unity Editor
-This tutorial will use Unity 6.3 LTS (6000.3.12f1)
+## Install the Editor
+This tutorial will use Unity 6.3 LTS (6000.3.12f1), but this should work on any version of Unity 6. If you use the new input system, it should work in future versions.
+!!! warning
+    This tutorial will use both the new input system and the legacy input system. The legacy input system is easier to use for beginners, but it will be deprecated in future versions.
 
-## Press "+ New Project"
+1. Go to the Installs tab
 
-## Select the Universal 2D Core
+2. Click Install Editor
 
-## Name and Create Project
+3. Install whichever version you want
+???+ info "Version"
+    Any official release of Unity 6 will work. This tutorial will use Unity 6.3 LTS (6000.3.12f1).
 
-## Create a Scripts folder
+![GIF for installing Unity Editor][install-editor-gif]
 
-## Create a Data folder
+## Create a Project
 
-## Import these assets
+1. Click **+ New Project**
 
-[itch.io][itch-url] assets url will be here.
+1. Select the Universal 2D Core Template
 
+1. Name your project
+
+1. Click **+ Create Project**
+
+## Set Up Folders
+
+1. Create a Scripts folder
+
+1. Create a Scenes folder
+
+1. Create a Data folder
+
+## Import your assets
+
+Add the assets you will use to the Data folder. You can import whatever assets you want to use or you can use the ones [here][itch-assets-url].
+
+({++ ASSETS URL DOESNT EXIST YET ++})
+
+
+<!-- Glossary -->
 *[LTS]: Long-Term Support, meaning it is a stable version maintained for an extended period with minimal changes.
 
 
 
 <!-- Hyperlinks -->
-[itch-url]: https://itch.io
+[itch-assets-url]: https://itch.io
 
 <!-- Images -->
+
+<!-- GIFs -->
+[install-editor-gif]: assets/project-setup/install-editor.gif "Free asset pack made by us"
