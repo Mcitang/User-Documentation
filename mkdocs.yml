@@ -38,6 +38,9 @@ theme:
     # Stops the page from fully reloading
     - navigation.instant
 
+    # Adds a next page and previous page footer
+    - navigation.footer
+
   icon:
     repo: fontawesome/brands/github
 
