@@ -20,6 +20,8 @@ Check out [Unity][unity-url]
 
 ## Images
 
+Images should be PNG files.
+
 Give image paths an alias ending in "-image", then define the alias path at the bottom of the file
 
 ```MD
