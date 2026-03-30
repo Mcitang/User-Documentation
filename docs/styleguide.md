@@ -31,7 +31,7 @@ Give image paths an alias ending in "-image", then define the alias path at the 
 
 <!-- The additional styles are for this image only, and not a styleguide specification -->
 
-![An image of a volleyball][vball-image]{: style="width: 250px; border: 5px solid black; border-radius: 15px; padding: 25px;", .center }
+![An image of a volleyball][vball-image]{: style="width: 250px; border: 5px solid black; border-radius: 15px; padding: 25px; background-color: white; ", .center }
 
 <br/><br/>
 
