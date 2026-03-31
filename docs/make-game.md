@@ -1,23 +1,26 @@
 # Make A 2D Game Scene
 
-## Create a new game scene
 
-## Add rectangles to indicate level bounds
+## Create the game
 
-## Add rectangles to make some platforms
+1. Create a new game scene
 
-## Add the player
+1. Add rectangles to indicate level bounds
 
-## Add a Rigidbody2D to the player
+1. Add rectangles to make some platforms
 
-## Add colliders to retangles
+1. Add the player
 
-## Player Movement
+1. Add a Rigidbody2D to the player
 
-## Player Jump
+1. Add colliders to retangles
 
-## Add coins
+1. Player Movement
 
-## Create score
+1. Player Jump
 
-## Make a win state
+1. Add coins
+
+1. Create score
+
+1. Make a win state
