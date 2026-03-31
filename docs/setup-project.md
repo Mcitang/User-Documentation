@@ -15,6 +15,37 @@ This tutorial will use Unity 6.3 LTS (6000.3.12f1), but this should work on any 
 
 ![GIF for installing Unity Editor][install-editor-gif]
 
+<!-- VISUAL STUDIO -->
+=== "If you have Visual Studio 2022 installed"
+    Since you already have Visual Studio 2022 installed, Unity will not install it for you. However, you must check if you have the _Game Development with Unity_ workload installed.
+
+    1. Open the Visual Studio Installer
+
+        ![The visual studio installer][vs-studio-installer]
+
+    1. Click _Modify_ for Visual Studio Community 2022
+    
+    1. Scroll down and ensure the _Game Development with Unity_ workload checkbox is checked
+
+        !!! success
+            ![Game Development with Unity workload checked][vs-unity-workload]
+
+    4. If you had to check the checkbox, press _Modify_
+
+=== "If you do not have Visual Studio 2022 installed"
+    After installing the editor, Unity will also automatically begin installing Visual Studio 2022. When the installation begins, Visual Studio will open a window
+
+    {--[I forget what happens here]--}
+    
+    1. Scroll down and click the _Game Development with Unity_ workload checkbox so it is checked
+
+        !!! success
+            ![Game Development with Unity workload checked][vs-unity-workload]
+
+    1. Press the install button
+
+    1. Continue waiting until the Editor and Visual Studio downloads to complete
+
 ## Create a Project
 
 1. Click **+ New Project**
@@ -77,7 +108,11 @@ Once it loads, you will see the Unity Editor open up
 [itch-assets-url]: https://itch.io
 
 <!-- Images -->
+[vs-studio-installer]: assets/project-setup/vs-studio-installer.png
+[vs-unity-workload]: assets/project-setup/vs-unity-workload.png
+
 [project-creation-loading-image]: assets/project-setup/project-creation-loading.png
+
 [default-unity-editor-image]: assets/project-setup/default-unity-editor.png
 [player-inspector-image]: assets/project-setup/player-inspector.png
 [setup-complete-image]: assets/project-setup/setup-complete.png
