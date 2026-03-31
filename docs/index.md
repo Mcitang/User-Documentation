@@ -11,15 +11,12 @@ This doc assumes the following
 
 - You have made a Unity account
 - You have the Unity Hub installed
-- You have Visual Studio with the "Game development with Unity" workload installed
 - You have an [itch.io][itch-url] account
 
 ## Software Requirements
 Before beginning, ensure you have the following installed:
 
 - Unity Hub installed
-- Unity 6+ editor
-- Visual Studio with "Game development with Unity" workload installed
 
 ## Objectives 
 1. Navigate through Unity 
