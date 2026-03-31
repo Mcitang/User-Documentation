@@ -1,24 +1,24 @@
 # Building and Uploading Your Game
 
-## Open the Build menu
+1. Open the Build menu
 
-## Select target platform (in this case, Windows)
+1. Select target platform (in this case, Windows)
 
-## Add your Scenes (they might be there already)
+1. Add your Scenes (they might be there already)
 
-## Press the Build button and wait (THIS WILL TAKE A WHILE)
+1. Press the Build button and wait (THIS WILL TAKE A WHILE)
 
-## Zip your Build
+1. Zip your Build
 
-## Go to itch.io, hit the arrow in the top right then select "Upload New Project"
+1. Go to itch.io, hit the arrow in the top right then select "Upload New Project"
 
-## Set "Kind of Project" to Downloadable *(WARNING: If you have a web builds, you should select HTML)*
+1. Set "Kind of Project" to Downloadable *(WARNING: If you have a web builds, you should select HTML)*
 
-## Hit upload files and select your build.zip
+1. Hit upload files and select your build.zip
 !!! warning
     There is a 1Gb file limit. To increase the file size limit you must [contact itch.io][itch-contact]
 
-## Set visibility
+1. Set visibility
 - **Draft:**
 Only editors can view the page
 
