@@ -36,13 +36,9 @@ Once it loads, you will see the Unity Editor open up
 
 ![Image of the Unity Editor][default-unity-editor-image]
 
-## Set Up Folders
+## Set Up Project
 
-1. Create a Scripts folder
 
-1. Create a Scenes folder
-
-1. Create a Data folder
 
 {--
 ## Import your assets
@@ -52,6 +48,7 @@ Add the assets you will use to the Data folder. You can import whatever assets y
 
 <!-- Glossary -->
 *[LTS]: Long-Term Support, meaning it is a stable version maintained for an extended period with minimal changes.
+*[context menu]: A pop-up menu that appears typically by right-clicking
 
 
 

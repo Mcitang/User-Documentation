@@ -112,8 +112,11 @@ We will use message blocks to inform you of additional relevant information. Her
 ???+ question "Collapsible Question"
     Yippee
 
+
+
 <!-- Glossary definitions at the bottom -->
 *[OOP]: Object-Oriented Programming
+*[context menu]: A pop-up menu that appears typically by right-clicking
 
 
 
