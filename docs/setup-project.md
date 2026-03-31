@@ -36,14 +36,21 @@ Once it loads, you will see the Unity Editor open up
 
 ![Image of the Unity Editor][default-unity-editor-image]
 
+{++MISSING HERE: Explain the UI: Hierarchy, Inspector, Project Files, Scene View, Game View++}
+
 ## Set Up Project
 
+1. Through the context menu, add a square sprite to the scene.
+> 2D Objects > Sprites > Square
+??? info "How to add objects to the scene?" 
+    Right-click the hierarchy and press right-click to open the context menu.
 
+2. In the inspector, rename this square to "_Player_"
 
-{--
-## Import your assets
+3. In the inspector, change the sprite's color to red.
 
-Add the assets you will use to the Data folder. You can import whatever assets you want to use or you can use the ones [here][itch-assets-url]. --}
+It should look like this
+![The player object's inspector tab][player-inspector-image]
 
 
 <!-- Glossary -->
@@ -58,6 +65,7 @@ Add the assets you will use to the Data folder. You can import whatever assets y
 <!-- Images -->
 [project-creation-loading-image]: assets/project-setup/project-creation-loading.png
 [default-unity-editor-image]: assets/project-setup/default-unity-editor.png
+[player-inspector-image]: assets/project-setup/player-inspector.png
 
 <!-- GIFs -->
 [install-editor-gif]: assets/project-setup/install-editor.gif
