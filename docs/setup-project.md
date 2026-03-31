@@ -25,6 +25,17 @@ This tutorial will use Unity 6.3 LTS (6000.3.12f1), but this should work on any 
 
 1. Click **+ Create Project**
 
+![GIF for Creating a 2D Unity project][create-project-gif]
+
+!!! info
+    You should now see the Unity Editor creating your project
+
+    ![Unity Editor creating project loading bar][project-creation-loading-image]
+
+Once it loads, you will see the Unity Editor open up
+
+![Image of the Unity Editor][default-unity-editor-image]
+
 ## Set Up Folders
 
 1. Create a Scripts folder
@@ -48,6 +59,9 @@ Add the assets you will use to the Data folder. You can import whatever assets y
 [itch-assets-url]: https://itch.io
 
 <!-- Images -->
+[project-creation-loading-image]: assets/project-setup/project-creation-loading.png
+[default-unity-editor-image]: assets/project-setup/default-unity-editor.png
 
 <!-- GIFs -->
 [install-editor-gif]: assets/project-setup/install-editor.gif
+[create-project-gif]: assets/project-setup/create-project.gif
