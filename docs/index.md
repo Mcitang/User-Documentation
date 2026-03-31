@@ -116,4 +116,4 @@ We will use message blocks to inform you of additional relevant information. Her
 [itch-url]: https://itch.io
 
 <!-- Images -->
-[Unity Hub Image]: assets/empty-unity-hub.png
+[Unity Hub Image]: assets/index/empty-unity-hub.png
