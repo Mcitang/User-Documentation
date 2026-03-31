@@ -33,6 +33,12 @@ Before beginning, ensure you have the following installed:
 ### Abbreviation
 Unity uses C# which uses OOP
 
+### Navigating the Context Menu
+Explaining how to find things in the context menu. 
+
+For example: Right-click on the hierarchy and create a square
+> 2D Object > Sprites > Square
+
 ### Code block
 ```C#
 void Start()
