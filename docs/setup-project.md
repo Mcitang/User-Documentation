@@ -3,7 +3,7 @@
 ## Install the Editor
 This tutorial will use Unity 6.3 LTS (6000.3.12f1), but this should work on any version of Unity 6. If you use the new input system, it should work in future versions.
 !!! warning
-    This tutorial will use both the new input system and the legacy input system. The legacy input system is easier to use for beginners, but it will be deprecated in future versions.
+    This tutorial will use the legacy input system. The legacy input system is easier to use for beginners, but it will be deprecated in future versions.
 
 1. Go to the Installs tab
 
@@ -40,18 +40,18 @@ Once it loads, you will see the Unity Editor open up
 
 ## Set Up Project
 
-1. Through the context menu, add a square sprite to the scene.
+1. Add a square sprite to the scene.
 > 2D Objects > Sprites > Square
 
-??? info "How to add objects to the scene?" 
+??? question "How to add objects to the scene?" 
     Right-click the hierarchy and press right-click to open the context menu.
 
-2. In the inspector, rename this square to "_Player_"
+2. In the inspector, rename the square to "_Player_"
 
-3. In the inspector, change the sprite's color to red.
+3. In the inspector, change the sprite's color to <span style="color: red">red</span>
 
-It should look like this
-![The player object's inspector tab][player-inspector-image]
+!!! success
+    ![The player object's inspector tab][player-inspector-image]
 
 4. Add another square sprite to the scene
 > 2D Objects > Sprites > Square
@@ -60,6 +60,9 @@ It should look like this
 
 6. In the scene view, stretch it using your cursor.
 [add gif here]
+
+!!! success
+    ![What your editor should look like after completing the project setup][setup-complete-image]
 
 <!-- Glossary -->
 *[LTS]: Long-Term Support, meaning it is a stable version maintained for an extended period with minimal changes.
@@ -74,6 +77,7 @@ It should look like this
 [project-creation-loading-image]: assets/project-setup/project-creation-loading.png
 [default-unity-editor-image]: assets/project-setup/default-unity-editor.png
 [player-inspector-image]: assets/project-setup/player-inspector.png
+[setup-complete-image]: assets/project-setup/setup-complete.png
 
 <!-- GIFs -->
 [install-editor-gif]: assets/project-setup/install-editor.gif
