@@ -23,6 +23,9 @@ This tutorial will use Unity 6.3 LTS (6000.3.12f1), but this should work on any 
 
 1. Name your project
 
+!!! info
+    This project will not cover Unity Version Control.
+
 1. Click **+ Create Project**
 
 ![GIF for Creating a 2D Unity project][create-project-gif]
