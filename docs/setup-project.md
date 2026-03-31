@@ -33,11 +33,10 @@ This tutorial will use Unity 6.3 LTS (6000.3.12f1), but this should work on any 
 
 1. Create a Data folder
 
+{--
 ## Import your assets
 
-Add the assets you will use to the Data folder. You can import whatever assets you want to use or you can use the ones [here][itch-assets-url].
-
-({++ ASSETS URL DOESNT EXIST YET ++})
+Add the assets you will use to the Data folder. You can import whatever assets you want to use or you can use the ones [here][itch-assets-url]. --}
 
 
 <!-- Glossary -->
@@ -51,4 +50,4 @@ Add the assets you will use to the Data folder. You can import whatever assets y
 <!-- Images -->
 
 <!-- GIFs -->
-[install-editor-gif]: assets/project-setup/install-editor.gif "Free asset pack made by us"
+[install-editor-gif]: assets/project-setup/install-editor.gif
