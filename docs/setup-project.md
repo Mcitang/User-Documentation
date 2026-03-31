@@ -42,6 +42,7 @@ Once it loads, you will see the Unity Editor open up
 
 1. Through the context menu, add a square sprite to the scene.
 > 2D Objects > Sprites > Square
+
 ??? info "How to add objects to the scene?" 
     Right-click the hierarchy and press right-click to open the context menu.
 
@@ -52,6 +53,13 @@ Once it loads, you will see the Unity Editor open up
 It should look like this
 ![The player object's inspector tab][player-inspector-image]
 
+4. Add another square sprite to the scene
+> 2D Objects > Sprites > Square
+
+5. Name this one "_Floor_"
+
+6. In the scene view, stretch it using your cursor.
+[add gif here]
 
 <!-- Glossary -->
 *[LTS]: Long-Term Support, meaning it is a stable version maintained for an extended period with minimal changes.
