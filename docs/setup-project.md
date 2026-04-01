@@ -71,6 +71,7 @@ Once it loads, you will see the Unity Editor open up
 ![Image of the Unity Editor][default-unity-editor-image]
 
 {++MISSING HERE: Explain the UI: Hierarchy, Inspector, Project Files, Scene View, Game View++}
+{++MISSING HERE: Switch to the old input system in Project Settings > Player > Other Settings > Active Input Handling => Both or Input Manager (old)++}
 
 ## Set Up Project
 
