@@ -1,4 +1,7 @@
-# Navigating And Setting Up Your Project
+# Setting Up Your First Project
+
+##
+This page will take you through setting up a project in Unity for the first time. You will install the Unity Editor, which is what you will be using to add elements to your game. You will also create a new game project and add a player character to your game.
 
 ## Install the Editor
 This tutorial will use Unity 6.3 LTS (6000.3.12f1), but this should work on any version of Unity 6. If you use the new input system, it should work in future versions.

@@ -1,13 +1,19 @@
 # Intro
-Hey! :wave: This documentation will guide you through setting up a project in the [Unity Game Engine][unity-url]. The objective is to learn how to navigate through Unity's basic functions and setup of your first game. 
+Hey! :wave: This documentation will guide you through setting up a project in the [Unity Game Engine][unity-url]. The objective is to learn how to navigate through Unity's basic functions and setup of your first game.
+
+## What is Unity?
+The Unity Game Engine is one of the most used game used to create many different types of games
+
 
 ## Intended Users
-This documentation is designed for users who want to start learning basic game development in Unity. This guide is designed for Windows, but could work for MacOS and Linux. A dedicated graphics card is recommended, but not required.
+This documentation is designed for users who want to start learning basic game development in Unity. This guide does not expect you to have any experience in coding or game development.
+All examples and instructions are designed for Windows, but could work for MacOS and Linux. A dedicated graphics card is recommended, but not required.
 
 ## Prerequisite Knowledge
-- Working knowledge of programming data types (e.g. string, int, float). You are expected to know what data types are, and what they represent in programming languages.  
+- Working knowledge of programming data types strings, ints and floats. You are expected to know what these data types are, and what they represent in programming languages.
+- Understanding of terms used in gaming: player, ________
 
-This doc assumes the following
+This doc assumes the following:
 
 - You have made a Unity account
 - You have the Unity Hub installed
@@ -19,11 +25,11 @@ Before beginning, ensure you have the following installed:
 - Unity Hub installed
 
 ## Objectives 
-1. Navigate through Unity 
-2. Setup a Unity Project
-4. Create a character and move them around
-5. Create a main and pause menu
-6. Finalize game (includes complete goal e.g. collect 4 coins)
+1. Install Unity Editor
+2. Set up a Unity Project
+3. Create a character and move them around
+4. Create a main and pause menu
+5. Finalize game (includes complete goal e.g. collect 4 coins)
 
 ## Typographical Conventions
 
