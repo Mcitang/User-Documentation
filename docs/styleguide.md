@@ -42,6 +42,9 @@ Here is a GIF, on the house:
 <!-- The additional styles are for this image only, and not a styleguide specification -->
 ![Hatsune Miku dancing gif][miku-dance-gif]{ .center }
 
+For recording those gifs, record display using OBS, use Windows Powertools for cursor click highlighing, color yellow. Then use ezgif (its a website) to convert the screen recording to a gif. Set it to 24 fps.
+It's a max 12 second GIF for 24fps so make sure to be quick.
+
 <br/><br/>
 
 ### Check these out for some mkdocs-material stuff:
