@@ -6,10 +6,17 @@ It would be boring if there was nothing but a floor, right? So let's add some pl
 
 1. Add rectangles to make some platforms
 
+    !!! tip
+        Use ++ctrl+d++ to duplicate the platforms in the scene and save time.
+
+    ![GIF of placing the platforms][place-platforms-gif]
+
 1. Add rectangles as walls so the player doesn't run outside the camera's view
 
     ???+ note "Reminder on the Camera View"
         The camera view is represented by a white rectangle in the scene view.
+
+    ![GIF of placing the walls][place-walls-gif]
 
     !!! success
         ![Game scene with walls and platforms][platforms-and-walls-image]
@@ -17,21 +24,21 @@ It would be boring if there was nothing but a floor, right? So let's add some pl
 Now hit the *Play* button. You will notice nothing really happens. That's because all we've done is add the objects to the scene.
 Let's add the player logic.
 
-## Let's add the Player logic
+## Player Logic
 
 Unity has a built-in 2D physics system called **Rigidbody2D**. We will control the player through it. It also takes care of other things for us, like momentum and gravity.
 
 1. Add a **Rigidbody2D** to the player
 
     ???+ How do I add a component
-        Click "Add Component" in the inspector, under the already put components
+        Click "Add Component" in the inspector, under the existing components
 
     Press the *Play* button and you will see the Player now falls as if there was gravity.
     You will also notice the player falls through the stage. That's because the **Rigidbody2D** doesn't know the floor is supposed to be solid. For that we need a Collider
 
 1. Add colliders to rectangles
 
-    Select all your rectangles by holding ++shift++ as you select them, and add a **BoxCollider2D** component to all of them.
+    Select all your rectangles by holding ++shift++ when you select each of them, and add a **BoxCollider2D** component to all of them.
     
     Now if you *Play*, the player will fall and land on the floor.
 
@@ -41,9 +48,9 @@ Before that, let's add a Scripts folder.
 
 1. Add a new folder to the Project files, and name it Scripts
 
-> Create > Folder
+    > Create > Folder
 
-With that out of the way, we can start scripting.
+    With that out of the way, we can start scripting.
 
 ### Player Movement
 
@@ -66,66 +73,66 @@ With that out of the way, we can start scripting.
 1. Increase Gravity in Project Settings
 
 
-??? note "`PlayerMovement` script draft"
-    ```c#
-    using System;
-    using UnityEngine;
+    ??? note "`PlayerMovement` script draft"
+        ```c#
+        using System;
+        using UnityEngine;
 
-    public class PlayerMovement : MonoBehaviour
-    {
-        public Rigidbody2D rb;
-
-        public float speed = 15f;
-
-        public float jumpForce = 15f;
-        public float fallForce = -3f;
-
-        private float xMovement;
-
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
+        public class PlayerMovement : MonoBehaviour
         {
-            
-        }
+            public Rigidbody2D rb;
 
-        // Update is called once per frame
-        void Update()
-        {
-            GetMovementInput();
-            Jump();
-        }
+            public float speed = 15f;
 
-        private void FixedUpdate()
-        {
-            MovePlayer();
-        }
+            public float jumpForce = 15f;
+            public float fallForce = -3f;
 
-        private void GetMovementInput()
-        {
-            xMovement = Input.GetAxis("Horizontal");
-        }
+            private float xMovement;
 
-        private void MovePlayer()
-        {
-            float x = xMovement * speed;
-            rb.linearVelocity = new Vector2(x, rb.linearVelocityY);
-        }
-
-        private void Jump()
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
+            // Start is called once before the first execution of Update after the MonoBehaviour is created
+            void Start()
             {
-                Debug.Log("Jump");
-                rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce);
+                
             }
 
-            if (Input.GetKeyUp(KeyCode.Space))
+            // Update is called once per frame
+            void Update()
             {
-                rb.linearVelocity = new Vector2(rb.linearVelocityX, fallForce);
+                GetMovementInput();
+                Jump();
+            }
+
+            private void FixedUpdate()
+            {
+                MovePlayer();
+            }
+
+            private void GetMovementInput()
+            {
+                xMovement = Input.GetAxis("Horizontal");
+            }
+
+            private void MovePlayer()
+            {
+                float x = xMovement * speed;
+                rb.linearVelocity = new Vector2(x, rb.linearVelocityY);
+            }
+
+            private void Jump()
+            {
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    Debug.Log("Jump");
+                    rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce);
+                }
+
+                if (Input.GetKeyUp(KeyCode.Space))
+                {
+                    rb.linearVelocity = new Vector2(rb.linearVelocityX, fallForce);
+                }
             }
         }
-    }
-    ```
+        ```
 
 ### Add a goal
 
@@ -153,3 +160,5 @@ With that out of the way, we can start scripting.
 [platforms-and-walls-image]: assets/make-game/platforms-walls-scene.png
 
 <!-- GIFs -->
+[place-platforms-gif]: assets/make-game/place-platforms.gif
+[place-walls-gif]: assets/make-game/place-walls.gif
