@@ -45,8 +45,8 @@ theme:
     repo: fontawesome/brands/github
 
   font:
-    text: Merriweather Sans
-    code: Red Hat Mono
+    text: Inter
+    code: Fira Code
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
