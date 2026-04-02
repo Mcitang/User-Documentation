@@ -52,7 +52,7 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: black
-      accent: deep purple
+      accent: indigo
       toggle:
         icon: material/weather-sunny
         name: Dark mode
@@ -60,8 +60,8 @@ theme:
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: blue grey
-      accent: light blue
+      primary: grey
+      accent: indigo
       toggle:
         icon: material/weather-night
         name: Light mode
