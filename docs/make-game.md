@@ -33,6 +33,8 @@ Unity has a built-in 2D physics system called **Rigidbody2D**. We will control t
     ???+ How do I add a component
         Click "Add Component" in the inspector, under the existing components
 
+        {++GIF HERE++}
+
     Press the *Play* button and you will see the Player now falls as if there was gravity.
     You will also notice the player falls through the stage. That's because the **Rigidbody2D** doesn't know the floor is supposed to be solid. For that we need a Collider
 
