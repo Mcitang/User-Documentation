@@ -30,10 +30,10 @@ Unity has a built-in 2D physics system called **Rigidbody2D**. We will control t
 
 1. Add a **Rigidbody2D** to the player
 
-    ???+ How do I add a component
+    ???+ "How to add a component?"
         Click "Add Component" in the inspector, under the existing components
 
-        ![Adding a Rigidbody2D component][add-component-gif]{ style="width: 650px;", .center}
+        <!-- ![Adding a Rigidbody2D component][add-component-gif]{ style="width: 650px;", .center} -->
 
     Press the *Play* button and you will see the Player now falls as if there was gravity.
     You will also notice the player falls through the stage. That's because the **Rigidbody2D** doesn't know the floor is supposed to be solid. For that we need a Collider
@@ -42,7 +42,7 @@ Unity has a built-in 2D physics system called **Rigidbody2D**. We will control t
 
     Select all your rectangles by holding ++shift++ when you select each of them, and add a **BoxCollider2D** component to all of them.
     
-    Now if you *Play*, the player will fall and land on the floor.
+    Now if you hit *Play* again, the player will fall and land on the floor.
 
 ## Let's write our own scripts
 
@@ -136,11 +136,15 @@ Before that, let's add a Scripts folder.
         }
         ```
 
-### Add a goal
+## Add a goal
 
-1. Add some golden circles
+### Coins
+1. Add a circle sprite
+    > 2D Object > Sprite > Circle
 
-1. Rename them to coins
+1. Change it to a <span style="color: #AA9900;">**golden**</span> color
+
+1. Rename the circle to "_Coin_"
 
 1. Create score UI
 
