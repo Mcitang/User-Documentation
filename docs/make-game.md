@@ -52,7 +52,8 @@ Now lets work on moving the player
 
 ## Player Movement
 
-1. Add a new MonoBehaviour Script to a Scripts folder called `PlayerMovement`
+1. Add a new MonoBehaviour Script to a Scripts folder called `PlayerMovement` in the Project files
+    > Create > MonoBehaviour Script
 
     ??? question "What is a MonoBehavour"
         MonoBehaviour is a base class in Unity that allows you to create scripts that can be attached to GameObjects
@@ -302,15 +303,59 @@ Now hit play and try it out! Feel free to change the `speed` and `jumpForce` var
 
 Now we're ready to dynamically count the score
 
-1. Give all coins trigger colliders
+1. Give all coins a `BoxCollider2D`
 
-1. Drag coins into an empty parent object.
+1. Turn the collider into a Trigger by checking _Is Trigger_ in all the coins' `BoxCollider2D`
 
-1. Create a `CoinManager` script
+    ![Trigger BoxCollider2D][trigger-image]
+
+1. Create a new empty object called "CoinManager"
+
+1. Drag and drop all coins into the CoinManager object
+
+    !!! success
+        ![CoinManager with Coins inside][coin-manager-image]{ style="height: 250px;", .center }
+
+1. Create a MonoBehaviour script called `CoinManager`
+    > Create > MonoBehavour Script
+
+1. Add the `CoinManager` component to the CoinManager object
+
+1. Declare the variables we will need
+
+    ```C# linenums="1" hl_lines="5-6"
+    using UnityEngine;
+
+    public class CoinManager : MonoBehaviour
+    {
+        private int score;
+        private int totalCoins;
+
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        void Start()
+        {
+            
+        }
+    }
+    ```
 
 1. Dynamically get the amount of coins
 
-1. Add a `Coin` script to all the coins
+    ```C# linenums="8" hl_lines="4"
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        totalCoins = transform.childCount;
+    }
+    ```
+
+1. Create a MonoBehaviour script called `Coin`
+    > Create > MonoBehavour Script
+
+1. Add the `Coin` script to all the coins
+
+    !!! tip
+        You can add a component to many objects at once by holding shift when selecting the items and then adding the component
 
 1. When the player enters the coin trigger, increase the score in `CoinManager` and kill the coin.
 
@@ -338,6 +383,8 @@ Now we're ready to dynamically count the score
 [tmp-files-image]: assets/make-game/tmp-files.png
 [canvas-scaler-res-image]: assets/make-game/canvas-scaler-res.png
 [canvas-setup-image]: assets/make-game/canvas-setup.png
+[trigger-image]: assets/make-game/trigger.png
+[coin-manager-image]: assets/make-game/coin-manager.png
 
 <!-- GIFs -->
 [place-platforms-gif]: assets/make-game/place-platforms.gif
