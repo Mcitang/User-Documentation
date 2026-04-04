@@ -4,3 +4,8 @@
   margin-right: auto;
   text-align: center; /* Helpful if applied to a container */
 }
+
+.white-glow-text {
+  color: black;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6)
+}

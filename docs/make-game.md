@@ -22,119 +22,221 @@ It would be boring if there was nothing but a floor, right? So let's add some pl
         ![Game scene with walls and platforms][platforms-and-walls-image]
 
 Now hit the *Play* button. You will notice nothing really happens. That's because all we've done is add the objects to the scene.
-Let's add the player logic.
 
-## Player Logic
 
-Unity has a built-in 2D physics system called **Rigidbody2D**. We will control the player through it. It also takes care of other things for us, like momentum and gravity.
+### Add a **Rigidbody2D** to the player
+Unity has a built-in 2D physics system. We can use it to control the player through a **Rigidbody2D** component. It also takes care of other things for us, like momentum and gravity.
 
 1. Add a **Rigidbody2D** to the player
 
     ???+ "How to add a component?"
-        Click "Add Component" in the inspector, under the existing components
+        Click _Add Component_ in the inspector, under the existing components
 
-        <!-- ![Adding a Rigidbody2D component][add-component-gif]{ style="width: 650px;", .center} -->
+        ![Adding a component][add-component-gif]{ style="width: 650px;", .center }
+
+    In the Rigidbody2D component, freeze the player's Z rotation
+    > Constraints > Freeze Rotation > :white_check_mark: Z
 
     Press the *Play* button and you will see the Player now falls as if there was gravity.
     You will also notice the player falls through the stage. That's because the **Rigidbody2D** doesn't know the floor is supposed to be solid. For that we need a Collider
 
-1. Add colliders to rectangles
+### Add colliders to rectangles
 
-    Select all your rectangles by holding ++shift++ when you select each of them, and add a **BoxCollider2D** component to all of them.
+1. Select all your platforms, walls, the floor and the player by holding ++shift++ when you select each of them
+
+1. Add a **BoxCollider2D** component to all of them.
     
     Now if you hit *Play* again, the player will fall and land on the floor.
 
-## Let's write our own scripts
+Now lets work on moving the player
 
-Before that, let's add a Scripts folder.
+## Player Movement
 
-1. Add a new folder to the Project files, and name it Scripts
-
-    > Create > Folder
-
-    With that out of the way, we can start scripting.
-
-### Player Movement
-
-1. Add a new MonoBehaviour Script to your Scripts folder called `PlayerMovement`
+1. Add a new MonoBehaviour Script to a Scripts folder called `PlayerMovement`
 
     ??? question "What is a MonoBehavour"
         MonoBehaviour is a base class in Unity that allows you to create scripts that can be attached to GameObjects
 
-1. Add the `PlayerMovement` component to your player.
+1. Add the `PlayerMovement` component to your player
 
-1. Setup variables
+    This is what the empty script will look like
 
-    {++Player Movement code here++}
+    ```C# linenums="1"
+    using UnityEngine;
 
-
-1. Add player jump logic
-
-    {++Player Jump code here++}
-
-1. Increase Gravity in Project Settings
-
-
-    ??? note "`PlayerMovement` script draft"
-        ```c#
-        using System;
-        using UnityEngine;
-
-        public class PlayerMovement : MonoBehaviour
+    public class PlayerMovement : MonoBehaviour
+    {
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        void Start()
         {
-            public Rigidbody2D rb;
+            
+        }
 
-            public float speed = 15f;
+        // Update is called once per frame
+        void Update()
+        {
+            
+        }
+    }
+    ```
 
-            public float jumpForce = 15f;
-            public float fallForce = -3f;
+1. Setup variables at the top of the script
 
-            private float xMovement;
+    ```C# linenums="1" hl_lines="5-13"
+    using UnityEngine;
 
-            // Start is called once before the first execution of Update after the MonoBehaviour is created
-            void Start()
+    public class PlayerMovement : MonoBehaviour
+    {
+        public Rigidbody2D rb;
+
+        public float speed = 8f;
+        public float jumpForce = 8f;
+
+        private float xMovement;
+        private bool isJumping;
+        
+        /* Rest of the code */
+    }
+    ```
+
+
+1. Create a function to read the player input
+
+    ```C# linenums="1"
+    private void GetMovementInput()
+    {
+        xMovement = Input.GetAxis("Horizontal");
+        isJumping = Input.GetKeyDown(KeyCode.Space);
+    }
+    ```
+
+1. Call your new input function in `Update()`
+
+    ```C# linenums="1" hl_lines="4"
+    // Update is called once per frame
+    void Update()
+    {
+        GetMovementInput();
+    }
+    ```
+
+1. Create a function to move the player depending on input
+
+    ```C# linenums="1"
+    private void MovePlayer()
+    {
+        float x = xMovement * speed;
+        rb.linearVelocity = new Vector2(x, rb.linearVelocityY); // (1)
+    }
+    ```
+
+    1. `rb.linearVelocity` is the velocity of the object
+
+1. Call your new movement function in `FixedUpdate()`.
+
+    ???+ info "Fixed Update"
+        Unity recommends using `FixedUpdate()` whenever we are dealing with the physics system. Unlike `Update()`, which runs every frame possible, `FixedUpdate()` will only run 30 times per second.
+
+    ```C# linenums="1" hl_lines="3"
+    private void FixedUpdate()
+    {
+        MovePlayer();
+    }
+    ```
+
+1. Create a function to calculate your jump
+
+    ```C# linenums="1"
+    private void Jump()
+    {
+        if (isJumping)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce);
+        }
+    }
+    ```
+
+1. Add your new jump function to `Update()`
+    
+    ```C# linenums="1" hl_lines="5"
+    // Update is called once per frame
+    void Update()
+    {
+        GetMovementInput();
+        Jump();
+    }
+    ```
+
+And that's it for the player movement script
+
+???+ success "PlayerMovement script"
+
+    ```C#
+    using System;
+    using UnityEngine;
+
+    public class PlayerMovement : MonoBehaviour
+    {
+        public Rigidbody2D rb;
+
+        public float speed = 8f;
+        public float jumpForce = 8f;
+
+        private float xMovement;
+        private bool isJumping;
+
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        void Start()
+        {
+            
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            GetMovementInput();
+            Jump();
+        }
+
+        private void FixedUpdate()
+        {
+            MovePlayer();
+        }
+
+        private void GetMovementInput()
+        {
+            xMovement = Input.GetAxis("Horizontal");
+            isJumping = Input.GetKeyDown(KeyCode.Space);
+        }
+
+        private void MovePlayer()
+        {
+            float x = xMovement * speed;
+            rb.linearVelocity = new Vector2(x, rb.linearVelocityY);
+        }
+
+        private void Jump()
+        {
+            if (isJumping)
             {
-                
-            }
-
-            // Update is called once per frame
-            void Update()
-            {
-                GetMovementInput();
-                Jump();
-            }
-
-            private void FixedUpdate()
-            {
-                MovePlayer();
-            }
-
-            private void GetMovementInput()
-            {
-                xMovement = Input.GetAxis("Horizontal");
-            }
-
-            private void MovePlayer()
-            {
-                float x = xMovement * speed;
-                rb.linearVelocity = new Vector2(x, rb.linearVelocityY);
-            }
-
-            private void Jump()
-            {
-                if (Input.GetKeyDown(KeyCode.Space))
-                {
-                    Debug.Log("Jump");
-                    rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce);
-                }
-
-                if (Input.GetKeyUp(KeyCode.Space))
-                {
-                    rb.linearVelocity = new Vector2(rb.linearVelocityX, fallForce);
-                }
+                rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce);
             }
         }
-        ```
+    }
+    ```
+
+Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` variable
+
+1. In the inspector, drag and drop the `Rigidbody2D` component to the corresponding field in `PlayerMovement`
+
+    ![Assigning a value to Rigidbody2D rb variable][assign-rb-gif]{ .center }
+
+Now hit play and try it out! Feel free to change the `speed` and `jumpForce` variable values, as well as the `Rigidbody2D`'s gravity scale in the inspector to your liking
+
+!!! tip
+    You can change your script variable values directly from the inspector
+
+    ![PlayerMovement public variables][public-vars-image]{ .center }
 
 ## Add a goal
 
@@ -142,18 +244,85 @@ Before that, let's add a Scripts folder.
 1. Add a circle sprite
     > 2D Object > Sprite > Circle
 
-1. Change it to a <span style="color: #AA9900;">**golden**</span> color
+1. Change it to a <span class="white-glow-text" style="color: #AA9900;">**golden**</span> color
 
 1. Rename the circle to "_Coin_"
 
-1. Create score UI
+1. By duplicating that coin, place 2 coins on top of each platform.
 
-1. Increase score when coin is collected
+    !!! success
+        ![Coins on each platform][coins-image]
+    
+    The win condition for the game will be to collect all the coins
 
-    {++Script here++}
+### Coins UI
 
-1. If all coins are collected, you win!
+1. Add a label
 
+    > UI (Canvas) > Text - TextMeshPro
+
+    You'll get a pop-up to download TMP essentials
+
+1. Click _Import TMP Essentials_
+
+    !!! success
+        You will see a _TextMesh Pro_ folder in your Project Files
+        ![TMP folder in your project files][tmp-files-image]
+
+1. Change the text color to <span class="white-glow-text">black</span> in the inspector
+
+    The best way to preview how UI looks in your game is through the game view
+
+1. Switch to the game view
+
+1. Change the preview resolution to 16:9
+
+1. Change back to scene view
+
+1. Click your canvas
+
+1. Find the `Canvas Scaler` component
+
+1. Change the UI Scale Mode to _Scale With Screen Size_
+
+1. Set your reference resolution to X=1920, Y=1080
+
+    ???+ success
+        ![Canvas Scaler component with 1920x1080 reference resolution][canvas-scaler-res-image]
+
+1. Double-click your Canvas in the hierarchy.
+
+    This will zoom you out to where you can see your canvas
+
+1. Drag the text object you made to the top-left corner of the canvas
+
+    !!! success
+        If you go to Game View, this is what it should look like
+        ![The game view with a text label in the top-left corner][canvas-setup-image]
+
+Now we're ready to dynamically count the score
+
+1. Give all coins trigger colliders
+
+1. Drag coins into an empty parent object.
+
+1. Create a `CoinManager` script
+
+1. Dynamically get the amount of coins
+
+1. Add a `Coin` script to all the coins
+
+1. When the player enters the coin trigger, increase the score in `CoinManager` and kill the coin.
+
+    When the score is equal to the amount of coins, the player collected them all and they win!
+
+1. Print a winning message to the console
+
+    ```C#
+    Debug.Log("You win!");
+    ```
+
+    Now your game can be won!
 
 
 <!-- Glossary -->
@@ -164,8 +333,14 @@ Before that, let's add a Scripts folder.
 
 <!-- Images -->
 [platforms-and-walls-image]: assets/make-game/platforms-walls-scene.png
+[public-vars-image]: assets/make-game/public-vars.png
+[coins-image]: assets/make-game/coins.png
+[tmp-files-image]: assets/make-game/tmp-files.png
+[canvas-scaler-res-image]: assets/make-game/canvas-scaler-res.png
+[canvas-setup-image]: assets/make-game/canvas-setup.png
 
 <!-- GIFs -->
 [place-platforms-gif]: assets/make-game/place-platforms.gif
 [place-walls-gif]: assets/make-game/place-walls.gif
 [add-component-gif]: assets/make-game/add-component.gif
+[assign-rb-gif]: assets/make-game/assign-rb.gif
