@@ -321,7 +321,7 @@ Now we're ready to dynamically count the score
 
 1. Add the `CoinManager` component to the CoinManager object
 
-1. Declare the variables we will need
+1. Delete the `Update()` function since we won't need it, and declare the variables we will need
 
     ```C# linenums="1" hl_lines="5-6"
     using UnityEngine;
@@ -357,18 +357,159 @@ Now we're ready to dynamically count the score
     !!! tip
         You can add a component to many objects at once by holding shift when selecting the items and then adding the component
 
-1. When the player enters the coin trigger, increase the score in `CoinManager` and kill the coin.
+1. Delete the `Update()` function, and add a variable to hold the CoinManager
 
-    When the score is equal to the amount of coins, the player collected them all and they win!
+    ```C# linenums="1" hl_lines="5"
+    using UnityEngine;
 
-1. Print a winning message to the console
+    public class Coin : MonoBehaviour
+    {
+        public CoinManager coinManager;
 
-    ```C#
-    Debug.Log("You win!");
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        void Start()
+        {
+            
+        }
+    }
     ```
 
-    Now your game can be won!
+1. Add a function to add to score in the `CoinManager` script
 
+    ```C# linenums="14"
+    public void addToScore(int add = 1)
+    {
+        score += add;
+        Debug.Log("Score: " + score);
+    }
+    ```
+
+1. Delete the `Update()` methods from `Coin`
+
+1. Assign the `CoinManager` to `Coin` in the `Start()` method
+
+    ```C# linenums="7"
+    void Start()
+    {
+        coinManager = transform.parent.GetComponent<CoinManager>();
+    }
+    ```
+
+1. Create an `OnTriggerEnter2D` function
+
+    ```C# linenums="12"
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+    }
+    ```
+
+1. When the player enters the coin trigger, increase the score in `CoinManager` and kill the coin.
+
+    ```C# linenums="12" hl_lines="3-4"
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        coinManager.addToScore();
+        Destroy(gameObject);
+    }
+    ```
+
+    ???+ success
+
+        ```C# linenums="1"
+        using UnityEngine;
+
+        public class Coin : MonoBehaviour
+        {
+            public CoinManager coinManager;
+
+            void Start()
+            {
+                coinManager = transform.parent.GetComponent<CoinManager>();
+            }
+
+            private void OnTriggerEnter2D(Collider2D collision)
+            {
+                coinManager.addToScore();
+                Destroy(gameObject);
+            }
+        }
+        ```
+    
+    
+1. When the score is equal to the amount of coins, the player collected them all and they win!
+
+    ```C# linenums="16" hl_lines="6-9"
+    public void addToScore(int add = 1)
+    {
+        score += add;
+        Debug.Log("Score: " + score);
+
+        if (score >= totalCoins)
+        {
+            Debug.Log("You win!");
+        }
+    }
+    ```
+
+Now your game can be won! Let's update the UI to show the score.
+
+
+1. Declare a public `TextMeshProUGUI` variable
+
+    ```C# linenums="4"
+    public TextMeshProUGUI scoreLabel;
+    ```
+
+1. Update the addScore function to update the score
+
+    ```C# linenums="16" hl_lines="4"
+    public void addToScore(int add = 1)
+    {
+        score += add;
+        scoreLabel.SetText(score.ToString());
+
+        if (score >= totalCoins)
+        {
+            Debug.Log("You win!");
+        }
+    }
+    ```
+
+    ???+ success
+
+        ```C# linenums="1"
+        using TMPro;
+        using UnityEngine;
+
+        public class CoinManager : MonoBehaviour
+        {
+            public TextMeshProUGUI scoreLabel;
+
+            private int score;
+            private int totalCoins;
+
+            void Start()
+            {
+                totalCoins = transform.childCount;
+            }
+
+            public void addToScore(int add = 1)
+            {
+                score += add;
+                scoreLabel.SetText(score.ToString());
+
+                if (score >= totalCoins)
+                {
+                    Debug.Log("You win!");
+                }
+            }
+        }
+        ```
+
+1. In the inspector, drag and drop you text label into "Score Label"
+
+    ![Score Label variable][score-label-image]{ .center }
 
 <!-- Glossary -->
 *[Collider]: Bounds around an object that prevent other bounds from intersecting with it.
@@ -385,6 +526,7 @@ Now we're ready to dynamically count the score
 [canvas-setup-image]: assets/make-game/canvas-setup.png
 [trigger-image]: assets/make-game/trigger.png
 [coin-manager-image]: assets/make-game/coin-manager.png
+[score-label-image]: assets/make-game/score-label.png
 
 <!-- GIFs -->
 [place-platforms-gif]: assets/make-game/place-platforms.gif
