@@ -30,7 +30,12 @@ Anyone can view the page
 
 
 
+<!-- Glossary -->
+
+
+
 <!-- Hyperlinks -->
-[itch-contact]: https://itch.io/support
 
 <!-- Images -->
+
+<!-- GIFs -->

@@ -511,8 +511,11 @@ Now your game can be won! Let's update the UI to show the score.
 
     ![Score Label variable][score-label-image]{ .center }
 
+
+
 <!-- Glossary -->
 *[Collider]: Bounds around an object that prevent other bounds from intersecting with it.
+
 
 
 <!-- Hyperlinks -->

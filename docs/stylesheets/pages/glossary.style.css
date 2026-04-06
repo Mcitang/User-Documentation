@@ -1,29 +1,29 @@
 /* Glossary Data */
-article table td:first-child {
-  font-size: 1.25em;
-  font-weight: bold;
-  white-space: nowrap;
+table:has(#glossary) td:first-child {
+  font-size: 1.25em !important;
+  font-weight: bold !important;
+  white-space: nowrap !important;
   text-align: center !important;
   vertical-align: middle ! important;
 }
 
-article table td:nth-child(2) {
-  font-weight: normal;
+table:has(#glossary) td:nth-child(2) {
+  font-weight: normal !important;
   text-align: left !important;
   vertical-align: middle ! important;
 }
 
 /* Glossary Headers */
-article table th:first-child {
-  font-weight: bold;
-  white-space: nowrap;
+table:has(#glossary) th:first-child {
+  font-weight: bold !important;
+  white-space: nowrap !important;
   text-align: center !important;
   vertical-align: middle ! important;
 }
 
-article table th:nth-child(2) {
-  font-weight: normal;
-  white-space: nowrap;
+table:has(#glossary) th:nth-child(2) {
+  font-weight: normal !important;
+  white-space: nowrap !important;
   text-align: left !important;
   vertical-align: middle ! important;
 }
