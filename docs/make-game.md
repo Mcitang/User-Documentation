@@ -245,7 +245,7 @@ Now hit play and try it out! Feel free to change the `speed` and `jumpForce` var
 1. Add a circle sprite
     > 2D Object > Sprite > Circle
 
-1. Change it to a <span class="white-glow-text" style="color: #AA9900;">**golden**</span> color
+1. Change it to a golden color
 
 1. Rename the circle to "_Coin_"
 
@@ -270,7 +270,7 @@ Now hit play and try it out! Feel free to change the `speed` and `jumpForce` var
         You will see a _TextMesh Pro_ folder in your Project Files
         ![TMP folder in your project files][tmp-files-image]
 
-1. Change the text color to <span class="white-glow-text">black</span> in the inspector
+1. Change the text color to black in the inspector
 
     The best way to preview how UI looks in your game is through the game view
 

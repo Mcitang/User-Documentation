@@ -9,9 +9,11 @@
 | [MonoBehaviour][monobehaviour-url]    |   A base class in Unity used to create scripts that can be attached to GameObjects   |
 | Sprite        |   A 2D image or animation computer graphic    |
 | [Vector2][vector2-url]       |   Used to represent 2D vectors and points, consisting of two values: X and Y  |
+| [TextMeshPro][tmp-url]    |   An easy-to-use system for high-quality text and UI included with the Unity Editor   |
 
 
 
 <!-- Hyperlinks -->
 [monobehaviour-url]: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MonoBehaviour.html
 [vector2-url]: https://docs.unity3d.com/6000.3/Documentation/ScriptReference/Vector2.html
+[tmp-url]: https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.2/manual/index.html

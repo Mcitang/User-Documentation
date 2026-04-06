@@ -2,6 +2,8 @@
 
 1. Open the Build menu
 
+    > File > Build Profiles
+
 1. Select target platform (in this case, Windows)
 
 1. Add your Scenes (they might be there already)

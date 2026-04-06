@@ -10,6 +10,8 @@
 
     > Create > Scene > Scene
 
+1. Open your main menu scene by double-clicking it in the Project Files
+
 1. Add a label
 
     > UI (Canvas) > Text - TextMeshPro
@@ -28,42 +30,41 @@
 
 1. Change these settings for the text object
 
-    | TRANSFORM     |           |
+    | Transform     |           |
     | ---------     | ------    |
     | Pos X         | 0         |
     | Pos Y         | 400       |
     | Width         | 1000      |
     | Height        | 200       |
 
-    | TEXTMESHPRO - TEXT    |   |
+    | TextMeshPro - Text    |   |
     | ---------     | ------    |
     | Text          | Main Menu |
     | Font Size     | 80px      |
-    | Font Style    | Bold      |
-    | Alignment     | Justify center, vertical align center |
+    | Font Style    | **Bold**      |
+    | Alignment     | Justify center<br>Vertical align center |
     
     ???+ success
-        !["Main Menu" Label][main-menu-label-image]
+
+        !["Main Menu" Label][main-menu-label-image]{ .center }
 
 1. Add a button
     > UI (Canvas) > Button - TextMeshPro
 
-1. Change these settings for the button
+1. Change these settings for the button and the button's text child object
 
-    | TRANSFORM     |           |
+    | Transform     |           |
     | ---------     | ------    |
     | Pos X         | 0         |
     | Pos Y         | 0         |
     | Width         | 400       |
     | Height        | 100       |
 
-    The button has a child Text object
-
-    | TEXTMESHPRO - TEXT    |   |
+    | TextMeshPro - Text    |   |
     | ---------     | ------    |
     | Text          | Play      |
     | Font Size     | 60px      |
-    | Font Style    | Bold      |
+    | Font Style    | **Bold**      |
 
 ## Create scene transition system
 
@@ -119,6 +120,10 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 
 1. Type "Game" into the parameter field
 
+    ???+ success
+        ![On Click () event function call list for the Play button][play-button-onclick-image]{ .center }
+        
+
 ### Add scenes to your build's scene list
 
 1. Open your Build Profiles
@@ -145,11 +150,184 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 
 1. Go back to the Game scene by double-clicking it in the Project Files
 
-1. 
+1. Right-click the Canvas and create an Empty Game Object
 
-1. Back in the Game Scene, add a "Back to Menu" button on win state
+    > Create Empty
 
-1. Add a Pause Menu with a Resume and Back to Menu buttons
+    ???+ bug
+        If you create the empty object without right-clicking the Canvas, the next steps will not work.
+
+        Be sure your empty object has a Rect Transform.
+
+        ![Rect Transform][rect-transform-image]{ .center}
+
+1. Name it "WinScreen"
+
+1. Right-click the WinScreen object and add an Image object
+
+    > UI (Canvas) > Image
+
+1. Change the image color to black
+
+1. Right-click the WinScreen object again and add a Text object
+
+    > UI (Canvas) > Text - TextMeshPro
+
+1. Select the text object, image object and WinScreen at the same time
+
+1. In the rect transform, click the Anchor Presets in the top-left of the component
+
+1. Hold ++alt+shift++ to set the pivot and position as well, then select furthest bottom right preset
+
+    ![Set Rect Transform anchors][rect-transform-anchor-gif]{ .center}
+
+    The image to
+
+    !!! success
+        Your game view should be covered by the black image, with text in the top-left corner
+
+        ![Win Screen Skeletopn game view][win-screen-skeleton-view-image]{ .center}
+
+    ???+ failure "I can't see the text"
+        If you can't see the text, your image is most likely covering it. Make sure the items inside WinScreen are in this exact order from top to bottom
+
+        ![Win Screen in the hierarchy][win-screen-hierarchy-image]{ .center}
+
+1. Right-click WinScreen and create a Button
+
+    > UI (Canvas) > Button - TextMeshPro
+
+1. Change these settings for the text inside WinScreen
+
+    | TextMeshPro - Text    |   |
+    | ---------     | ------    |
+    | Text          | You win!  |
+    | Font Size     | 100px     |
+    | Font Style    | **Bold**      |
+    | Vertex Color  | Yellow    |
+    | Alignment     | Justify center<br>Vertical align center |
+
+1. Change these settings for the button in WinScreen and the text in that button
+
+    | Transform     |           |
+    | ---------     | ------    |
+    | Pos X         | 0         |
+    | Pos Y         | -150      |
+    | Width         | 400       |
+    | Height        | 75        |
+
+    | TextMeshPro - Text    |   |
+    | ---------     | ------    |
+    | Text          | Back To Menu  |
+    | Font Size     | 40px      |
+    | Font Style    | **Bold**      |
+
+1. Change these settings for the image in WinScreen
+
+    | Image     |           |
+    | ---------     | ------    |
+    | Color         | Alpha (A): 200    |
+
+
+## Win screen logic
+
+### Set up SceneLoader
+
+1. Create an empty object
+    
+    > Create Empty
+
+1. Rename it to "SceneLoader"
+
+1. Add the `SceneLoader` component
+
+1. Add the `GoToScene` function that takes in a string to the "Back To Menu" button's On Click () function list
+
+1. Type "MainMenu" into the parameter field
+
+    ???+ success
+        ![On Click () event function call list for the Back To Menu button][menu-button-onclick-image]{ .center }
+
+### Show win screen on win
+
+1. Open your `CoinManager` script
+
+1. Add a reference to the WinScreen GameObject
+
+    ```C# linenums="6"
+    public GameObject winScreen;
+    ```
+
+1. Hide the win screen on Start
+
+    ```C# linenums="12" hl_lines="4"
+    void Start()
+    {
+        totalCoins = transform.childCount;
+        winScreen.SetActive(false);
+    }
+    ```
+
+1. Show win screen when the player wins
+
+    ```C# linenums="18" hl_lines="8"
+    public void addToScore(int add = 1)
+    {
+        score += add;
+        scoreLabel.SetText(score.ToString());
+
+        if (score >= totalCoins)
+        {
+            winScreen.SetActive(true);
+        }
+    }
+    ```
+
+1. Test it
+
+    !!! success
+        You are able to go from the Main Menu to the Game, and when you win you can go back to the Main Menu
+
+        ![Main menu to Game then back to Main Menu][game-loop-gif]
+
+Finally we should add a quit button so people can stop playing the game
+
+### Quit button
+
+1. Go to the main menu
+
+1. Duplicate your play button by selecting it and pressing ++ctrl+d++
+
+1. Drag it down in the scene view or set its Y position to -150 so it is visible
+
+1. Change its text to say "Quit"
+
+1. Open your `SceneLoader` script
+
+1. Write this quit function
+
+    ```C# linenums="16"
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+    ```
+
+1. Go to your quit button's _On Click ()_ list
+
+    It should have the `GoToScene` function from `SceneLoader`
+
+1. Click the function dropdown and change it from `GoToScene` to `QuitGame`
+
+    > Scene Loader > QuitGame ()
+
+    ???+ info "Testing the Quit Button"
+        Testing the quit button will do nothing in the Unity Editor, it only works in the game build
+
+    !!! warning
+        Make sure you change the On Click function for the quit button and not the play button. Since the inspector looks the same for both buttons, it will be easy to get confused.
+
+And we are done!
 
 
 
@@ -162,6 +340,13 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 <!-- Images -->
 [main-menu-label-image]: assets/make-menu/main-menu-label.png
 [build-profiles-image]: assets/make-menu/build-profiles.png
+[rect-transform-image]: assets/make-menu/rect-transform.png
+[win-screen-hierarchy-image]: assets/make-menu/win-screen-hierarchy.png
+[win-screen-skeleton-view-image]: assets/make-menu/winscreen-skeleton-view.png
+[play-button-onclick-image]: assets/make-menu/play-button-onclick.png
+[menu-button-onclick-image]: assets/make-menu/menu-button-onclick.png
 
 <!-- GIFs -->
 [scene-list-gif]: assets/make-menu/scene-list.gif
+[rect-transform-anchor-gif]: assets/make-menu/rect-transform-anchor.gif
+[game-loop-gif]: assets/make-menu/game-loop.gif
