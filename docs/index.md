@@ -11,6 +11,7 @@ All examples and instructions are designed for Windows and has not been tested w
 
 ## Prerequisite Knowledge
 - Working knowledge of programming data types strings, ints and floats. You are expected to know what these data types are, and what they represent in programming languages.
+- {++Understanding of Windows, such how to zip a folder++}
 
 ## Software Requirements
 Before beginning, please ensure you have the following accounts and programs:
