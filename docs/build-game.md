@@ -38,16 +38,26 @@
 
 1. Zip your Build
 
-1. Go to itch.io, hit the arrow in the top right then select "Upload New Project"
+1. Go to [itch.io][itch-url]
 
-1. Set "Kind of Project" to Downloadable *(WARNING: If you have a web builds, you should select HTML)*
+1. Press the arrow in the top-right corner, next to your profile picture
 
-1. Hit upload files and select your build.zip
+    This will show a little dropdown
 
-    !!! warning
-        There is a 1Gb file limit. To increase the file size limit you must [contact itch.io][itch-contact]
+1. Select "Upload New Project"
 
-1. Set visibility
+1. Give your game any title you want
+
+1. Set "Kind of Project" to _Downloadable_
+
+    ???+ info "About Web Builds"
+        For games meant to be played in browser, you should select _HTML_ instead of _Downloadable_
+
+1. Press upload files and select your build zip folder
+
+1. Check the box next to the Windows logo so consumers know the target platform
+
+1. Scroll down and set your project's visibility
 
     - **Draft:**
     Only editors can view the page
@@ -58,6 +68,10 @@
     - **Public:**
     Anyone can view the page
 
+1. Press _Save_
+
+And you're done, you can share that with whoever you want and they will be able to download from [itch.io][itch-url] and play it.
+
 
 
 <!-- Glossary -->
@@ -65,6 +79,7 @@
 
 
 <!-- Hyperlinks -->
+[itch-url]: https://itch.io
 
 <!-- Images -->
 [rearranged-scene-list]: assets/build-game/build-scene-list.png
