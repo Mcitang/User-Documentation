@@ -105,19 +105,22 @@ We will use message blocks to inform you of additional relevant information. Her
     Specifies actions that may lead to unexpected behaviour.
 
 !!! info 
-    Indicates additional information or tips
+    Indicates additional information
+
+!!! tip
+    Indicates useful knowledge, such as keyboard shortcuts
 
 !!! bug
     Specifies actions that may cause an error.
 
 ???+ note "Collapsible Note"
-    Yippee reminder to move if we dont need
+    Provides a reminder for something
 
 ???+ info "Collapsible Info"
-    Yippee reminder to move if we dont need
+    Provides additional information on a topic
 
 ???+ question "Collapsible Question"
-    Yippee reminder to move if we dont need
+    Provides additional information on a topic, framed as a question
 
 
 
