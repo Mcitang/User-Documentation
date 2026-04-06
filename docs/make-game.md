@@ -507,7 +507,7 @@ Now your game can be won! Let's update the UI to show the score.
         }
         ```
 
-1. In the inspector, drag and drop you text label into "Score Label"
+1. In the inspector, drag and drop your text label into the "Score Label" slot in your script
 
     ![Score Label variable][score-label-image]{ .center }
 
