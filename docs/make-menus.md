@@ -130,6 +130,23 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
     ???+ success
         ![The Build Profiles menu][build-profiles-image]
 
+1. Press _Open Scene List_
+
+1. Drag and drop all the scenes into the Scene List
+
+    !!! tip
+        To select multiple things at a time, hold ++shift++ while selecting each of them
+
+    ![Scene List with Main Menu and Game][scene-list-gif]
+
+1. Test your menu
+
+## Return to Main Menu after winning
+
+1. Go back to the Game scene by double-clicking it in the Project Files
+
+1. 
+
 1. Back in the Game Scene, add a "Back to Menu" button on win state
 
 1. Add a Pause Menu with a Resume and Back to Menu buttons
@@ -147,3 +164,4 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 [build-profiles-image]: assets/make-menu/build-profiles.png
 
 <!-- GIFs -->
+[scene-list-gif]: assets/make-menu/scene-list.gif
