@@ -18,16 +18,18 @@ Before beginning, please ensure you have the following accounts and programs:
 - A [Unity] [unity-url] account
 - An [itch.io][itch-url] account
 
-- [Unity Engine Hub][unity-hub] downloaded and installed
-- [Visual Studio 2022+][visual-studio] downloaded and installed 
+- [Unity Engine Hub][unity-hub-url] downloaded and installed
 
 ## Objectives
 1. Install Unity Editor
-2. Set up a Unity Project
-3. Create a character
-4. Create a main menu
-5. Create a pause menu
-6. Add a game win condition
+1. Set up a Unity Project
+1. Create a platformer character
+1. Add a game win condition
+1. Create a main menu
+1. Create a win menu
+1. Build the game for Windows
+1. Upload it to [itch.io][itch-url]
+
 
 ## Typographical Conventions
 
@@ -128,8 +130,7 @@ We will use message blocks to inform you of additional relevant information. Her
 <!-- Hyperlinks -->
 [unity-url]: https://unity.com/
 [itch-url]: https://itch.io
-[unity-hub]: https://unity.com/products/unity-engine
-[visual-studio]: https://visualstudio.microsoft.com/downloads/
+[unity-hub-url]: https://unity.com/products/unity-engine
 
 <!-- Images -->
 [Unity Hub Image]: assets/index/empty-unity-hub.png
