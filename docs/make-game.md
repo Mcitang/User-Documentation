@@ -296,6 +296,8 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
 
 1. Click _Import TMP Essentials_
 
+1. We don't need the examples and extras, so close the TMP Importer window
+
     !!! success
         You will see a _TextMesh Pro_ folder in your Project Files
         ![TMP folder in your project files][tmp-files-image]
