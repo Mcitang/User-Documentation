@@ -581,7 +581,7 @@ Now your game can be won! Let's update the UI to show the score.
 
 1. Minimize Visual Studio
 
-1. In the inspector, drag and drop the text label in your scene's canvas into the "Score Label" slot in your script
+1. Drag and drop the text label in your scene's canvas into the "Score Label" slot in the `CoinManager` component, in the inspector
 
 
     !!! success
