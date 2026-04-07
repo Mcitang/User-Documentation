@@ -358,27 +358,21 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
 
 ## CoinManager script
 
+1. Go into your "Scripts" folder in your Project files
+
 1. Create a MonoBehaviour script called `CoinManager`
+
     > Create > MonoBehavour Script
 
 1. Add the `CoinManager` component to the CoinManager object
 
-1. Delete the `Update()` function since we won't need it, and declare the variables we will need
+1. Delete the `Update()` function since we won't need it
 
-    ```C# linenums="1" hl_lines="5-6"
-    using UnityEngine;
+1. Declare the variables we will need
 
-    public class CoinManager : MonoBehaviour
-    {
-        private int score;
-        private int totalCoins;
-
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
-        {
-            
-        }
-    }
+    ```C# linenums="5"
+    private int score;
+    private int totalCoins;
     ```
 
 1. Dynamically get the amount of coins
@@ -390,6 +384,25 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
         totalCoins = transform.childCount;
     }
     ```
+
+    !!! success
+
+        ```C# linenums="1" hl_lines="5-6"
+        using UnityEngine;
+
+        public class CoinManager : MonoBehaviour
+        {
+            private int score;
+            private int totalCoins;
+
+            // Start is called once before the first execution of Update after the MonoBehaviour is created
+            void Start()
+            {
+                totalCoins = transform.childCount;
+            }
+        }
+        ```
+
 1. Go into your "Scripts" folder in your Project files
 
 1. Create a MonoBehaviour script called `Coin`
@@ -401,7 +414,9 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
     !!! tip
         You can add a component to many objects at once by holding shift when selecting the items and then adding the component
 
-1. Delete the `Update()` function, and add a variable to hold the CoinManager
+1. Delete the `Update()` function
+
+1. Add a variable to hold the CoinManager
 
     ```C# linenums="1" hl_lines="5"
     using UnityEngine;
