@@ -188,6 +188,10 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 
     ![Scene List with Main Menu and Game][scene-list-gif]
 
+1. Close the Build Profiles menu
+
+1. Save your Unity project by pressing ++ctrl+s++
+
 1. Test your menu
 
 ## Return to Main Menu after winning
@@ -201,7 +205,7 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
     ???+ bug
         If you create the empty object without right-clicking the Canvas, the next steps will not work.
 
-        Be sure your empty object has a Rect Transform.
+        Be sure your empty object has a Rect Transform component.
 
         ![Rect Transform][rect-transform-image]{ .center}
 
