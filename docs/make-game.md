@@ -356,27 +356,23 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
     !!! success
         ![CoinManager with Coins inside][coin-manager-image]{ style="height: 250px;", .center }
 
+## CoinManager script
+
+1. Go into your "Scripts" folder in your Project files
+
 1. Create a MonoBehaviour script called `CoinManager`
+
     > Create > MonoBehavour Script
 
 1. Add the `CoinManager` component to the CoinManager object
 
-1. Delete the `Update()` function since we won't need it, and declare the variables we will need
+1. Delete the `Update()` function since we won't need it
 
-    ```C# linenums="1" hl_lines="5-6"
-    using UnityEngine;
+1. Declare the variables we will need
 
-    public class CoinManager : MonoBehaviour
-    {
-        private int score;
-        private int totalCoins;
-
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
-        {
-            
-        }
-    }
+    ```C# linenums="5"
+    private int score;
+    private int totalCoins;
     ```
 
 1. Dynamically get the amount of coins
@@ -389,7 +385,36 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
     }
     ```
 
+    !!! success
+
+        ```C# linenums="1" hl_lines="5-6"
+        using UnityEngine;
+
+        public class CoinManager : MonoBehaviour
+        {
+            private int score;
+            private int totalCoins;
+
+            // Start is called once before the first execution of Update after the MonoBehaviour is created
+            void Start()
+            {
+                totalCoins = transform.childCount;
+            }
+        }
+        ```
+
+1. Save your changes by pressing ++ctrl+s++
+
+1. Minimize Visual Studio
+
+1. Save your Unity project by pressing ++ctrl+s++
+
+## Coin script
+
+1. Go into your "Scripts" folder in your Project files
+
 1. Create a MonoBehaviour script called `Coin`
+
     > Create > MonoBehavour Script
 
 1. Add the `Coin` script to all the coins
@@ -397,7 +422,18 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
     !!! tip
         You can add a component to many objects at once by holding shift when selecting the items and then adding the component
 
-1. Delete the `Update()` function, and add a variable to hold the CoinManager
+1. Delete the `Update()` method from `Coin`
+
+1. Assign the `CoinManager` to `Coin` in the `Start()` method
+
+    ```C# linenums="7"
+    void Start()
+    {
+        coinManager = transform.parent.GetComponent<CoinManager>();
+    }
+    ```
+
+1. Add a variable to hold the CoinManager
 
     ```C# linenums="1" hl_lines="5"
     using UnityEngine;
@@ -424,17 +460,6 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
     }
     ```
 
-1. Delete the `Update()` methods from `Coin`
-
-1. Assign the `CoinManager` to `Coin` in the `Start()` method
-
-    ```C# linenums="7"
-    void Start()
-    {
-        coinManager = transform.parent.GetComponent<CoinManager>();
-    }
-    ```
-
 1. Create an `OnTriggerEnter2D` function
 
     ```C# linenums="12"
@@ -454,7 +479,10 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
     }
     ```
 
-    ???+ success
+1. Save your changes by pressing ++ctrl+s++
+
+    !!! success
+        Completed coin script
 
         ```C# linenums="1"
         using UnityEngine;
@@ -492,7 +520,7 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
     }
     ```
 
-1. Save your Unity project by pressing ++ctrl+s++
+1. Save your changes by pressing ++ctrl+s++
 
 Now your game can be won! Let's update the UI to show the score.
 
@@ -517,6 +545,8 @@ Now your game can be won! Let's update the UI to show the score.
         }
     }
     ```
+
+1. Save your changes by pressing ++ctrl+s++
 
     ???+ success
 
@@ -548,15 +578,20 @@ Now your game can be won! Let's update the UI to show the score.
             }
         }
         ```
-1. Save your changes by pressing ++ctrl+s++
 
 1. Minimize Visual Studio
 
-1. In the inspector, drag and drop your text label into the "Score Label" slot in your script
+1. Drag and drop the text label in your scene's canvas into the "Score Label" slot in the `CoinManager` component, in the inspector
 
-    ![Score Label variable][score-label-image]{ .center }
+
+    !!! success
+        ![Score Label variable][score-label-image]{ .center }
 
 1. Save your Unity project by pressing ++ctrl+s++
+
+1. Run the game and collect all coins
+
+    Once you collect all the coins, the console should say "You win!"
 
 
 

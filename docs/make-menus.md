@@ -2,11 +2,11 @@
 
 ## Setup
 
-1. Find the current scene, called _SampleScene_ in your Project files, inside the "Scenes" folder
+1. Open the "Scenes" folder in your Project files
 
-1. Right-click it, then rename it to "_Game_"
+1. Rename the current scene from "_SampleScene_" to "_Game_"
 
-1. Create a new Scene, call it "_Main Menu_"
+1. Right click your Project filesCreate a new Scene, call it "_Main Menu_"
 
     > Create > Scene > Scene
 
@@ -30,7 +30,7 @@
 
 1. Change these settings for the text object
 
-    | Transform     |           |
+    | Rect Transform    |           |
     | ---------     | ------    |
     | Pos X         | 0         |
     | Pos Y         | 400       |
@@ -49,16 +49,19 @@
         !["Main Menu" Label][main-menu-label-image]{ .center }
 
 1. Add a button
+
     > UI (Canvas) > Button - TextMeshPro
 
-1. Change these settings for the button and the button's text child object
+1. Change these settings for the button object
 
-    | Transform     |           |
+    | Rect Transform    |           |
     | ---------     | ------    |
     | Pos X         | 0         |
     | Pos Y         | 0         |
     | Width         | 400       |
     | Height        | 100       |
+
+1. Change these settings for the button's text child object
 
     | TextMeshPro - Text    |   |
     | ---------     | ------    |
@@ -68,7 +71,11 @@
 
 ## Create scene transition system
 
+1. Open your "Scripts" folder in the Project files
+
 1. Create a new MonoBehaviour script called "SceneLoader"
+    
+    > Create > MonoBehavour Script
 
 1. Create a new empty object
     > Create Empty
@@ -101,6 +108,38 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
     }
     ```
 
+1. Save your changes by pressing ++ctrl+s++
+
+    !!! success
+        The complete `SceneLoader` script
+    
+        ```C# linenums="1"
+        using UnityEngine;
+        using UnityEngine.SceneManagement;
+
+        public class SceneLoader : MonoBehaviour
+        {
+            public void GoToScene(int sceneIndex)
+            {
+                SceneManager.LoadScene(sceneIndex);
+            }
+
+            public void GoToScene(string sceneName)
+            {
+                SceneManager.LoadScene(sceneName);
+            }
+
+            public void QuitGame()
+            {
+                Application.Quit();
+            }
+        }
+        ```
+
+### Linking buttons
+
+1. Minimize Visual Studio
+
 1. Select your play button and scroll down in the inspector
 
     At the very bottom of the `Button` component, you'll see an empty list with the header "On Click ()".
@@ -112,7 +151,7 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 
     You will see a dropdown that says "No Function"
 
-1. Open the dropdown and select your `GoToScene` function th at takes in a string.
+1. Open the dropdown and select your `GoToScene` function that takes in a string.
 
     > Scene Loader > GoToScene (string)
 
@@ -120,8 +159,13 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 
 1. Type "Game" into the parameter field
 
+    !!! warning
+        Strings are case-sensitive, make sure you write "Game" exactly like that
+
     ???+ success
         ![On Click () event function call list for the Play button][play-button-onclick-image]{ .center }
+
+1. Save your Unity project by pressing ++ctrl+s++
         
 
 ### Add scenes to your build's scene list
@@ -137,12 +181,16 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 
 1. Press _Open Scene List_
 
-1. Drag and drop all the scenes into the Scene List
+1. Drag and drop all the scenes from your Project files into the Scene List
 
     !!! tip
         To select multiple things at a time, hold ++shift++ while selecting each of them
 
     ![Scene List with Main Menu and Game][scene-list-gif]
+
+1. Close the Build Profiles menu
+
+1. Save your Unity project by pressing ++ctrl+s++
 
 1. Test your menu
 
@@ -157,7 +205,7 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
     ???+ bug
         If you create the empty object without right-clicking the Canvas, the next steps will not work.
 
-        Be sure your empty object has a Rect Transform.
+        Be sure your empty object has a Rect Transform component.
 
         ![Rect Transform][rect-transform-image]{ .center}
 
