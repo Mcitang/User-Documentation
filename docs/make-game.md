@@ -308,7 +308,7 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
 
 1. Switch to the Game view
 
-1. Change the preview resolution from "Free Aspect" to "16:9 Aspect"
+1. In the top of the Game view, change the preview resolution from "Free Aspect" to "16:9 Aspect"
 
 1. Change back to Scene view
 
@@ -331,6 +331,7 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
 
     !!! success
         If you go to Game View, this is what it should look like
+        
         ![The game view with a text label in the top-left corner][canvas-setup-image]
 
 Now we're ready to dynamically count the score
