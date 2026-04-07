@@ -140,8 +140,6 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 
 1. Minimize Visual Studio
 
-1. Save your Unity project by pressing ++ctrl+s++
-
 1. Select your play button and scroll down in the inspector
 
     At the very bottom of the `Button` component, you'll see an empty list with the header "On Click ()".
@@ -166,6 +164,8 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 
     ???+ success
         ![On Click () event function call list for the Play button][play-button-onclick-image]{ .center }
+
+1. Save your Unity project by pressing ++ctrl+s++
         
 
 ### Add scenes to your build's scene list
@@ -181,7 +181,7 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 
 1. Press _Open Scene List_
 
-1. Drag and drop all the scenes into the Scene List
+1. Drag and drop all the scenes from your Project files into the Scene List
 
     !!! tip
         To select multiple things at a time, hold ++shift++ while selecting each of them
