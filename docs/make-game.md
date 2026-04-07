@@ -257,12 +257,14 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
 
     ![Assigning a value to Rigidbody2D rb variable][assign-rb-gif]{ .center }
 
-Now hit play and try it out! Feel free to change the `speed` and `jumpForce` variable values, as well as the `Rigidbody2D`'s gravity scale in the inspector to your liking
+1. Now hit play and try it out!
 
-!!! tip
-    You can change your script variable values directly from the inspector
+    Feel free to change the `speed` and `jumpForce` variable values, as well as the `Rigidbody2D`'s gravity scale in the inspector to your liking
 
-    ![PlayerMovement public variables][public-vars-image]{ .center }
+    !!! tip
+        You can change your script variable values directly from the inspector
+
+        ![PlayerMovement public variables][public-vars-image]{ .center }
 
 ## Add a goal
 
