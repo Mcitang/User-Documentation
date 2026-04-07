@@ -81,6 +81,8 @@ Unity will ask to restart the editor, then the legacy input system will be activ
 
 1. Add the `PlayerMovement` component to your player
 
+1. Open your `PlayerMovement` script by double-clicking it
+
     This is what the empty script will look like
 
     ```C# linenums="1"
@@ -104,11 +106,7 @@ Unity will ask to restart the editor, then the legacy input system will be activ
 
 1. Setup variables at the top of the script
 
-    ```C# linenums="1" hl_lines="5-13"
-    using UnityEngine;
-
-    public class PlayerMovement : MonoBehaviour
-    {
+    ```C# linenums="5"
         public Rigidbody2D rb;
 
         public float speed = 8f;
@@ -116,9 +114,6 @@ Unity will ask to restart the editor, then the legacy input system will be activ
 
         private float xMovement;
         private bool isJumping;
-        
-        /* Rest of the code */
-    }
     ```
 
 
