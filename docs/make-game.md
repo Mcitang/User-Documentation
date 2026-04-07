@@ -347,7 +347,9 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
 
     ![Trigger BoxCollider2D][trigger-image]
 
-1. Create a new empty object called "CoinManager"
+1. Create a new empty object
+
+1. Name your empty object "CoinManager"
 
 1. Drag and drop all coins into the CoinManager object
 
