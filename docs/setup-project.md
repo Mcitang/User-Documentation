@@ -85,7 +85,7 @@ Great! Now that you have the Editor and Visual Studio installed, we can begin cr
 
 ![GIF for Creating a 2D Unity project][create-project-gif]
 
-!!! info
+!!! success
     You should now see the Unity Editor creating your project
 
     ![Unity Editor creating project loading bar][project-creation-loading-image]
@@ -121,7 +121,7 @@ Game View++
 1. Add a square sprite to the scene.
 > 2D Objects > Sprites > Square
 
-    ??? question "How to add objects to the scene?" 
+    ???+ question "How to add objects to the scene?" 
         Right-click the hierarchy and press right-click to open the context menu.
 
 2. In the inspector, rename the square to "_Player_"

@@ -29,16 +29,19 @@ Unity has a built-in 2D physics system. We can use it to control the player thro
 
 1. Add a **Rigidbody2D** to the player
 
-    ???+ "How to add a component?"
+    ???+ question "How to add a component?"
         Click _Add Component_ in the inspector, under the existing components
 
         ![Adding a component][add-component-gif]{ style="width: 650px;", .center }
 
-    In the Rigidbody2D component, freeze the player's Z rotation
-    > Constraints > Freeze Rotation > :white_check_mark: Z
+1. In the Rigidbody2D component, freeze the player's Z rotation by checking _Freeze Rotation Z_ to true
 
-    Press the *Play* button and you will see the Player now falls as if there was gravity.
-    You will also notice the player falls through the stage. That's because the **Rigidbody2D** doesn't know the floor is supposed to be solid. For that we need a Collider
+    > Rigidbody2D > Constraints > Freeze Rotation > :white_check_mark: Z
+
+1. Press the *Play* button
+
+    You will see the Player now falls as if there was gravity.
+    You will also notice the player falls through the stage. That's because the **Rigidbody2D** doesn't know the floor is supposed to be solid. For that we need a Collider.
 
 ### Add colliders to rectangles
 
@@ -52,13 +55,33 @@ Now lets work on moving the player
 
 ## Player Movement
 
-1. Add a new MonoBehaviour Script to a Scripts folder called `PlayerMovement` in the Project files
+### Legacy Input System
+Before we start, we need to enable the legacy input system. It is easier for beginners, but less versatile than the new one. Since the old one is deprecated, it is not active by default. Let's fix that.
+
+1. Open project settings
+
+1. Go to player
+
+1. Other settings
+
+1. Active Input Handler: Both
+
+Unity will ask to restart the editor, then the legacy input system will be active.
+
+### Movement time!
+
+1. Create a Scripts folder in the Project files
+
+1. Add a new MonoBehaviour Script called `PlayerMovement` to the _Scripts_ folder
+    
     > Create > MonoBehaviour Script
 
     ??? question "What is a MonoBehavour"
         MonoBehaviour is a base class in Unity that allows you to create scripts that can be attached to GameObjects
 
 1. Add the `PlayerMovement` component to your player
+
+1. Open your `PlayerMovement` script by double-clicking it
 
     This is what the empty script will look like
 
@@ -83,11 +106,7 @@ Now lets work on moving the player
 
 1. Setup variables at the top of the script
 
-    ```C# linenums="1" hl_lines="5-13"
-    using UnityEngine;
-
-    public class PlayerMovement : MonoBehaviour
-    {
+    ```C# linenums="5"
         public Rigidbody2D rb;
 
         public float speed = 8f;
@@ -95,9 +114,6 @@ Now lets work on moving the player
 
         private float xMovement;
         private bool isJumping;
-        
-        /* Rest of the code */
-    }
     ```
 
 
