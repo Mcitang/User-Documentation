@@ -243,6 +243,14 @@ And that's it for the player movement script
     }
     ```
 
+### In the editor
+
+1. Save your changes by pressing ++ctrl+s++
+
+1. Minimize Visual Studio
+
+1. Save your Unity project by pressing ++ctrl+s++
+
 Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` variable
 
 1. In the inspector, drag and drop the `Rigidbody2D` component to the corresponding field in `PlayerMovement`
@@ -523,10 +531,15 @@ Now your game can be won! Let's update the UI to show the score.
             }
         }
         ```
+1. Save your changes by pressing ++ctrl+s++
+
+1. Minimize Visual Studio
 
 1. In the inspector, drag and drop your text label into the "Score Label" slot in your script
 
     ![Score Label variable][score-label-image]{ .center }
+
+1. Save your Unity project by pressing ++ctrl+s++
 
 
 
