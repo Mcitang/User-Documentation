@@ -105,7 +105,7 @@ Unity will ask to restart the editor, then the legacy input system will be activ
         }
         ```
 
-1. Setup variables at the top of the script
+1. Setup variables before the functions
 
     ```C# linenums="5"
     public Rigidbody2D rb;
