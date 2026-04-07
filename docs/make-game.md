@@ -422,7 +422,16 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
     !!! tip
         You can add a component to many objects at once by holding shift when selecting the items and then adding the component
 
-1. Delete the `Update()` function
+1. Delete the `Update()` method from `Coin`
+
+1. Assign the `CoinManager` to `Coin` in the `Start()` method
+
+    ```C# linenums="7"
+    void Start()
+    {
+        coinManager = transform.parent.GetComponent<CoinManager>();
+    }
+    ```
 
 1. Add a variable to hold the CoinManager
 
@@ -451,17 +460,6 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
     }
     ```
 
-1. Delete the `Update()` methods from `Coin`
-
-1. Assign the `CoinManager` to `Coin` in the `Start()` method
-
-    ```C# linenums="7"
-    void Start()
-    {
-        coinManager = transform.parent.GetComponent<CoinManager>();
-    }
-    ```
-
 1. Create an `OnTriggerEnter2D` function
 
     ```C# linenums="12"
@@ -481,7 +479,8 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
     }
     ```
 
-    ???+ success
+    !!! success
+        Completed coin script
 
         ```C# linenums="1"
         using UnityEngine;
