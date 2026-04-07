@@ -2,11 +2,11 @@
 
 ## Setup
 
-1. Find the current scene, called _SampleScene_, inside the "Scenes" folder in your Project files
+1. Open the "Scenes" folder in your Project files
 
-1. Right-click it, then rename it to "_Game_"
+1. Rename the current scene from "_SampleScene_" to "_Game_"
 
-1. Create a new Scene, call it "_Main Menu_"
+1. Right click your Project filesCreate a new Scene, call it "_Main Menu_"
 
     > Create > Scene > Scene
 
@@ -100,6 +100,34 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
         SceneManager.LoadScene(sceneName);
     }
     ```
+
+    !!! success
+        The complete `SceneLoader` script
+    
+        ```C# linenums="1"
+        using UnityEngine;
+        using UnityEngine.SceneManagement;
+
+        public class SceneLoader : MonoBehaviour
+        {
+            public void GoToScene(int sceneIndex)
+            {
+                SceneManager.LoadScene(sceneIndex);
+            }
+
+            public void GoToScene(string sceneName)
+            {
+                SceneManager.LoadScene(sceneName);
+            }
+
+            public void QuitGame()
+            {
+                Application.Quit();
+            }
+        }
+        ```
+
+### Linking buttons
 
 1. Select your play button and scroll down in the inspector
 
