@@ -16,13 +16,38 @@ The Unity Editor is where you will assemble your game. This tutorial will use Un
 
 4. Install Unity 6.3 LTS under the tab **Official Releases**
 ???+ info "Version"
-    Any official release of Unity 6 will work. The app will recommend Unity 6.4, but this tutorial will use Unity 6.3 LTS (6000.3.12f1) since it is more stable.
+    Any official release of Unity 6 will work. The app will recommend Unity 6.4 (6000.4.1f1), but this tutorial will use Unity 6.3 LTS (6000.3.12f1) since it is more stable.
 
 ![GIF for installing Unity Editor][install-editor-gif]
 
 <!-- VISUAL STUDIO -->
+=== "If you do not have Visual Studio 2022 installed"
+    The program will ask you what modules you would like to have installed with the Unity editor. We will need to install **Visual Studio 2022** as well. This tool will help you debug and test your game code. Every other checkbox that is not mentioned can be left untouched.
+    
+    1. Ensure the Microsoft Visual Studio Community 2022 box is checked
+    ![vs-install-check]
+
+    2. Click **continue**
+
+    3. Scroll down and ensure that _Game Development with Unity_ addon is checked under the **Workloads** tab
+
+        ![Game Development with Unity workload checked][vs-unity-workload]
+
+    4. Press the install button
+
+    5. Wait for Editor and Visual Studio downloads to complete
+
+        !!! success
+            ![vs-install-success][vs-install-success]
+
+    6. Close the Visual Studio Installer window
+    
+    This is what your Unity Window should look like at this point when the installations have been complete:
+    ![install-success]
+
 === "If you have Visual Studio 2022 installed"
-    Since you already have Visual Studio 2022 installed, Unity will not install it for you. However, you must check if you have the _Game Development with Unity_ workload installed.
+    Since you already have Visual Studio 2022 installed, Unity will not install it for you. However, you must check if you have the **Game Development with Unity** workload installed. This is an essential addon
+    that will let help you debug and test your game code. 
 
     1. Open the Visual Studio Installer
 
@@ -37,30 +62,24 @@ The Unity Editor is where you will assemble your game. This tutorial will use Un
 
     4. If you had to check the checkbox, press _Modify_
 
-=== "If you do not have Visual Studio 2022 installed"
-    After installing the editor, Unity will also automatically begin installing Visual Studio 2022. When the installation begins, Visual Studio will open a window
 
-    {--[I forget what happens here]--}
-    
-    1. Scroll down and click the _Game Development with Unity_ workload checkbox so it is checked
-
-        !!! success
-            ![Game Development with Unity workload checked][vs-unity-workload]
-
-    1. Press the install button
-
-    1. Continue waiting until the Editor and Visual Studio downloads to complete
 
 ## Create a Project
+Great! Now that you have the Editor and Visual Studio installed, we can begin creating your first Unity project.
 
+1. Go to the **Projects** tab on the right side of your Unity Hub window
+   
 1. Click **+ New Project**
+     ![new-project]
 
-1. Select the Universal 2D Core Template
+1. Select the **Universal 2D Core Template** under the **Core** tab
 
 1. Name your project
 
-!!! info
-    This project will not cover Unity Version Control.
+1. Choose project location
+
+    !!! info
+        This guide will not cover version control. Leave the **Unity Version Control** box unchecked.
 
 1. Click **+ Create Project**
 
@@ -73,10 +92,29 @@ The Unity Editor is where you will assemble your game. This tutorial will use Un
 
 Once it loads, you will see the Unity Editor open up
 
-![Image of the Unity Editor][default-unity-editor-image]
+!!! success
+    ![Image of the Unity Editor][default-unity-editor-image]
 
 {++MISSING HERE: Explain the UI: Hierarchy, Inspector, Project Files, Scene View, Game View++}
 {++MISSING HERE: Switch to the old input system in Project Settings > Player > Other Settings > Active Input Handling => Both or Input Manager (old)++}
+
+## Navigate Editor UI
+This section will explain a few of the most important elements of the user interface. 
+
+Hierarchy 
+
+Inspector 
+
+Project Files 
+
+Scene View 
+
+Game View++
+
+
+
+## Switch to Old Input System
+
 
 ## Set Up Project
 
@@ -117,6 +155,10 @@ Once it loads, you will see the Unity Editor open up
 <!-- Images -->
 [vs-studio-installer]: assets/project-setup/vs-studio-installer.png
 [vs-unity-workload]: assets/project-setup/vs-unity-workload.png
+[vs-install-check]: assets/project-setup/vs-install-check.png
+[vs-install-success]: assets/project-setup/vs-install-success.png
+[install-success]: assets/project-setup/install-success.png
+[new-project]: assets/project-setup/new-project.png
 
 [project-creation-loading-image]: assets/project-setup/project-creation-loading.png
 
