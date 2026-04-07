@@ -4,17 +4,19 @@
 This page will take you through setting up a project in Unity for the first time. You will install the Unity Editor, which is what you will be using to add elements to your game. You will also create a new game project and add a player character to your game.
 
 ## Install the Editor
-This tutorial will use Unity 6.3 LTS (6000.3.12f1), but this should work on any version of Unity 6. If you use the new input system, it should work in future versions.
+The Unity Editor is where you will assemble your game. This tutorial will use Unity 6.3 LTS (6000.3.12f1), but this should work on any version of Unity 6+.
 !!! warning
     This tutorial will use the legacy input system. The legacy input system is easier to use for beginners, but it will be deprecated in future versions.
 
-1. Go to the Installs tab
+1. Open the Unity app
 
-2. Click Install Editor
+2. Navigate to the **Installs** tab on the left side
 
-3. Install whichever version you want
+3. Click **Install Editor**
+
+4. Install Unity 6.3 LTS under the tab **Official Releases**
 ???+ info "Version"
-    Any official release of Unity 6 will work. This tutorial will use Unity 6.3 LTS (6000.3.12f1).
+    Any official release of Unity 6 will work. The app will recommend Unity 6.4, but this tutorial will use Unity 6.3 LTS (6000.3.12f1) since it is more stable.
 
 ![GIF for installing Unity Editor][install-editor-gif]
 
