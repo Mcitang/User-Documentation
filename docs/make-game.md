@@ -390,6 +390,7 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
         totalCoins = transform.childCount;
     }
     ```
+1. Go into your "Scripts" folder in your Project files
 
 1. Create a MonoBehaviour script called `Coin`
     > Create > MonoBehavour Script
