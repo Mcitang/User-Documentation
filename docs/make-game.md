@@ -403,6 +403,14 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
         }
         ```
 
+1. Save your changes by pressing ++ctrl+s++
+
+1. Minimize Visual Studio
+
+1. Save your Unity project by pressing ++ctrl+s++
+
+## Coin script
+
 1. Go into your "Scripts" folder in your Project files
 
 1. Create a MonoBehaviour script called `Coin`
