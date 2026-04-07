@@ -49,6 +49,7 @@
         !["Main Menu" Label][main-menu-label-image]{ .center }
 
 1. Add a button
+
     > UI (Canvas) > Button - TextMeshPro
 
 1. Change these settings for the button object
@@ -70,7 +71,11 @@
 
 ## Create scene transition system
 
+1. Open your "Scripts" folder in the Project files
+
 1. Create a new MonoBehaviour script called "SceneLoader"
+    
+    > Create > MonoBehavour Script
 
 1. Create a new empty object
     > Create Empty
