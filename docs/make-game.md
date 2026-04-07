@@ -55,7 +55,25 @@ Now lets work on moving the player
 
 ## Player Movement
 
-1. Add a new MonoBehaviour Script to a Scripts folder called `PlayerMovement` in the Project files
+### Legacy Input System
+Before we start, we need to enable the legacy input system. It is easier for beginners, but less versatile than the new one. Since the old one is depre
+
+1. Open project settings
+
+1. Go to player
+
+1. Other settings
+
+1. Active Input Handler: Both
+
+Unity will ask to 
+
+### Movement time!
+
+1. Create a Scripts folder in the Project files
+
+1. Add a new MonoBehaviour Script called `PlayerMovement` to the _Scripts_ folder
+    
     > Create > MonoBehaviour Script
 
     ??? question "What is a MonoBehavour"
