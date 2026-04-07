@@ -56,7 +56,7 @@ Now lets work on moving the player
 ## Player Movement
 
 ### Legacy Input System
-Before we start, we need to enable the legacy input system. It is easier for beginners, but less versatile than the new one. Since the old one is depre
+Before we start, we need to enable the legacy input system. It is easier for beginners, but less versatile than the new one. Since the old one is deprecated, it is not active by default. Let's fix that.
 
 1. Open project settings
 
@@ -66,7 +66,7 @@ Before we start, we need to enable the legacy input system. It is easier for beg
 
 1. Active Input Handler: Both
 
-Unity will ask to 
+Unity will ask to restart the editor, then the legacy input system will be active.
 
 ### Movement time!
 
