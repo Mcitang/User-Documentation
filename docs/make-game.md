@@ -477,6 +477,8 @@ Now we're ready to dynamically count the score
     }
     ```
 
+1. Save your Unity project by pressing ++ctrl+s++
+
 Now your game can be won! Let's update the UI to show the score.
 
 
