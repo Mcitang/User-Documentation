@@ -10,7 +10,7 @@
 | Sprite        |   A 2D image or animation computer graphic    |
 | [Vector2][vector2-url]       |   Used to represent 2D vectors and points, consisting of two values: X and Y  |
 | [TextMeshPro][tmp-url]    |   An easy-to-use system for high-quality text and UI included with the Unity Editor   |
-
+| User Interface (UI)   |   {++Definition here++}   |
 
 
 <!-- Hyperlinks -->
