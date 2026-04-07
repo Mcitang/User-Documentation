@@ -288,7 +288,7 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
 
 ### Coins UI
 
-1. Add a label
+1. Add a label to the scene
 
     > UI (Canvas) > Text - TextMeshPro
 
