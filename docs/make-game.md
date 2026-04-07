@@ -589,6 +589,10 @@ Now your game can be won! Let's update the UI to show the score.
 
 1. Save your Unity project by pressing ++ctrl+s++
 
+1. Run the game and collect all coins
+
+    Once you collect all the coins, the console should say "You win!"
+
 
 
 <!-- Glossary -->
