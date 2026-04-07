@@ -331,10 +331,12 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
 
     !!! success
         If you go to Game View, this is what it should look like
-        
+
         ![The game view with a text label in the top-left corner][canvas-setup-image]
 
-Now we're ready to dynamically count the score
+    Now we're ready to dynamically count the score
+
+## Track the score
 
 1. Give all coins a `BoxCollider2D`
 
