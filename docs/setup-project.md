@@ -64,7 +64,7 @@ This tutorial will use Unity 6.3 LTS (6000.3.12f1), but this should work on any 
 
 ![GIF for Creating a 2D Unity project][create-project-gif]
 
-!!! info
+!!! success
     You should now see the Unity Editor creating your project
 
     ![Unity Editor creating project loading bar][project-creation-loading-image]
