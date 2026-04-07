@@ -29,7 +29,7 @@ Unity has a built-in 2D physics system. We can use it to control the player thro
 
 1. Add a **Rigidbody2D** to the player
 
-    ???+ "How to add a component?"
+    ???+ question "How to add a component?"
         Click _Add Component_ in the inspector, under the existing components
 
         ![Adding a component][add-component-gif]{ style="width: 650px;", .center }
