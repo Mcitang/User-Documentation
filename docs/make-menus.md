@@ -406,7 +406,7 @@ Finally we should add a quit button so people can stop playing the game
         Testing the quit button will do nothing in the Unity Editor, it only works in the game build
 
     !!! warning
-        Make sure you change the On Click function for the quit button and not the play button. Since the inspector looks the same for both buttons, it will be easy to get confused.
+        Make sure you change the _On Click ()_ function for the quit button and not the play button. Since the inspector looks the same for both buttons, it will be easy to get confused.
 
 And we are done!
 
