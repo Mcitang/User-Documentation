@@ -41,7 +41,7 @@ Unity has a built-in 2D physics system. We can use it to control the player thro
 1. Press the *Play* button
 
     You will see the Player now falls as if there was gravity.
-    You will also notice the player falls through the stage. That's because the **Rigidbody2D** doesn't know the floor is supposed to be solid. For that we need a Collider
+    You will also notice the player falls through the stage. That's because the **Rigidbody2D** doesn't know the floor is supposed to be solid. For that we need a Collider.
 
 ### Add colliders to rectangles
 
