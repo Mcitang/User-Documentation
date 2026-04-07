@@ -356,6 +356,8 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
     !!! success
         ![CoinManager with Coins inside][coin-manager-image]{ style="height: 250px;", .center }
 
+## CoinManager script
+
 1. Create a MonoBehaviour script called `CoinManager`
     > Create > MonoBehavour Script
 
