@@ -30,7 +30,7 @@
 
 1. Change these settings for the text object
 
-    | Transform     |           |
+    | Rect Transform    |           |
     | ---------     | ------    |
     | Pos X         | 0         |
     | Pos Y         | 400       |
@@ -51,14 +51,16 @@
 1. Add a button
     > UI (Canvas) > Button - TextMeshPro
 
-1. Change these settings for the button and the button's text child object
+1. Change these settings for the button object
 
-    | Transform     |           |
+    | Rect Transform    |           |
     | ---------     | ------    |
     | Pos X         | 0         |
     | Pos Y         | 0         |
     | Width         | 400       |
     | Height        | 100       |
+
+1. Change these settings for the button's text child object
 
     | TextMeshPro - Text    |   |
     | ---------     | ------    |
