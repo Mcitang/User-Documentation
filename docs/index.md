@@ -11,6 +11,7 @@ All examples and instructions are designed for Windows and has not been tested w
 
 ## Prerequisite Knowledge
 - Working knowledge of programming data types strings, ints and floats. You are expected to know what these data types are, and what they represent in programming languages.
+- {++Understanding of Windows, such how to zip a folder++}
 
 ## Software Requirements
 Before beginning, please ensure you have the following accounts and programs:
@@ -18,16 +19,18 @@ Before beginning, please ensure you have the following accounts and programs:
 - A [Unity] [unity-url] account
 - An [itch.io][itch-url] account
 
-- [Unity Engine Hub][unity-hub] downloaded and installed
-- [Visual Studio 2022+][visual-studio] downloaded and installed 
+- [Unity Engine Hub][unity-hub-url] downloaded and installed
 
 ## Objectives
 1. Install Unity Editor
-2. Set up a Unity Project
-3. Create a character
-4. Create a main menu
-5. Create a pause menu
-6. Add a game win condition
+1. Set up a Unity Project
+1. Create a platformer character
+1. Add a game win condition
+1. Create a main menu
+1. Create a win menu
+1. Build the game for Windows
+1. Upload it to [itch.io][itch-url]
+
 
 ## Typographical Conventions
 
@@ -103,19 +106,22 @@ We will use message blocks to inform you of additional relevant information. Her
     Specifies actions that may lead to unexpected behaviour.
 
 !!! info 
-    Indicates additional information or tips
+    Indicates additional information
+
+!!! tip
+    Indicates useful knowledge, such as keyboard shortcuts
 
 !!! bug
     Specifies actions that may cause an error.
 
 ???+ note "Collapsible Note"
-    Yippee reminder to move if we dont need
+    Provides a reminder for something
 
 ???+ info "Collapsible Info"
-    Yippee reminder to move if we dont need
+    Provides additional information on a topic
 
 ???+ question "Collapsible Question"
-    Yippee reminder to move if we dont need
+    Provides additional information on a topic, framed as a question
 
 
 
@@ -128,8 +134,7 @@ We will use message blocks to inform you of additional relevant information. Her
 <!-- Hyperlinks -->
 [unity-url]: https://unity.com/
 [itch-url]: https://itch.io
-[unity-hub]: https://unity.com/products/unity-engine
-[visual-studio]: https://visualstudio.microsoft.com/downloads/
+[unity-hub-url]: https://unity.com/products/unity-engine
 
 <!-- Images -->
 [Unity Hub Image]: assets/index/empty-unity-hub.png
