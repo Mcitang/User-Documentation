@@ -278,6 +278,9 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
 
 1. By duplicating that coin, place 2 coins on top of each platform.
 
+    !!! tip
+        Use ++ctrl+d++ to duplicate the platforms in the scene and save time.
+
     !!! success
         ![Coins on each platform][coins-image]
     
