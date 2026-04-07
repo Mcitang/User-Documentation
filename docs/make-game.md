@@ -302,9 +302,9 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
         You will see a _TextMesh Pro_ folder in your Project Files
         ![TMP folder in your project files][tmp-files-image]
 
-1. Change the text color to black in the inspector
+1. Since our platforms and walls are white, change the text color to black in the inspector
 
-    The best way to preview how UI looks in your game is through the game view
+    The best way to preview how the UI looks is through Game view
 
 1. Switch to the game view
 
