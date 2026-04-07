@@ -108,6 +108,8 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
     }
     ```
 
+1. Save your changes by pressing ++ctrl+s++
+
     !!! success
         The complete `SceneLoader` script
     
@@ -136,6 +138,10 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 
 ### Linking buttons
 
+1. Minimize Visual Studio
+
+1. Save your Unity project by pressing ++ctrl+s++
+
 1. Select your play button and scroll down in the inspector
 
     At the very bottom of the `Button` component, you'll see an empty list with the header "On Click ()".
@@ -147,13 +153,16 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 
     You will see a dropdown that says "No Function"
 
-1. Open the dropdown and select your `GoToScene` function th at takes in a string.
+1. Open the dropdown and select your `GoToScene` function that takes in a string.
 
     > Scene Loader > GoToScene (string)
 
     An empty field will appear under the dropdown. That is the parameter value.
 
 1. Type "Game" into the parameter field
+
+    !!! warning
+        Strings are case-sensitive, make sure you write "Game" exactly like that
 
     ???+ success
         ![On Click () event function call list for the Play button][play-button-onclick-image]{ .center }
