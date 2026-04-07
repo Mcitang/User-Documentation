@@ -111,7 +111,6 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 1. Save your changes by pressing ++ctrl+s++
 
     !!! success
-        The complete `SceneLoader` script
     
         ```C# linenums="1"
         using UnityEngine;
@@ -127,11 +126,6 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
             public void GoToScene(string sceneName)
             {
                 SceneManager.LoadScene(sceneName);
-            }
-
-            public void QuitGame()
-            {
-                Application.Quit();
             }
         }
         ```
@@ -393,6 +387,31 @@ Finally we should add a quit button so people can stop playing the game
         Application.Quit();
     }
     ```
+
+    !!! success
+
+        ```C# linenums="1"
+        using UnityEngine;
+        using UnityEngine.SceneManagement;
+
+        public class SceneLoader : MonoBehaviour
+        {
+            public void GoToScene(int sceneIndex)
+            {
+                SceneManager.LoadScene(sceneIndex);
+            }
+
+            public void GoToScene(string sceneName)
+            {
+                SceneManager.LoadScene(sceneName);
+            }
+
+            public void QuitGame()
+            {
+                Application.Quit();
+            }
+        }
+        ```
 
 1. Go to your quit button's _On Click ()_ list
 
