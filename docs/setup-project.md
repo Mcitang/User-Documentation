@@ -83,7 +83,7 @@ Once it loads, you will see the Unity Editor open up
 1. Add a square sprite to the scene.
 > 2D Objects > Sprites > Square
 
-    ??? question "How to add objects to the scene?" 
+    ???+ question "How to add objects to the scene?" 
         Right-click the hierarchy and press right-click to open the context menu.
 
 2. In the inspector, rename the square to "_Player_"
