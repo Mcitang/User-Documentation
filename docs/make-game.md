@@ -34,7 +34,7 @@ Unity has a built-in 2D physics system. We can use it to control the player thro
 
         ![Adding a component][add-component-gif]{ style="width: 650px;", .center }
 
-1. In the Rigidbody2D component, freeze the player's Z rotation
+1. In the Rigidbody2D component, freeze the player's Z rotation by checking _Freeze Rotation Z_ to true
 
     > Rigidbody2D > Constraints > Freeze Rotation > :white_check_mark: Z
 
