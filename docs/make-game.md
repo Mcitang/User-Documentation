@@ -108,13 +108,13 @@ Unity will ask to restart the editor, then the legacy input system will be activ
 1. Setup variables at the top of the script
 
     ```C# linenums="5"
-        public Rigidbody2D rb;
+    public Rigidbody2D rb;
 
-        public float speed = 8f;
-        public float jumpForce = 8f;
+    public float speed = 8f;
+    public float jumpForce = 8f;
 
-        private float xMovement;
-        private bool isJumping;
+    private float xMovement;
+    private bool isJumping;
     ```
 
 
