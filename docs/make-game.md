@@ -340,6 +340,9 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
 
 1. Give all coins a `BoxCollider2D`
 
+    !!! tip
+        You can add a component to many objects at once by holding shift when selecting the items and then adding the component
+
 1. Turn the collider into a Trigger by checking _Is Trigger_ in all the coins' `BoxCollider2D`
 
     ![Trigger BoxCollider2D][trigger-image]
