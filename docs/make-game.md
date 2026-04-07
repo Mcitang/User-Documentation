@@ -83,26 +83,27 @@ Unity will ask to restart the editor, then the legacy input system will be activ
 
 1. Open your `PlayerMovement` script by double-clicking it
 
-    This is what the empty script will look like
+    !!! success
+        This is what the empty script will look like
 
-    ```C# linenums="1"
-    using UnityEngine;
+        ```C# linenums="1"
+        using UnityEngine;
 
-    public class PlayerMovement : MonoBehaviour
-    {
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
+        public class PlayerMovement : MonoBehaviour
         {
-            
-        }
+            // Start is called once before the first execution of Update after the MonoBehaviour is created
+            void Start()
+            {
+                
+            }
 
-        // Update is called once per frame
-        void Update()
-        {
-            
+            // Update is called once per frame
+            void Update()
+            {
+                
+            }
         }
-    }
-    ```
+        ```
 
 1. Setup variables at the top of the script
 
