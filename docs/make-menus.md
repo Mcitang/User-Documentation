@@ -2,7 +2,7 @@
 
 ## Setup
 
-1. Find the current scene, called _SampleScene_ in your Project files, inside the "Scenes" folder
+1. Find the current scene, called _SampleScene_, inside the "Scenes" folder in your Project files
 
 1. Right-click it, then rename it to "_Game_"
 
