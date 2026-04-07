@@ -479,6 +479,8 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
     }
     ```
 
+1. Save your changes by pressing ++ctrl+s++
+
     !!! success
         Completed coin script
 
@@ -544,6 +546,8 @@ Now your game can be won! Let's update the UI to show the score.
     }
     ```
 
+1. Save your changes by pressing ++ctrl+s++
+
     ???+ success
 
         ```C# linenums="1"
@@ -574,7 +578,6 @@ Now your game can be won! Let's update the UI to show the score.
             }
         }
         ```
-1. Save your changes by pressing ++ctrl+s++
 
 1. Minimize Visual Studio
 
