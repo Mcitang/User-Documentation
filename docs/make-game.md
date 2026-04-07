@@ -306,11 +306,11 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
 
     The best way to preview how the UI looks is through Game view
 
-1. Switch to the game view
+1. Switch to the Game view
 
-1. Change the preview resolution to 16:9
+1. Change the preview resolution from "Free Aspect" to "16:9 Aspect"
 
-1. Change back to scene view
+1. Change back to Scene view
 
 1. Click your canvas
 
