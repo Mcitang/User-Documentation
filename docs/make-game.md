@@ -393,6 +393,7 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
 1. Go into your "Scripts" folder in your Project files
 
 1. Create a MonoBehaviour script called `Coin`
+
     > Create > MonoBehavour Script
 
 1. Add the `Coin` script to all the coins
@@ -495,7 +496,7 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
     }
     ```
 
-1. Save your Unity project by pressing ++ctrl+s++
+1. Save your changes by pressing ++ctrl+s++
 
 Now your game can be won! Let's update the UI to show the score.
 
