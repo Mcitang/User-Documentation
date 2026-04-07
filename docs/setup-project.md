@@ -8,13 +8,13 @@ The Unity Editor is where you will assemble your game. This tutorial will use Un
 !!! warning
     This tutorial will use the legacy input system. The legacy input system is easier to use for beginners, but it will be deprecated in future versions.
 
-1. Open the Unity app
+1. Open the Unity app.
 
-2. Navigate to the **Installs** tab on the left side
+2. Navigate to the **Installs** tab on the left side.
 
-3. Click **Install Editor**
+3. Click **Install Editor**.
 
-4. Install Unity 6.3 LTS under the tab **Official Releases**
+4. Install Unity 6.3 LTS under the tab **Official Releases**.
 ???+ info "Version"
     Any official release of Unity 6 will work. The app will recommend Unity 6.4 (6000.4.1f1), but this tutorial will use Unity 6.3 LTS (6000.3.12f1) since it is more stable.
 
@@ -24,23 +24,23 @@ The Unity Editor is where you will assemble your game. This tutorial will use Un
 === "If you do not have Visual Studio 2022 installed"
     The program will ask you what modules you would like to have installed with the Unity editor. We will need to install **Visual Studio 2022** as well. This tool will help you debug and test your game code. Every other checkbox that is not mentioned can be left untouched.
     
-    1. Ensure the Microsoft Visual Studio Community 2022 box is checked
+    1. Ensure the Microsoft Visual Studio Community 2022 box is checked.
     ![vs-install-check]
 
-    2. Click **continue**
+    2. Click **continue**.
 
-    3. Scroll down and ensure that _Game Development with Unity_ addon is checked under the **Workloads** tab
+    3. Scroll down and ensure that _Game Development with Unity_ addon is checked under the **Workloads** tab.
 
         ![Game Development with Unity workload checked][vs-unity-workload]
 
-    4. Press the install button
+    4. Press the install button.
 
-    5. Wait for Editor and Visual Studio downloads to complete
+    5. Wait for Editor and Visual Studio downloads to complete.
 
         !!! success
             ![vs-install-success][vs-install-success]
 
-    6. Close the Visual Studio Installer window
+    6. Close the Visual Studio Installer window.
     
     This is what your Unity Window should look like at this point when the installations have been complete:
     ![install-success]
@@ -49,18 +49,18 @@ The Unity Editor is where you will assemble your game. This tutorial will use Un
     Since you already have Visual Studio 2022 installed, Unity will not install it for you. However, you must check if you have the **Game Development with Unity** workload installed. This is an essential addon
     that will let help you debug and test your game code. 
 
-    1. Open the Visual Studio Installer
+    1. Open the Visual Studio Installer.
 
         ![The visual studio installer][vs-studio-installer]
 
-    1. Click _Modify_ for Visual Studio Community 2022
+    1. Click _Modify_ for Visual Studio Community 2022.
     
-    1. Scroll down and ensure the _Game Development with Unity_ workload checkbox is checked
+    1. Scroll down and ensure the _Game Development with Unity_ workload checkbox is checked.
 
         !!! success
             ![Game Development with Unity workload checked][vs-unity-workload]
 
-    4. If you had to check the checkbox, press _Modify_
+    4. If you had to check the checkbox, press _Modify_.
 
 
 
@@ -95,30 +95,44 @@ Once it loads, you will see the Unity Editor open up
 !!! success
     ![Image of the Unity Editor][default-unity-editor-image]
 
-{++MISSING HERE: Explain the UI: Hierarchy, Inspector, Project Files, Scene View, Game View++}
 {++MISSING HERE: Switch to the old input system in Project Settings > Player > Other Settings > Active Input Handling => Both or Input Manager (old)++}
 
 ## Navigate Editor UI
-This section will explain a few of the most important elements of the user interface. 
+This section will explain a few of the most important elements of the Editor's user interface. 
 
-Hierarchy 
+The _Hierarchy_ section on the left of the screen is a dedicated window that displays every _GameObject_ currently present in the active _Scene_. It allows you to organize your objects and control how they interact with each other.
 
-Inspector 
+![hierarchy] 
 
-Project Files 
+The _Inspector_ section on the right of the screen is a panel that is used to view and edit the properties, components and settings of selected GameObjects, assets or project settings.
 
-Scene View 
-
-Game View++
+![inspector]
 
 
+The _Project Files_ at the bottom of the screen is a window that is the central hub for navigating, organizing and managing all files, assets and folders in the game project.
+
+![project-files]
+
+The _Scene View_ at the center of the screen is an interactive sandbox used to help you construct, arrange and edit the game world.
+![scene-view]
+
+The _Game View++_ tab when selected, appears at the center of the screen and is the window that simulates and renders the final output of the project, showing what a player will see when the game is played. It currently shows a blue screen which is expected.
+![game-view]
 
 ## Switch to Old Input System
+There is one more thing we need to do before adding anything. We will switch to the old input system, which is easier and more straight forward to use for simple games compared to the newer input system.
+
+1. Open Project Settings: Go to the top menu and select **Edit > Project Settings.**
+2. Navigate to Player Settings: In the left-hand sidebar of the **Project Settings** window, select the **Player** category.
+3. Find Active Input Handling: Scroll down to the Other Settings section (you may need to expand it).
+4. Look for the Configuration subheading to find the Active Input Handling dropdown menu.
+5. Select the Old System: Click the dropdown and select **Input Manager (Old)**.
+6. Restart the Editor: Unity will prompt you to restart the editor to apply these changes. Click Yes.
 
 
 ## Set Up Project
 
-1. Add a square sprite to the scene.
+1. Add a square sprite to the scene
 > 2D Objects > Sprites > Square
 
     ???+ question "How to add objects to the scene?" 
@@ -159,6 +173,11 @@ Game View++
 [vs-install-success]: assets/project-setup/vs-install-success.png
 [install-success]: assets/project-setup/install-success.png
 [new-project]: assets/project-setup/new-project.png
+[hierarchy]: assets/project-setup/hierarchy.png
+[inspector]: assets/project-setup/inspector.png
+[project-files]: assets/project-setup/project-files.png
+[scene-view]: assets/project-setup/scene-view.png
+[game-view]: assets/project-setup/game-view.png
 
 [project-creation-loading-image]: assets/project-setup/project-creation-loading.png
 
