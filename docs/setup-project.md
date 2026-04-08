@@ -126,8 +126,11 @@ There is one more thing we need to do before adding anything. We will switch to 
 2. Navigate to Player Settings: In the left-hand sidebar of the **Project Settings** window, select the **Player** category.
 3. Find Active Input Handling: Scroll down to the Other Settings section (you may need to expand it).
 4. Look for the Configuration subheading to find the Active Input Handling dropdown menu.
-5. Select the Old System: Click the dropdown and select **Input Manager (Old)**.
-6. Restart the Editor: Unity will prompt you to restart the editor to apply these changes. Click Yes.
+5. Select the Old System: Click the dropdown and select **Both**.
+
+    Unity will prompt you to restart the editor to apply these changes
+
+6. Click _Yes_ to restart the editor
 
 
 ## Set Up Project
