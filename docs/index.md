@@ -6,20 +6,23 @@ Unity is a game engine that is used to develop 2D, 3D, VR and AR experiences. Wh
 
 
 ## Intended Users
-This documentation is designed for users who want to start learning basic game development in Unity. This guide does not expect you to have any experience in coding or game development.
-All examples and instructions are designed for Windows and has not been tested with Mac or Linux. A dedicated graphics card is recommended, but not required.
+This documentation is designed for users who want to start learning basic game development in Unity. This guide does not expect you to have any experience in game development.
+
+All examples and instructions are designed for Windows and have not been tested with Mac or Linux. A dedicated graphics card is strongly recommended, but not required.
 
 ## Prerequisite Knowledge
-- Working knowledge of programming data types strings, ints and floats. You are expected to know what these data types are, and what they represent in programming languages.
-- {++Understanding of Windows, such how to zip a folder++}
+Working knowledge of programming data types strings, ints and floats. You are expected to know what these data types are, and what they represent in programming languages.
+
+Experience with statically typed programming languages.
 
 ## Software Requirements
 Before beginning, please ensure you have the following accounts and programs:
 
 - A [Unity] [unity-url] account
 - An [itch.io][itch-url] account
-
 - [Unity Engine Hub][unity-hub-url] downloaded and installed
+- A way to zip and unzip a folder in your computer
+
 
 ## Objectives
 1. Install Unity Editor

@@ -5,6 +5,7 @@ site_url: https://mcitang.github.io/User-Documentation/
 nav:
  - Home: "index.md"
  - Set Up Unity Project: "setup-project.md"
+ - Navigate The Editor: "navigate-editor.md"
  - Create A Simple 2D Game: "make-game.md"
  - Create A Menu & Set Up Transitions: "make-menus.md"
  - Build And Upload Your Game: "build-game.md"

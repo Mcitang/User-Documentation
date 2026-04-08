@@ -111,7 +111,6 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 1. Save your changes by pressing ++ctrl+s++
 
     !!! success
-        The complete `SceneLoader` script
     
         ```C# linenums="1"
         using UnityEngine;
@@ -127,11 +126,6 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
             public void GoToScene(string sceneName)
             {
                 SceneManager.LoadScene(sceneName);
-            }
-
-            public void QuitGame()
-            {
-                Application.Quit();
             }
         }
         ```
@@ -223,13 +217,11 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 
 1. Select the text object, image object and WinScreen at the same time
 
-1. In the rect transform, click the Anchor Presets in the top-left of the component
+1. In the rect transform, click the Anchor Presets in the left side of the component
 
 1. Hold ++alt+shift++ to set the pivot and position as well, then select furthest bottom right preset
 
     ![Set Rect Transform anchors][rect-transform-anchor-gif]{ .center}
-
-    The image to
 
     !!! success
         Your game view should be covered by the black image, with text in the top-left corner
@@ -255,7 +247,7 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
     | Vertex Color  | Yellow    |
     | Alignment     | Justify center<br>Vertical align center |
 
-1. Change these settings for the button in WinScreen and the text in that button
+1. Change these settings for the button in WinScreen 
 
     | Transform     |           |
     | ---------     | ------    |
@@ -263,6 +255,8 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
     | Pos Y         | -150      |
     | Width         | 400       |
     | Height        | 75        |
+    
+1. Change these settings for the text inside the button in WinScreen
 
     | TextMeshPro - Text    |   |
     | ---------     | ------    |
@@ -331,6 +325,39 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
     }
     ```
 
+    !!! success
+
+        ```C# linenums="1"
+        using TMPro;
+        using UnityEngine;
+
+        public class CoinManager : MonoBehaviour
+        {
+            public GameObject winScreen;
+            public TextMeshProUGUI scoreLabel;
+
+            private int score;
+            private int totalCoins;
+
+            void Start()
+            {
+                totalCoins = transform.childCount;
+                winScreen.SetActive(false);
+            }
+
+            public void addToScore(int add = 1)
+            {
+                score += add;
+                scoreLabel.SetText(score.ToString());
+
+                if (score >= totalCoins)
+                {
+                    winScreen.SetActive(true);
+                }
+            }
+        }
+        ```
+
 1. Test it
 
     !!! success
@@ -361,6 +388,31 @@ Finally we should add a quit button so people can stop playing the game
     }
     ```
 
+    !!! success
+
+        ```C# linenums="1"
+        using UnityEngine;
+        using UnityEngine.SceneManagement;
+
+        public class SceneLoader : MonoBehaviour
+        {
+            public void GoToScene(int sceneIndex)
+            {
+                SceneManager.LoadScene(sceneIndex);
+            }
+
+            public void GoToScene(string sceneName)
+            {
+                SceneManager.LoadScene(sceneName);
+            }
+
+            public void QuitGame()
+            {
+                Application.Quit();
+            }
+        }
+        ```
+
 1. Go to your quit button's _On Click ()_ list
 
     It should have the `GoToScene` function from `SceneLoader`
@@ -373,7 +425,7 @@ Finally we should add a quit button so people can stop playing the game
         Testing the quit button will do nothing in the Unity Editor, it only works in the game build
 
     !!! warning
-        Make sure you change the On Click function for the quit button and not the play button. Since the inspector looks the same for both buttons, it will be easy to get confused.
+        Make sure you change the _On Click ()_ function for the quit button and not the play button. Since the inspector looks the same for both buttons, it will be easy to get confused.
 
 And we are done!
 
