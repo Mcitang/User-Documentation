@@ -75,7 +75,7 @@ Great! Now that you have the Editor and Visual Studio installed, we can begin cr
 
 1. Go to the **Projects** tab on the right side of your Unity Hub window
    
-1. Click **+ New Project**
+1. Click **+New Project**
      <!-- ![new-project] -->
 
 1. Select the **Universal 2D Core Template** under the **Core** tab
@@ -84,7 +84,7 @@ Great! Now that you have the Editor and Visual Studio installed, we can begin cr
 
 1. Choose project location
 
-1. Click **+ Create Project**
+1. Click **+Create Project**
 
     ![GIF for Creating a 2D Unity project][create-project-gif]
 
