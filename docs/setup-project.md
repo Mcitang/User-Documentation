@@ -98,9 +98,7 @@ Once it loads, you will see the Unity Editor open up
 !!! success
     ![Image of the Unity Editor][default-unity-editor-image]
 
-{++MISSING HERE: Switch to the old input system in Project Settings > Player > Other Settings > Active Input Handling => Both or Input Manager (old)++}
-
-## Navigate Editor UI
+## Navigate the Editor UI
 This section will explain a few of the most important elements of the Editor's user interface. 
 
 The _Hierarchy_ section on the left of the screen is a dedicated window that displays every _GameObject_ currently present in the active _Scene_. It allows you to organize your objects and control how they interact with each other.
@@ -133,7 +131,7 @@ There is one more thing we need to do before adding anything. We will activate t
 !!! warning
     The legacy input system is easier to use for beginners, but it will be deprecated in future versions. Once you get more comfortable with the engine, switching to the new input system is strongly recommended.
 
-1. Go to the top menu and select **Edit > Project Settings**.
+1. In the menu bar, select **Edit > Project Settings**.
 
 1. Navigate to Player Settings: In the left-hand sidebar of the **Project Settings** window, select the **Player** category.
 
