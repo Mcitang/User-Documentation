@@ -104,7 +104,10 @@ The _Hierarchy_ section on the left of the screen is a dedicated window that dis
 
 ![hierarchy] 
 
-The _Inspector_ section on the right of the screen is a panel that is used to view and edit the properties, components and settings of selected GameObjects, assets or project settings.
+The _Inspector_ section on the right of the screen is a panel that is used to view and edit the properties, components and settings of objects and assets. 
+    
+    !!! tip
+        To find an object in your scene quickly, select the object in your hierarchy by pressing left-click, then press ++F++ to find it in the _Scene View_.
 
 ![inspector]
 
@@ -114,23 +117,29 @@ The _Project Files_ at the bottom of the screen is a window that is the central 
 ![project-files]
 
 The _Scene View_ at the center of the screen is an interactive sandbox used to help you construct, arrange and edit the game world.
+
+You can left-click on objects to select them, and hold right-click and drag to move around the scene
 ![scene-view]
 
-The _Game View++_ tab when selected, appears at the center of the screen and is the window that simulates and renders the final output of the project, showing what a player will see when the game is played. It currently shows a blue screen which is expected.
+The _Game View_ tab when selected, appears at the center of the screen and is the window that simulates and renders the final output of the project, showing what a player will see when the game is played. It currently shows a blue screen which is expected.
 ![game-view]
 
-## Switch to Old Input System
-There is one more thing we need to do before adding anything. We will switch to the old input system, which is easier and more straight forward to use for simple games compared to the newer input system.
+## Enabling the Legacy Input System
+There is one more thing we need to do before adding anything. We will activate the legacy input system, which is easier to use for beginners compared to the newer input system.
 
-1. Open Project Settings: Go to the top menu and select **Edit > Project Settings.**
-2. Navigate to Player Settings: In the left-hand sidebar of the **Project Settings** window, select the **Player** category.
-3. Find Active Input Handling: Scroll down to the Other Settings section (you may need to expand it).
-4. Look for the Configuration subheading to find the Active Input Handling dropdown menu.
-5. Select the Old System: Click the dropdown and select **Both**.
+1. Go to the top menu and select **Edit > Project Settings**.
 
-    Unity will prompt you to restart the editor to apply these changes
+1. Navigate to Player Settings: In the left-hand sidebar of the **Project Settings** window, select the **Player** category.
 
-6. Click _Yes_ to restart the editor
+1. Find Active Input Handling: Scroll down to the Other Settings section (you may need to expand it).
+
+1. Look for the Configuration subheading to find the Active Input Handling dropdown menu.
+
+1. Click the dropdown and select **Both**.
+
+    Unity will prompt you to restart the editor to apply these changes.
+
+1. Click _Yes_ to restart the editor.
 
 
 ## Set Up Project
