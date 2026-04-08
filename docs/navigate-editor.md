@@ -4,15 +4,11 @@ This section will explain a few of the most important elements of the Editor's u
 
 ## Hierarchy
 
-{++Larger Picture and mention Menu Bar in description++}
-
-The _Hierarchy_ section on the left of the screen is a dedicated window that displays every _GameObject_ currently present in the active _Scene_. It allows you to organize your objects and control how they interact with each other.
+The _Hierarchy_ section on the left of the screen is a dedicated window that displays every _GameObject_ currently present in the active _Scene_. It allows you to organize your objects and control how they interact with each other. At the top of the Hierarchy section is the Menu Bar which gives you access to speicfic
 
 ![hierarchy] 
 
 ## Inspector
-
-{++Add Larger Picture showing a Transform Component too++}
 
 The _Inspector_ section on the right of the screen is a panel that is used to view and edit the properties, components and settings of objects and assets. 
     
@@ -25,15 +21,13 @@ The _Inspector_ section on the right of the screen is a panel that is used to vi
 
 The _Project Files_ at the bottom of the screen is a window that is the central hub for navigating, organizing and managing all files, assets and folders in the game project.
 
-{++Thinner picture so it is more HD++}
-
 ![project-files]
 
 ## Console
 
 The _Console_ is at the bottom of the screen is where all errors, warnings and logs are displayed. It shares a window with the _Project Files_ as a separate tab.
 
-{++Add picture here++}
+![console-view]
 
 ## Scene View
 
@@ -61,5 +55,5 @@ The _Game View_ tab when selected, appears at the center of the screen and is th
 [project-files]: assets/project-setup/project-files.png
 [scene-view]: assets/project-setup/scene-view.png
 [game-view]: assets/project-setup/game-view.png
-
+[console-view]: assets/project-setup/console-view.png
 <!-- GIFs -->
