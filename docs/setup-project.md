@@ -148,11 +148,11 @@ There is one more thing we need to do before adding anything. We will switch to 
     Unity may ask you if you want to enable backends. Click no??? also need to replace screenshot
 
 ![backends-warning]
-## Create the Player
+## Create the Player and Floor
+Now we can start adding objects. This section will guide you through shapes to your game. You will add 2 squares, one representing the player, and another representing the floor. Ensure that the editor is on the **Scene** view instead of the **Game** view. We will start with the player first.
 
 
-## Add An Object to Your Game
-Now we can start adding objects. This section will guide you through shapes to your game. You will add 2 squares, one representing the player, and another representing the floor. Ensure that the editor is on the **Scene** view instead of the **Game** view.
+## Create Player
 
 
 1. Add a square sprite to the scene from the Hierarchy tab's **+** button.
@@ -168,7 +168,9 @@ Now we can start adding objects. This section will guide you through shapes to y
         ![The player object's inspector tab][player-inspector-image]
 
 4. Add another square sprite to the scene.
+
 ## Create the Floor
+Now that we have a player character, we will add a floor for them to stand on.
 
 4. Add another square sprite to the scene
 > 2D Objects > Sprites > Square
