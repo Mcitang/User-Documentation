@@ -133,7 +133,9 @@ There is one more thing we need to do before adding anything. We will activate t
 
 1. In the menu bar, select **Edit > Project Settings**.
 
-1. Navigate to Player Settings: In the left-hand sidebar of the **Project Settings** window, select the **Player** category.
+1. In the left-hand sidebar of the **Project Settings** window, select the **Player** category.
+
+1. Scroll down and open the **Other Settings** dropdown.
 
 1. Find Active Input Handling: Scroll down to the Other Settings section (you may need to expand it).
 
@@ -144,6 +146,8 @@ There is one more thing we need to do before adding anything. We will activate t
     Unity will prompt you to restart the editor to apply these changes.
 
 1. Click _Yes_ to restart the editor.
+
+    {++Add gif++}
 
 
 ## Set Up Project
