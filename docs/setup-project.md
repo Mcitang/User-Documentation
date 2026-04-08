@@ -122,37 +122,43 @@ The _Game View++_ tab when selected, appears at the center of the screen and is 
 ## Switch to Old Input System
 There is one more thing we need to do before adding anything. We will switch to the old input system, which is easier and more straight forward to use for simple games compared to the newer input system.
 
-1. Open Project Settings: Go to the top menu and select **Edit > Project Settings.**
-2. Navigate to Player Settings: In the left-hand sidebar of the **Project Settings** window, select the **Player** category.
-3. Find Active Input Handling: Scroll down to the Other Settings section (you may need to expand it).
-4. Look for the Configuration subheading to find the Active Input Handling dropdown menu.
-5. Select the Old System: Click the dropdown and select **Input Manager (Old)**.
+1. Go to the top menu and select **Edit > Project Settings.**
+2. In the left-hand sidebar of the **Project Settings** window, select the **Player** category.
+3. Scroll down to the **Other Settings** section.
+4. Look for the Configuration subheading to find the **Active Input Handling** dropdown menu.
+5. Click the dropdown and select **Input Manager (Old)**.
 6. Restart the Editor: Unity will prompt you to restart the editor to apply these changes. Click Yes.
 
+!!! warning
+    Unity may ask you if you want to enable backends. Click no??? also need to replace screenshot
 
-## Set Up Project
+![backends-warning]
 
-1. Add a square sprite to the scene
+
+## Add An Object to Your Game
+Now we can start adding objects. This section will guide you through shapes to your game. You will add 2 squares, one representing the player, and another representing the floor. Ensure that the editor is on the **Scene** view instead of the **Game** view.
+
+
+1. Add a square sprite to the scene from the Hierarchy tab's **+** button.
 > 2D Objects > Sprites > Square
 
-    ???+ question "How to add objects to the scene?" 
-        Right-click the hierarchy and press right-click to open the context menu.
+    ![add-square-sprite]
 
-2. In the inspector, rename the square to "_Player_"
+2. Rename the square to "_Player_" in the **Inspector** tab on the right.
 
-3. In the inspector, change the sprite's color to <span style="color: red">red</span>
+3. Change the sprite's color to <span style="color: red">red</span> in the **Inspector** tab.
 
     !!! success
         ![The player object's inspector tab][player-inspector-image]
 
-4. Add another square sprite to the scene
+4. Add another square sprite to the scene.
 > 2D Objects > Sprites > Square
 
-5. Name this one "_Floor_"
+5. Name the second sprite "_Floor_" in the **Inspector** tab.
 
-6. In the scene view, stretch it using your cursor.
+6. In the scene view, stretch it using your cursor into a rectangle shape.
 
-{++[add gif here]++}
+![add-floor]
 
 !!! success
     ![What your editor should look like after completing the project setup][setup-complete-image]
@@ -178,6 +184,8 @@ There is one more thing we need to do before adding anything. We will switch to 
 [project-files]: assets/project-setup/project-files.png
 [scene-view]: assets/project-setup/scene-view.png
 [game-view]: assets/project-setup/game-view.png
+[backends-warning]: assets/project-setup/backends-warning.png
+[add-square-sprite]: assets/project-setup/add-square-sprite.png
 
 [project-creation-loading-image]: assets/project-setup/project-creation-loading.png
 
@@ -188,3 +196,4 @@ There is one more thing we need to do before adding anything. We will switch to 
 <!-- GIFs -->
 [install-editor-gif]: assets/project-setup/install-editor.gif
 [create-project-gif]: assets/project-setup/create-project.gif
+[add-floor]: assets/project-setup/add-floor.gif
