@@ -5,8 +5,6 @@ This page will take you through setting up a project in Unity for the first time
 
 ## Install the Editor
 The Unity Editor is where you will assemble your game. This tutorial will use Unity 6.3 LTS (6000.3.12f1), but this should work on any version of Unity 6+.
-!!! warning
-    This tutorial will use the legacy input system. The legacy input system is easier to use for beginners, but it will be deprecated in future versions.
 
 1. Open the Unity app.
 
@@ -15,35 +13,38 @@ The Unity Editor is where you will assemble your game. This tutorial will use Un
 3. Click **Install Editor**.
 
 4. Install Unity 6.3 LTS under the tab **Official Releases**.
+
 ???+ info "Version"
-    Any official release of Unity 6 will work. The app will recommend Unity 6.4 (6000.4.1f1), but this tutorial will use Unity 6.3 LTS (6000.3.12f1) since it is more stable.
+    Any official release of Unity 6 will work. The Unity Hub will recommend version 6.4 (6000.4.1f1), but this tutorial will use Unity 6.3 LTS (6000.3.12f1) since it is more stable and will be supported for longer.
 
 ![GIF for installing Unity Editor][install-editor-gif]
 
 <!-- VISUAL STUDIO -->
 === "If you do not have Visual Studio 2022 installed"
-    The program will ask you what modules you would like to have installed with the Unity editor. We will need to install **Visual Studio 2022** as well. This tool will help you debug and test your game code. Every other checkbox that is not mentioned can be left untouched.
+    The program will ask you what modules you would like to have installed with the Unity editor.
     
-    1. Ensure the Microsoft Visual Studio Community 2022 box is checked.
-    ![vs-install-check]
+    1. Ensure the **Microsoft Visual Studio Community 2022** box is checked.
 
-    2. Click **continue**.
+        ![Visual Studio installation checked box][vs-install-check]
 
-    3. Scroll down and ensure that _Game Development with Unity_ addon is checked under the **Workloads** tab.
+        Every other checkbox that is not mentioned can be left untouched.
+
+    1. Click **Continue**.
+
+    1. Wait for Visual Studio to popup asking for which Workloads you want to install with it.
+
+    1. Scroll down and ensure that _Game Development with Unity_ addon is checked under the **Workloads** tab.
 
         ![Game Development with Unity workload checked][vs-unity-workload]
 
-    4. Press the install button.
+    1. Press the install button.
 
-    5. Wait for Editor and Visual Studio downloads to complete.
+    1. Wait for Editor and Visual Studio downloads to complete.
 
         !!! success
-            ![vs-install-success][vs-install-success]
+            ![Visual Studio installed successfully][vs-install-success]
 
-    6. Close the Visual Studio Installer window.
-    
-    This is what your Unity Window should look like at this point when the installations have been complete:
-    ![install-success]
+    1. Close the Visual Studio Installer window.
 
 === "If you have Visual Studio 2022 installed"
     Since you already have Visual Studio 2022 installed, Unity will not install it for you. However, you must check if you have the **Game Development with Unity** workload installed. This is an essential addon
@@ -57,11 +58,16 @@ The Unity Editor is where you will assemble your game. This tutorial will use Un
     
     1. Scroll down and ensure the _Game Development with Unity_ workload checkbox is checked.
 
-        !!! success
-            ![Game Development with Unity workload checked][vs-unity-workload]
+        ![Game Development with Unity workload checked][vs-unity-workload]
 
-    4. If you had to check the checkbox, press _Modify_.
+    1. If you had to check the checkbox, press _Modify_.
 
+    1. After the changes apply, close Visual Studio.
+
+!!! success
+    When the install completes, you should see the editor in the **Installs** tab
+
+    ![Editor in the Installs tab][install-success]
 
 
 ## Create a Project
@@ -70,7 +76,7 @@ Great! Now that you have the Editor and Visual Studio installed, we can begin cr
 1. Go to the **Projects** tab on the right side of your Unity Hub window
    
 1. Click **+ New Project**
-     ![new-project]
+     <!-- ![new-project] -->
 
 1. Select the **Universal 2D Core Template** under the **Core** tab
 
@@ -78,12 +84,9 @@ Great! Now that you have the Editor and Visual Studio installed, we can begin cr
 
 1. Choose project location
 
-    !!! info
-        This guide will not cover version control. Leave the **Unity Version Control** box unchecked.
-
 1. Click **+ Create Project**
 
-![GIF for Creating a 2D Unity project][create-project-gif]
+    ![GIF for Creating a 2D Unity project][create-project-gif]
 
 !!! success
     You should now see the Unity Editor creating your project
@@ -125,7 +128,10 @@ The _Game View_ tab when selected, appears at the center of the screen and is th
 ![game-view]
 
 ## Enabling the Legacy Input System
-There is one more thing we need to do before adding anything. We will activate the legacy input system, which is easier to use for beginners compared to the newer input system.
+There is one more thing we need to do before adding anything. We will activate the legacy input system.
+
+!!! warning
+    The legacy input system is easier to use for beginners, but it will be deprecated in future versions. Once you get more comfortable with the engine, switching to the new input system is strongly recommended.
 
 1. Go to the top menu and select **Edit > Project Settings**.
 
