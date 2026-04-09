@@ -11,7 +11,7 @@
 
 1. Rearrange your scenes so the Main Menu is at the top.
 
-    !!! info
+    !!! warning
         We put the Main Menu at the top, because that is the scene Unity opens when the game is run.
 
     !!! success
