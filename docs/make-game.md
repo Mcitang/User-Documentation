@@ -27,18 +27,18 @@ It would be boring if there was nothing but a floor, right? So let's add some pl
 
 
 ### Add Physics to the Player
-Unity has a built-in 2D physics system. We can use it to control the player through a **Rigidbody2D** component. It also takes care of other things for us, like momentum and gravity.
+Unity has a built-in 2D physics system. We can use it to control the player through a **[Rigidbody2D][rb2d-glossary]** component. It also takes care of other things for us, like momentum and gravity.
 
-1. Add a **Rigidbody2D** component to the red square player sprite.
+1. Add a **[Rigidbody2D][rb2d-glossary]** component to the red square player sprite.
 
     ???+ question "How to add a component?"
         Click _Add Component_ in the inspector, under the existing components
 
         ![Adding a component][add-component-gif]{ style="width: 650px;", .center }
 
-1. Check the player's [**Freeze Rotation Z**][z-rotation-glossary] checkbox in the Rigidbody2D component settings.
+1. Check the player's [**Freeze Rotation Z**][z-rotation-glossary] checkbox in the [Rigidbody2D][rb2d-glossary] component settings.
 
-    > Rigidbody2D > Constraints > Freeze Rotation > :white_check_mark: Z
+    > [Rigidbody2D][rb2d-glossary] > Constraints > Freeze Rotation > :white_check_mark: Z
 
     ![freeze-rotation]
 
@@ -47,7 +47,7 @@ Unity has a built-in 2D physics system. We can use it to control the player thro
 1. Press the **Play** button.
 
     You will see the Player now falls as if there was gravity. They should fall right through the stage.
-    That's because the **Rigidbody2D** doesn't know the floor is supposed to be solid. For that we will need a Collider.
+    That's because the **[Rigidbody2D][rb2d-glossary]** doesn't know the floor is supposed to be solid. For that we will need a Collider.
 
 ### Add Colliders to Rectangles
 
@@ -106,7 +106,7 @@ Now lets work on moving the player.
 1. Place these variables before the functions.
 
     ```C# linenums="5"
-    public Rigidbody2D rb;
+    public [Rigidbody2D][rb2d-glossary] rb;
 
     public float speed = 8f;
     public float jumpForce = 8f;
@@ -193,7 +193,7 @@ That's all for the player movement script. This is what the completed file shoul
 
     public class PlayerMovement : MonoBehaviour
     {
-        public Rigidbody2D rb;
+        public [Rigidbody2D][rb2d-glossary] rb;
 
         public float speed = 8f;
         public float jumpForce = 8f;
@@ -249,18 +249,18 @@ That's all for the player movement script. This is what the completed file shoul
 
 1. Save your Unity project by pressing ++ctrl+s++.
 
-Before testing the movement, we have to assign a value to the `Rigidbody2D` variable
+Before testing the movement, we have to assign a value to the `[Rigidbody2D][rb2d-glossary]` variable
 
-1. In the inspector, drag and drop the `Rigidbody2D` component to the corresponding field in `PlayerMovement`
+1. In the inspector, drag and drop the `[Rigidbody2D][rb2d-glossary]` component to the corresponding field in `PlayerMovement`
 
-    ![Assigning a value to Rigidbody2D rb variable][assign-rb-gif]{ .center }
+    ![Assigning a value to [Rigidbody2D][rb2d-glossary] rb variable][assign-rb-gif]{ .center }
 
 1. Hit **Play** and try moving the player around!
 
     !!! info
         Use ++space++ to jump and use the arrow keys or `WASD` to move around.
 
-    Feel free to change the `speed` and `jumpForce` variable values, as well as the `Rigidbody2D`'s gravity scale in the inspector to your liking.
+    Feel free to change the `speed` and `jumpForce` variable values, as well as the `[Rigidbody2D][rb2d-glossary]`'s gravity scale in the inspector to your liking.
 
     !!! tip
         You can change your script variable values directly from the inspector
@@ -641,6 +641,8 @@ Now your game can be won! Let's update the UI to show the score.
 
 <!-- Glossary -->
 *[Collider]: Bounds around an object that prevent other bounds from intersecting with it.
+[rb2d-glossary]: glossary.md#rigidbody2d
+[prefab-glossary]: glossary.md#prefab
 
 
 
