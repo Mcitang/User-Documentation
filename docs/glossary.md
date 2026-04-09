@@ -2,6 +2,9 @@
 
 | **Term**                  |  **Definition** <br id="glossary">    |
 |-----------                |------------------------------------   |
+| 2D                        |   {++Add definition++}    |
+| 3D                        |   {++Add definition++}    |
+| AR                        |   {++Add definition++}    |
 | Assets                    |   {++Add definition++}    |
 | [Canvas][canvas-url]      |   Area where all visible elements are located.  |
 | [Collider][collider-url]    |   An invisible shape that defines the physical boundaries of a GameObject for the purpose of collisions. It allows the physics engine to calculate when objects touch or overlap.   |
@@ -20,6 +23,7 @@
 | [TextMeshPro][tmp-url]    |   An easy-to-use system for high-quality text and UI included with the Unity Editor.   |
 | [Universal Render Pipeline (URP)][urp-url]    |   A multi-platform Render Pipeline that allows for high-quality graphics and fast performance across a wide range of devices, from mobile phones to high-end consoles.    |
 | [Vector2][vector2-url]    |   Used to represent 2D vectors and points, consisting of two values: X and Y.  |
+| VR                        |   {++Add definition++}
 | Z Rotation                |   Rotation of an object around the Z-axis in a 3D coordinate system.  |
 
 <!-- Hyperlinks -->
