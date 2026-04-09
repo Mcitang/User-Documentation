@@ -33,7 +33,7 @@ The _Console_ is at the bottom of the screen is where all errors, warnings and l
 
 The _Scene View_ at the center of the screen is an interactive sandbox used to help you construct, arrange and edit the game world.
 
-You can left-click on objects to select them, and hold right-click and drag to move around the scene
+You can left-click on objects to select them, and hold right-click and drag to move around the scene.
 
 ![Scene View][scene-view]
 
