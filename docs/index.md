@@ -123,11 +123,6 @@ We will use message blocks to inform you of additional relevant information. Her
 ???+ info "Collapsible Info"
     Provides additional information on a topic
 
-???+ question "Collapsible Question"
-    Provides additional information on a topic, framed as a question
-
-
-
 <!-- Glossary definitions at the bottom -->
 *[OOP]: Object-Oriented Programming
 *[context menu]: A pop-up menu that appears to offer additional information when you hover over them.
