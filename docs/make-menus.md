@@ -138,7 +138,7 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 
 1. Minimize Visual Studio.
 
-1. Select your play button and scroll down in the inspector.
+1. Select your play button and scroll down in the **Inspector**.
 
     At the very bottom of the `Button` component, you'll see an empty list with the header "On Click ()".
     This is an event. You give it a list of functions that will execute when the `OnClick()` event occurs.
