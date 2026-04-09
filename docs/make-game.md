@@ -290,7 +290,7 @@ Every game has a goal or victory condition that means the player has won once th
 
 ### Create Coins User Interface (UI)
 
-1. Add a text object to the scene by right clicking in the **Hierarchy** window
+1. Add a text object to the scene by right clicking in the **Hierarchy** window.
 
     > UI (Canvas) > Text - TextMeshPro
 
@@ -322,7 +322,7 @@ Every game has a goal or victory condition that means the player has won once th
 
 1. Find the `Canvas Scaler` component in the **Inspector** window.
 
-1. Change the UI Scale Mode from **Constant Pixel Size** to **Scale With Screen Size**
+1. Change the UI Scale Mode from **Constant Pixel Size** to **Scale With Screen Size**.
 
 1. Set your reference resolution to X=1920, Y=1080.
 

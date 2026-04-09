@@ -1,5 +1,7 @@
 # Building and Uploading Your Game
 
+{++Add intro here++}
+
 1. Open the **Build menu**:
 
     > File > Build Profiles
