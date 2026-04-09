@@ -1,10 +1,11 @@
 # Building and Uploading Your Game
 
-1. Open the **Build menu**.
+1. Open the **Build menu**:
 
     > File > Build Profiles
 
 1. Open your **Scene List**.
+    ![scene-list]
 
 1. Rearrange your scenes so the Main Menu is at the top.
 
@@ -14,7 +15,9 @@
     !!! success
         ![Scene List with Main Menu at the top][rearranged-scene-list]{ .center }
 
-1. Return to the **Windows** tab in Platforms.
+1. Go to the **Windows** tab under the Platforms category in the same **Build** window.
+
+    ![windows]
 
     !!! warning
         Windows is the default target platform when building. If for some reason it is not active, change your target platform to Windows.
@@ -34,9 +37,20 @@
 
     Proceed when the build is complete.
 
-1. Test your build by hitting **play**.
+1. Test your build by double clicking the `test` executable in the folder.
 
-1. Zip your Build into a compressed zip file.
+    !!! success
+        ![build-files]
+    
+    !!! success
+        ![game-start]
+
+
+
+1. Zip your Build into a compressed zip file:
+>Right click > Compress to > Zip File
+
+You should now have two files: a `Build` folder, and a `Build` zip file.
 
 1. Go to [itch.io][itch-url].
 
@@ -45,6 +59,8 @@
     This will show a little dropdown.
 
 1. Select "Upload New Project".
+    
+    ![upload-project]
 
 1. Give your game any title you want.
 
@@ -53,7 +69,9 @@
     !!! info "About Web Builds"
         For games meant to be played in browser, you should select _HTML_ instead of _Downloadable_.
 
-1. Press upload files and select your build zip folder.
+1. Press **Upload files** and select your build zip folder.
+
+    ![upload-build]
 
 1. Check the box next to the Windows logo so others know the target platform.
 
@@ -70,7 +88,11 @@
 
 1. Press **Save**.
 
-And you're done! You can share that with whoever you want and they will be able to download from [itch.io][itch-url] and play it.
+    !!! success
+        ![game-page]
+
+And you're done! You can leave every other field blank. Feel free to upload a cover image for the game if you would like. 
+You can share the URL that was generated with whoever you want and they will be able to download from [itch.io][itch-url] and play it. 
 
 <!-- Glossary -->
 
@@ -81,5 +103,12 @@ And you're done! You can share that with whoever you want and they will be able 
 
 <!-- Images -->
 [rearranged-scene-list]: assets/build-game/build-scene-list.png
+[game-page]: assets/build-game/game-page.png
+[upload-build]: assets/build-game/upload-build.png
+[upload-project]: assets/build-game/upload-project.png
+[build-files]: assets/build-game/build-files.png
+[game-start]: assets/build-game/game-start.png
+[scene-list]: assets/build-game/scene-list.png
+[windows]: assets/build-game/windows.png
 
 <!-- GIFs -->
