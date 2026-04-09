@@ -15,35 +15,33 @@ The _Inspector_ section on the right of the screen is a panel that is used to vi
 !!! tip
     To find an object in your scene quickly, select the object in your hierarchy by pressing left-click, then press <kbd>F</kbd> to find it in the _Scene View_.
 
-![inspector]
+![Inspector][inspector]
 
 ## Project Files
 
 The _Project Files_ at the bottom of the screen is a window that is the central hub for navigating, organizing and managing all files, assets and folders in the game project.
 
-![project-files]
+![Project Files][project-files]
 
 ## Console
 
-The _Console_ is at the bottom of the screen is where all errors, warnings and logs are displayed. It shares a window with the _Project Files_ as a separate tab.
+The _Console_ is at the bottom of the screen is where all errors, warnings and logs are displayed. It shares its space with the _Project Files_ window.
 
-![console-view]
+![Console View][console-view]
 
 ## Scene View
 
 The _Scene View_ at the center of the screen is an interactive sandbox used to help you construct, arrange and edit the game world.
 
 You can left-click on objects to select them, and hold right-click and drag to move around the scene
-![scene-view]
 
-{++Maybe replace with picture of the complete game? So they see what it look like?++}
+![Scene View][scene-view]
 
 ## Game View
 
 The _Game View_ tab when selected, appears at the center of the screen and is the window that simulates and renders the final output of the project, showing what a player will see when the game is played. It currently shows a blue screen which is expected.
-![game-view]
 
-{++Maybe replace with picture of the complete game? So they see what it look like?++}
+![Game View][game-view]
 
 
 
@@ -51,10 +49,10 @@ The _Game View_ tab when selected, appears at the center of the screen and is th
 [user-interface-glossary]: glossary.md
 
 <!-- Images -->
-[hierarchy]: assets/project-setup/hierarchy.png
-[inspector]: assets/project-setup/inspector.png
-[project-files]: assets/project-setup/project-files.png
-[scene-view]: assets/project-setup/scene-view.png
-[game-view]: assets/project-setup/game-view.png
-[console-view]: assets/project-setup/console-view.png
+[hierarchy]: assets/navigate-editor/hierarchy.png
+[inspector]: assets/navigate-editor/inspector.png
+[project-files]: assets/navigate-editor/project-files.png
+[scene-view]: assets/navigate-editor/scene-view.png
+[game-view]: assets/navigate-editor/game-view.png
+[console-view]: assets/navigate-editor/console-view.png
 <!-- GIFs -->
