@@ -2,16 +2,18 @@
 
 ## Prepare the stage
 
-It would be boring if there was nothing but a floor, right? So let's add some platforms and walls
+It would be boring if there was nothing but a floor, right? So let's add some platforms and walls!
 
-1. Add rectangles to make some platforms
+1. Add 3 more squares and stretch them out.
 
     !!! tip
         Use ++ctrl+d++ to duplicate the platforms in the scene and save time.
 
     ![GIF of placing the platforms][place-platforms-gif]
 
-1. Add rectangles as walls so the player doesn't run outside the camera's view
+    These will be the platforms for the game.
+
+1. Add 2 squares and stretch them out vertically on both sides of the scene.
 
     ???+ note "Reminder on the Camera View"
         The camera view is represented by a white rectangle in the scene view.
@@ -21,37 +23,41 @@ It would be boring if there was nothing but a floor, right? So let's add some pl
     !!! success
         ![Game scene with walls and platforms][platforms-and-walls-image]
 
-Now hit the *Play* button. You will notice nothing really happens. That's because all we've done is add the objects to the scene.
+    These rectangles will act as walls for this section of the game.
 
 
-### Add a **Rigidbody2D** to the player
+### Add Physics to the Player
 Unity has a built-in 2D physics system. We can use it to control the player through a **Rigidbody2D** component. It also takes care of other things for us, like momentum and gravity.
 
-1. Add a **Rigidbody2D** to the player
+1. Add a **Rigidbody2D** component to the red square player sprite.
 
     ???+ question "How to add a component?"
         Click _Add Component_ in the inspector, under the existing components
 
         ![Adding a component][add-component-gif]{ style="width: 650px;", .center }
 
-1. In the Rigidbody2D component, freeze the player's Z rotation by checking _Freeze Rotation Z_ to true
+1. Check the player's _Freeze Rotation Z_ checkbox in the Rigidbody2D component settings.
 
     > Rigidbody2D > Constraints > Freeze Rotation > :white_check_mark: Z
 
-1. Press the *Play* button
+    ![freeze-rotation]
 
-    You will see the Player now falls as if there was gravity.
-    You will also notice the player falls through the stage. That's because the **Rigidbody2D** doesn't know the floor is supposed to be solid. For that we need a Collider.
+    This will ensure that the player character from rolling or spinning when they collide with objects or move around.
 
-### Add colliders to rectangles
+1. Press the **Play** button.
 
-1. Select all your platforms, walls, the floor and the player by holding ++shift++ when you select each of them
+    You will see the Player now falls as if there was gravity. They should fall right through the stage.
+    That's because the **Rigidbody2D** doesn't know the floor is supposed to be solid. For that we will need a Collider.
+
+### Add Colliders to Rectangles
+
+1. Select all your platforms, walls, the floor and the player by holding ++shift++ when you select each of them.
 
 1. Add a **BoxCollider2D** component to all of them.
     
     Now if you hit *Play* again, the player will fall and land on the floor.
 
-Now lets work on moving the player
+Now lets work on moving the player.
 
 ## Player Movement
 
@@ -70,18 +76,26 @@ Unity will ask to restart the editor, then the legacy input system will be activ
 
 ### Movement time!
 
-1. Create a Scripts folder in the Project files
+1. Create a Scripts folder by right clicking anywhere in the Project files section.
+    > Create > Folder
 
-1. Add a new MonoBehaviour Script called `PlayerMovement` to the _Scripts_ folder
+1. Name the folder as *Scripts*.
+
+1. Enter the Scripts folder by double clicking on it.
+
+1. Add a new MonoBehaviour Script called `PlayerMovement` to the _Scripts_ folder.
     
     > Create > MonoBehaviour Script
 
-    ??? question "What is a MonoBehavour"
+    ??? question "What is a MonoBehaviour"
         MonoBehaviour is a base class in Unity that allows you to create scripts that can be attached to GameObjects
 
-1. Add the `PlayerMovement` component to your player
+1. Add the `PlayerMovement` component to your player.
 
-1. Open your `PlayerMovement` script by double-clicking it
+1. Open your `PlayerMovement` script by double-clicking it.
+
+    !!! info
+        This action should open Microsoft Visual Studio if you have it correctly installed.
 
     !!! success
         This is what the empty script will look like
@@ -105,7 +119,7 @@ Unity will ask to restart the editor, then the legacy input system will be activ
         }
         ```
 
-1. Setup variables before the functions
+1. Setup variables before the functions.
 
     ```C# linenums="5"
     public Rigidbody2D rb;
@@ -118,7 +132,7 @@ Unity will ask to restart the editor, then the legacy input system will be activ
     ```
 
 
-1. Create a function to read the player input
+1. Create a function to read the player input.
 
     ```C# linenums="1"
     private void GetMovementInput()
@@ -128,7 +142,7 @@ Unity will ask to restart the editor, then the legacy input system will be activ
     }
     ```
 
-1. Call your new input function in `Update()`
+1. Call your new input function in `Update()`.
 
     ```C# linenums="1" hl_lines="4"
     // Update is called once per frame
@@ -138,7 +152,7 @@ Unity will ask to restart the editor, then the legacy input system will be activ
     }
     ```
 
-1. Create a function to move the player depending on input
+1. Create a function to move the player depending on input.
 
     ```C# linenums="1"
     private void MovePlayer()
@@ -153,7 +167,7 @@ Unity will ask to restart the editor, then the legacy input system will be activ
 1. Call your new movement function in `FixedUpdate()`.
 
     ???+ info "Fixed Update"
-        Unity recommends using `FixedUpdate()` whenever we are dealing with the physics system. Unlike `Update()`, which runs every frame possible, `FixedUpdate()` will only run 30 times per second.
+        Unity recommends using `FixedUpdate()` whenever we are dealing with the physics system. Unlike `Update()`, which runs every frame possible, `FixedUpdate()` will only run 30 times per second. This function is meant to work alongside `Update()`.
 
     ```C# linenums="1" hl_lines="3"
     private void FixedUpdate()
@@ -185,7 +199,7 @@ Unity will ask to restart the editor, then the legacy input system will be activ
     }
     ```
 
-And that's it for the player movement script
+That's all for the player movement script. This is what the completed file should look like:
 
 ???+ success "PlayerMovement script"
 
@@ -243,40 +257,45 @@ And that's it for the player movement script
     }
     ```
 
-### In the editor
+### Test Your Movement Script
 
-1. Save your changes by pressing ++ctrl+s++
+1. Save your changes in Visual Studio by pressing ++ctrl+s++.
 
-1. Minimize Visual Studio
+1. Minimize Visual Studio.
 
-1. Save your Unity project by pressing ++ctrl+s++
+1. Save your Unity project by pressing ++ctrl+s++.
 
-Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` variable
+Before hitting _Play_, we have to assign a value to the `Rigidbody2D` variable
 
 1. In the inspector, drag and drop the `Rigidbody2D` component to the corresponding field in `PlayerMovement`
 
     ![Assigning a value to Rigidbody2D rb variable][assign-rb-gif]{ .center }
 
-1. Now hit play and try it out!
+1. Hit play and try moving the player around!
 
-    Feel free to change the `speed` and `jumpForce` variable values, as well as the `Rigidbody2D`'s gravity scale in the inspector to your liking
+    !!! info
+        Use ++space++ to jump and use the arrow keys or WASD to move around.
+
+    Feel free to change the `speed` and `jumpForce` variable values, as well as the `Rigidbody2D`'s gravity scale in the inspector to your liking.
 
     !!! tip
         You can change your script variable values directly from the inspector
 
         ![PlayerMovement public variables][public-vars-image]{ .center }
 
-## Add a goal
+ 1. Pause the play button before moving on to the next step. 
+
+## Add a Goal
 
 ### Coins
-1. Add a circle sprite
+1. Add a circle sprite to the scene. 
     > 2D Object > Sprite > Circle
 
-1. Change it to a golden color
+1. Change it to a golden color in the coin's **Inspector** window.
 
 1. Rename the circle to "_Coin_"
 
-1. By duplicating that coin, place 2 coins on top of each platform.
+1. Duplicate the coins until there are 2 on top of each platform.
 
     !!! tip
         Use ++ctrl+d++ to duplicate the platforms in the scene and save time.
@@ -284,57 +303,61 @@ Before hitting _Play_ though, we have to assign a value to the `Rigidbody2D` var
     !!! success
         ![Coins on each platform][coins-image]
     
-    The win condition for the game will be to collect all the coins
+    The win condition for the game will be to collect all the coins.
 
-### Coins UI
+### Coins User Interface (UI)
 
-1. Add a label to the scene
+1. Add a label to the scene by right clicking in the **Hierarchy** window
 
     > UI (Canvas) > Text - TextMeshPro
 
-    You'll get a pop-up to download TMP essentials
+    You will get a pop-up to download TextMeshPro (TMP) essentials.
 
-1. Click _Import TMP Essentials_
+1. Click _Import TMP Essentials_.
 
-1. We don't need the examples and extras, so close the TMP Importer window
+1. Close the TMP Importer window without importing the examples and extras.
 
     !!! success
-        You will see a _TextMesh Pro_ folder in your Project Files
+        You should see a _TextMesh Pro_ folder in your Project Files
         ![TMP folder in your project files][tmp-files-image]
 
-1. Since our platforms and walls are white, change the text color to black in the inspector
+1. Change the default text color to black in the **Inspector**.
+    Since the walls and platforms are white, black will contrast well with them.
 
-    The best way to preview how the UI looks is through Game view
+    !!! tip
+        The best way to preview how the UI looks is through the **Game** view instead of the **Scene** view.
 
-1. Switch to the Game view
+1. Switch to the **Game** view
 
-1. In the top of the Game view, change the preview resolution from "Free Aspect" to "16:9 Aspect"
+1. Change the preview resolution from "Free Aspect" to "16:9 Aspect" at the top of the **Game** view.
+    
+    This will force the display to a standard widescreen format, allowing you to view how the game would look on modern displays.
 
 1. Change back to Scene view
 
-1. Click your canvas
+1. Click the **Canvas** button in the **Hierarchy** window.
 
-1. Find the `Canvas Scaler` component
+1. Find the `Canvas Scaler` component in the **Inspector** window.
 
-1. Change the UI Scale Mode to _Scale With Screen Size_
+1. Change the UI Scale Mode from **Constant Pixel Size** to **Scale With Screen Size**
 
 1. Set your reference resolution to X=1920, Y=1080
 
     ???+ success
         ![Canvas Scaler component with 1920x1080 reference resolution][canvas-scaler-res-image]
 
-1. Double-click your Canvas in the hierarchy.
+1. Double-click Canvas in the **Hierarchy** window.
 
-    This will zoom you out to where you can see your canvas
+    This will zoom you out to where you can see your whole canvas.
 
-1. Drag the text object you made to the top-left corner of the canvas
+1. Drag the text object you made (Text-tmp under Canvas in the **Hierarchy** window) to the top-left corner of the canvas
 
     !!! success
         If you go to Game View, this is what it should look like
 
         ![The game view with a text label in the top-left corner][canvas-setup-image]
 
-    Now we're ready to dynamically count the score
+    This text will help us dynamically display the player's score.
 
 ## Track the score
 
@@ -612,6 +635,7 @@ Now your game can be won! Let's update the UI to show the score.
 [trigger-image]: assets/make-game/trigger.png
 [coin-manager-image]: assets/make-game/coin-manager.png
 [score-label-image]: assets/make-game/score-label.png
+[freeze-rotation]: assets/make-game/freeze-rotation.png
 
 <!-- GIFs -->
 [place-platforms-gif]: assets/make-game/place-platforms.gif
