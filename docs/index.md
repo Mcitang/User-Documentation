@@ -47,8 +47,6 @@ Before beginning, please ensure you have the following accounts and programs:
 | Commands, functions and file names are formatted in monospace font | `Canvas Scaler` |
 | Glossary defined terms have a link to the glossary page | [sprite] [sprite-glossary] |
 
-- Terms that are defined in the glossary will have a link
-
 ### Code Blocks
 This syntax denotes a section of code that would be put into the Unity editor.
 
