@@ -47,8 +47,6 @@ Before beginning, please ensure you have the following accounts and programs:
 | Commands, functions and file names are formatted in monospace font | `Canvas Scaler` |
 | Glossary defined terms have a link to the glossary page | [sprite] [sprite-glossary] |
 
-- Terms that are defined in the glossary will have a link
-
 ### Code Blocks
 This syntax denotes a section of code that would be put into the Unity editor.
 
@@ -82,19 +80,19 @@ void start()
 We will use message blocks to inform you of additional relevant information. Here are each possible message block.
 
 !!! warning
-    Indicates specific information that should be read before proceeding
+    Indicates specific information that should be read before proceeding.
 
 !!! success
-    Indicates what success looks like
+    Indicates what success looks like.
 
 !!! failure
     Specifies actions that may lead to unexpected behaviour.
 
 !!! info 
-    Indicates additional information
+    Indicates additional information.
 
 !!! tip
-    Indicates useful knowledge, such as keyboard shortcuts
+    Indicates useful knowledge, such as keyboard shortcuts.
 
 !!! bug
     Specifies actions that may cause an error.
