@@ -2,7 +2,8 @@
 
 | **Term**                  |  **Definition** <br id="glossary">    |
 |-----------                |------------------------------------   |
-| Canvas                    |   Area where all visible elements are located.  |
+| [Canvas][canvas-url]      |   Area where all visible elements are located.  |
+| [Collider][collider-url]    |   An invisible shape that defines the physical boundaries of a GameObject for the purpose of collisions. It allows the physics engine to calculate when objects touch or overlap.
 | Context Menu              |   A pop-up menu that appears typically by right-clicking.    |
 | Dedicated Graphics Card   |   A separate component installed in a computer that handles all visual processing tasks, providing better performance for graphic-intensive applications compared to integrated graphics. |
 | LTS                       |   Stands for Long-Term Support. It is a stable version maintained for an extended period of time with minimal changes.  |
@@ -19,6 +20,8 @@
 | Z Rotation                |   Rotation of an object around the Z-axis in a 3D coordinate system.  |
 
 <!-- Hyperlinks -->
+[canvas-url]: https://docs.unity3d.com/2022.1/Documentation/Manual/class-Canvas.html
+[collider-url]: https://docs.unity3d.com/2022.3/Documentation/ScriptReference/Collider.html
 [monobehaviour-url]: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MonoBehaviour.html
 [prefab-url]: https://docs.unity3d.com/2023.2/Documentation//Manual/CreatingPrefabs.html
 [render-pipelines-url]: https://docs.unity3d.com/6000.3/Documentation/Manual/render-pipelines.html

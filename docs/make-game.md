@@ -36,9 +36,9 @@ Unity has a built-in 2D physics system. We can use it to control the player thro
 
         ![Adding a component][add-component-gif]{ style="width: 650px;", .center }
 
-1. Check the player's [**Freeze Rotation Z**][z-rotation-glossary] checkbox in the [Rigidbody2D][rb2d-glossary] component settings.
+1. Check the player's [**Freeze Rotation Z**][z-rotation-glossary] checkbox in the **[Rigidbody2D][rb2d-glossary]** component settings.
 
-    > [Rigidbody2D][rb2d-glossary] > Constraints > Freeze Rotation > :white_check_mark: Z
+    > Rigidbody2D > Constraints > Freeze Rotation > :white_check_mark: Z
 
     ![freeze-rotation]
 
@@ -106,7 +106,7 @@ Now lets work on moving the player.
 1. Place these variables before the functions.
 
     ```C# linenums="5"
-    public [Rigidbody2D][rb2d-glossary] rb;
+    public Rigidbody2D rb;
 
     public float speed = 8f;
     public float jumpForce = 8f;
@@ -193,7 +193,7 @@ That's all for the player movement script. This is what the completed file shoul
 
     public class PlayerMovement : MonoBehaviour
     {
-        public [Rigidbody2D][rb2d-glossary] rb;
+        public Rigidbody2D rb;
 
         public float speed = 8f;
         public float jumpForce = 8f;
@@ -249,25 +249,25 @@ That's all for the player movement script. This is what the completed file shoul
 
 1. Save your Unity project by pressing ++ctrl+s++.
 
-Before testing the movement, we have to assign a value to the `[Rigidbody2D][rb2d-glossary]` variable
+Before testing the movement, we have to assign a value to the `Rigidbody2D rb` variable
 
 1. In the inspector, drag and drop the `[Rigidbody2D][rb2d-glossary]` component to the corresponding field in `PlayerMovement`
 
-    ![Assigning a value to [Rigidbody2D][rb2d-glossary] rb variable][assign-rb-gif]{ .center }
+    ![Assigning a value to Rigidbody2D rb variable][assign-rb-gif]{ .center }
 
-1. Hit **Play** and try moving the player around!
+1. Hit _Play_ and try moving the player around!
 
     !!! info
-        Use ++space++ to jump and use the arrow keys or `WASD` to move around.
+        Use ++space++ to jump and use the arrow keys or <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> to move around.
 
-    Feel free to change the `speed` and `jumpForce` variable values, as well as the `[Rigidbody2D][rb2d-glossary]`'s gravity scale in the inspector to your liking.
+    Feel free to change the `speed` and `jumpForce` variable values, as well as the `Rigidbody2D`'s gravity scale in the inspector to your liking.
 
     !!! tip
         You can change your script variable values directly from the inspector
 
         ![PlayerMovement public variables][public-vars-image]{ .center }
 
- 1. Pause the **Play**  button before moving on to the next step.
+ 1. Pause the _Play_  button before moving on to the next step.
 
 ## Add a Goal
 Every game has a goal or victory condition that means the player has won once they have achieve that. Let's add that now. We will create coins that players can collect. Once they have collected every coin, they win the game.
@@ -290,13 +290,13 @@ Every game has a goal or victory condition that means the player has won once th
 
 ### Create Coins User Interface (UI)
 
-1. Add a label to the scene by right clicking in the **Hierarchy** window
+1. Add a text object to the scene by right clicking in the **Hierarchy** window
 
     > UI (Canvas) > Text - TextMeshPro
 
     You will get a pop-up to download [TextMeshPro (TMP)] [textmesh-glossary] essentials.
 
-1. Click **Import TMP Essentials**.
+1. Click _Import TMP Essentials_.
 
 1. Close the TMP Importer window without importing the examples and extras.
 
@@ -640,7 +640,8 @@ Now your game can be won! Let's update the UI to show the score.
 
 
 <!-- Glossary -->
-*[Collider]: Bounds around an object that prevent other bounds from intersecting with it.
+[canvas-glossary]: glossary.md#canvas
+[collider-glossary]: glossary.md#collider
 [rb2d-glossary]: glossary.md#rigidbody2d
 [prefab-glossary]: glossary.md#prefab
 
