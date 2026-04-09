@@ -296,7 +296,7 @@ Every game has a goal or victory condition that means the player has won once th
 
     You will get a pop-up to download [TextMeshPro (TMP)] [textmesh-glossary] essentials.
 
-1. Click _Import TMP Essentials_.
+1. Click **Import TMP Essentials**.
 
 1. Close the TMP Importer window without importing the examples and extras.
 
@@ -310,13 +310,13 @@ Every game has a goal or victory condition that means the player has won once th
     !!! tip
         The best way to preview how the UI looks is through the **Game** view instead of the **Scene** view.
 
-1. Switch to the **Game** view
+1. Switch to the **Game** view.
 
 1. Change the preview resolution from "Free Aspect" to "16:9 Aspect" at the top of the **Game** view.
     
     This will force the display to a standard widescreen format, allowing you to view how the game would look on modern displays.
 
-1. Change back to **Scene** view
+1. Change back to **Scene** view.
 
 1. Click the [**Canvas**][canvas-glossary] button in the **Hierarchy** window.
 
