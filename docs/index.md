@@ -80,19 +80,19 @@ void start()
 We will use message blocks to inform you of additional relevant information. Here are each possible message block.
 
 !!! warning
-    Indicates specific information that should be read before proceeding
+    Indicates specific information that should be read before proceeding.
 
 !!! success
-    Indicates what success looks like
+    Indicates what success looks like.
 
 !!! failure
     Specifies actions that may lead to unexpected behaviour.
 
 !!! info 
-    Indicates additional information
+    Indicates additional information.
 
 !!! tip
-    Indicates useful knowledge, such as keyboard shortcuts
+    Indicates useful knowledge, such as keyboard shortcuts.
 
 !!! bug
     Specifies actions that may cause an error.
