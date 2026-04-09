@@ -372,7 +372,7 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 
         ![Main menu to Game then back to Main Menu][game-loop-gif]
 
-Finally we should add a quit button so people can stop playing the game
+    Finally we should add a quit button so people can stop playing the game.
 
 ### Add Quit Button
 
