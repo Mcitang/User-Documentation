@@ -23,7 +23,7 @@ Before beginning, please ensure you have the following accounts and programs:
 - A [Unity] [unity-url] account
 - An [itch.io][itch-url] account
 - [Unity Engine Hub][unity-hub-url] downloaded and installed
-- A way to zip and unzip a folder in your computer
+- A way to zip and unzip a folder in your computer, such as [7zip][7-zip-url].
 
 
 ## Objectives
@@ -44,10 +44,8 @@ Before beginning, please ensure you have the following accounts and programs:
 | Hover over underlined words for further explanation |   context menu |
 | Menu and Button Sequence. The > symbol indicates the flow of menu or button click actions. | > 2D Object > Sprites > Square |
 | Clickable buttons and sections within Unity are bolded |    **Hierarchy** window |
-| Commands and file names are formatted in monospace font | `Canvas Scaler` |
+| Commands, functions and file names are formatted in monospace font | `Canvas Scaler` |
 | Glossary defined terms have a link to the glossary page | [sprite] [sprite-glossary] |
-
-- Terms that are defined in the glossary will have a link
 
 ### Code Blocks
 This syntax denotes a section of code that would be put into the Unity editor.
@@ -82,19 +80,19 @@ void start()
 We will use message blocks to inform you of additional relevant information. Here are each possible message block.
 
 !!! warning
-    Indicates specific information that should be read before proceeding
+    Indicates specific information that should be read before proceeding.
 
 !!! success
-    Indicates what success looks like
+    Indicates what success looks like.
 
 !!! failure
     Specifies actions that may lead to unexpected behaviour.
 
 !!! info 
-    Indicates additional information
+    Indicates additional information.
 
 !!! tip
-    Indicates useful knowledge, such as keyboard shortcuts
+    Indicates useful knowledge, such as keyboard shortcuts.
 
 !!! bug
     Specifies actions that may cause an error.
@@ -109,6 +107,7 @@ We will use message blocks to inform you of additional relevant information. Her
 [itch-url]: https://itch.io
 [unity-hub-url]: https://unity.com/products/unity-engine
 [sprite-glossary]: glossary.md
+[7-zip-url]: https://www.7-zip.org/download.html
 
 <!-- Images -->
 [Unity Hub Image]: assets/index/empty-unity-hub.png

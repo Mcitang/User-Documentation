@@ -13,7 +13,7 @@ The Unity Editor is where you will assemble your game. This tutorial will use Un
 
 4. Install Unity 6.3 LTS under the tab **Official Releases**.
 
-???+ info "Version"
+!!! info "Version"
     Any official release of Unity 6 will work. The Unity Hub will recommend version 6.4 (6000.4.1f1), but this tutorial will use Unity 6.3 LTS (6000.3.12f1) since it is more stable and will be supported for longer.
 
 ![GIF for installing Unity Editor][install-editor-gif]
@@ -175,11 +175,6 @@ Now that we have a player character, we will add a floor for them to stand on.
 [vs-install-success]: assets/project-setup/vs-install-success.png
 [install-success]: assets/project-setup/install-success.png
 [new-project]: assets/project-setup/new-project.png
-[hierarchy]: assets/project-setup/hierarchy.png
-[inspector]: assets/project-setup/inspector.png
-[project-files]: assets/project-setup/project-files.png
-[scene-view]: assets/project-setup/scene-view.png
-[game-view]: assets/project-setup/game-view.png
 [backends-warning]: assets/project-setup/backends-warning.png
 [add-square-sprite]: assets/project-setup/add-square-sprite.png
 

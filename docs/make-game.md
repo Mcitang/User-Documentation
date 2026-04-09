@@ -1,6 +1,6 @@
 # Make A 2D Game Scene
 
-## Prepare the stage
+## Prepare the Stage
 
 It would be boring if there was nothing but a floor, right? So let's add some platforms and walls!
 
@@ -27,16 +27,16 @@ It would be boring if there was nothing but a floor, right? So let's add some pl
 
 
 ### Add Physics to the Player
-Unity has a built-in 2D physics system. We can use it to control the player through a **Rigidbody2D** component. It also takes care of other things for us, like momentum and gravity.
+Unity has a built-in 2D physics system. We can use it to control the player through a **[Rigidbody2D][rb2d-glossary]** component. It also takes care of other things for us, like momentum and gravity.
 
-1. Add a **Rigidbody2D** component to the red square player sprite.
+1. Add a **[Rigidbody2D][rb2d-glossary]** component to the red square player sprite.
 
     ???+ question "How to add a component?"
         Click _Add Component_ in the inspector, under the existing components
 
         ![Adding a component][add-component-gif]{ style="width: 650px;", .center }
 
-1. Check the player's _Freeze Rotation Z_ checkbox in the Rigidbody2D component settings.
+1. Check the player's [**Freeze Rotation Z**][z-rotation-glossary] checkbox in the **[Rigidbody2D][rb2d-glossary]** component settings.
 
     > Rigidbody2D > Constraints > Freeze Rotation > :white_check_mark: Z
 
@@ -47,7 +47,7 @@ Unity has a built-in 2D physics system. We can use it to control the player thro
 1. Press the **Play** button.
 
     You will see the Player now falls as if there was gravity. They should fall right through the stage.
-    That's because the **Rigidbody2D** doesn't know the floor is supposed to be solid. For that we will need a Collider.
+    That's because the **[Rigidbody2D][rb2d-glossary]** doesn't know the floor is supposed to be solid. For that we will need a Collider.
 
 ### Add Colliders to Rectangles
 
@@ -61,34 +61,18 @@ Now lets work on moving the player.
 
 ## Player Movement
 
-### Legacy Input System
-Before we start, we need to enable the legacy input system. It is easier for beginners, but less versatile than the new one. Since the old one is deprecated, it is not active by default. Let's fix that.
-
-1. Open project settings
-
-1. Go to player
-
-1. Other settings
-
-1. Active Input Handler: Both
-
-Unity will ask to restart the editor, then the legacy input system will be active.
-
-### Add Movement!
+### Add Movement
 
 1. Create a Scripts folder by right clicking anywhere in the Project files section.
-    > Create > Folder
+> Create > Folder
 
-1. Name the folder as *Scripts*.
+1. Name the folder as `Scripts`.
 
-1. Enter the Scripts folder by double clicking on it.
+1. Enter the `Scripts` folder by double clicking on it.
 
-1. Add a new MonoBehaviour Script called `PlayerMovement` to the _Scripts_ folder.
+1. Add a new [MonoBehaviour][Monobehaviour-glossary] Script called `PlayerMovement` to the `Scripts` folder.
     
     > Create > MonoBehaviour Script
-
-    ??? question "What is a MonoBehaviour"
-        MonoBehaviour is a base class in Unity that allows you to create scripts that can be attached to GameObjects
 
 1. Add the `PlayerMovement` component to your player.
 
@@ -98,7 +82,7 @@ Unity will ask to restart the editor, then the legacy input system will be activ
         This action should open Microsoft Visual Studio if you have it correctly installed.
 
     !!! success
-        This is what the empty script will look like
+        This is what the empty script will look like.
 
         ```C# linenums="1"
         using UnityEngine;
@@ -119,7 +103,7 @@ Unity will ask to restart the editor, then the legacy input system will be activ
         }
         ```
 
-1. Setup variables before the functions.
+1. Place these variables before the functions.
 
     ```C# linenums="5"
     public Rigidbody2D rb;
@@ -176,7 +160,7 @@ Unity will ask to restart the editor, then the legacy input system will be activ
     }
     ```
 
-1. Create a function to calculate your jump
+1. Create a function to calculate your jump.
 
     ```C# linenums="1"
     private void Jump()
@@ -188,7 +172,7 @@ Unity will ask to restart the editor, then the legacy input system will be activ
     }
     ```
 
-1. Add your new jump function to `Update()`
+1. Add your new jump function to `Update()`.
     
     ```C# linenums="1" hl_lines="5"
     // Update is called once per frame
@@ -265,16 +249,16 @@ That's all for the player movement script. This is what the completed file shoul
 
 1. Save your Unity project by pressing ++ctrl+s++.
 
-Before hitting _Play_, we have to assign a value to the `Rigidbody2D` variable
+Before testing the movement, we have to assign a value to the `Rigidbody2D rb` variable
 
-1. In the inspector, drag and drop the `Rigidbody2D` component to the corresponding field in `PlayerMovement`
+1. In the inspector, drag and drop the `[Rigidbody2D][rb2d-glossary]` component to the corresponding field in `PlayerMovement`
 
     ![Assigning a value to Rigidbody2D rb variable][assign-rb-gif]{ .center }
 
-1. Hit play and try moving the player around!
+1. Hit _Play_ and try moving the player around!
 
     !!! info
-        Use ++space++ to jump and use the arrow keys or WASD to move around.
+        Use ++space++ to jump and use the arrow keys or <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> to move around.
 
     Feel free to change the `speed` and `jumpForce` variable values, as well as the `Rigidbody2D`'s gravity scale in the inspector to your liking.
 
@@ -283,17 +267,18 @@ Before hitting _Play_, we have to assign a value to the `Rigidbody2D` variable
 
         ![PlayerMovement public variables][public-vars-image]{ .center }
 
- 1. Pause the play button before moving on to the next step. 
+ 1. Pause the _Play_  button before moving on to the next step.
 
 ## Add a Goal
+Every game has a goal or victory condition that means the player has won once they have achieve that. Let's add that now. We will create coins that players can collect. Once they have collected every coin, they win the game.
 
 ### Create Coins
 1. Add a circle sprite to the scene. 
-    > 2D Object > Sprite > Circle
+> 2D Object > Sprite > Circle
 
 1. Change it to a golden color in the coin's **Inspector** window.
 
-1. Rename the circle to "_Coin_"
+1. Rename the circle to "_Coin_".
 
 1. Duplicate the coins until there are 2 on top of each platform.
 
@@ -302,23 +287,21 @@ Before hitting _Play_, we have to assign a value to the `Rigidbody2D` variable
 
     !!! success
         ![Coins on each platform][coins-image]
-    
-    The win condition for the game will be to collect all the coins.
 
 ### Create Coins User Interface (UI)
 
-1. Add a label to the scene by right clicking in the **Hierarchy** window
+1. Add a text object to the scene by right clicking in the **Hierarchy** window
 
     > UI (Canvas) > Text - TextMeshPro
 
-    You will get a pop-up to download TextMeshPro (TMP) essentials.
+    You will get a pop-up to download [TextMeshPro (TMP)] [textmesh-glossary] essentials.
 
 1. Click _Import TMP Essentials_.
 
 1. Close the TMP Importer window without importing the examples and extras.
 
     !!! success
-        You should see a _TextMesh Pro_ folder in your Project Files
+        You should see a _TextMesh Pro_ folder in your Project Files.
         ![TMP folder in your project files][tmp-files-image]
 
 1. Change the default text color to black in the **Inspector**.
@@ -333,15 +316,15 @@ Before hitting _Play_, we have to assign a value to the `Rigidbody2D` variable
     
     This will force the display to a standard widescreen format, allowing you to view how the game would look on modern displays.
 
-1. Change back to Scene view
+1. Change back to **Scene** view
 
-1. Click the **Canvas** button in the **Hierarchy** window.
+1. Click the [**Canvas**][canvas-glossary] button in the **Hierarchy** window.
 
 1. Find the `Canvas Scaler` component in the **Inspector** window.
 
 1. Change the UI Scale Mode from **Constant Pixel Size** to **Scale With Screen Size**
 
-1. Set your reference resolution to X=1920, Y=1080
+1. Set your reference resolution to X=1920, Y=1080.
 
     ???+ success
         ![Canvas Scaler component with 1920x1080 reference resolution][canvas-scaler-res-image]
@@ -350,10 +333,10 @@ Before hitting _Play_, we have to assign a value to the `Rigidbody2D` variable
 
     This will zoom you out to where you can see your whole canvas.
 
-1. Drag the text object you made (Text-tmp under Canvas in the **Hierarchy** window) to the top-left corner of the canvas
+1. Drag the text object you made (Text-tmp under Canvas in the **Hierarchy** window) to the top-left corner of the canvas.
 
     !!! success
-        If you go to Game View, this is what it should look like
+        This is wat it should look like in the **Game** view.
 
         ![The game view with a text label in the top-left corner][canvas-setup-image]
 
@@ -361,7 +344,7 @@ Before hitting _Play_, we have to assign a value to the `Rigidbody2D` variable
 
 ## Track the Score
 
-1. Give all coins a `BoxCollider2D`.
+1. Give all coins a `BoxCollider2D` component in the **Inspector** tab.
 
     !!! info
         If your scene view is still zoomed out, the objects you have are in the bottom left corner, zoom there if you want to select your coins from there.
@@ -369,7 +352,7 @@ Before hitting _Play_, we have to assign a value to the `Rigidbody2D` variable
     !!! tip
         You can add a component to many objects at once by holding shift when selecting the items and then adding the component. 
 
-1. Turn the collider into a Trigger by checking the **Is Trigger** box in all the coins' `BoxCollider2D` component settings.
+1. Turn the collider into a [Trigger][trigger-glossary] by checking the **Is Trigger** box in all the coins' `BoxCollider2D` component settings.
 
     ![Trigger BoxCollider2D][trigger-image]
 
@@ -382,7 +365,7 @@ Before hitting _Play_, we have to assign a value to the `Rigidbody2D` variable
     !!! success
         ![CoinManager with Coins inside][coin-manager-image]{ style="height: 250px;", .center }
 
-## Create CoinManager script
+## Create CoinManager Script
 
 1. Go into your "Scripts" folder in your Project files.
 
@@ -390,20 +373,20 @@ Before hitting _Play_, we have to assign a value to the `Rigidbody2D` variable
 
     > Create > MonoBehavour Script
 
-1. Add the `CoinManager` script component to the CoinManager object's **Inspector** window. 
+1. Add the `CoinManager` script component to the CoinManager object's **Inspector** window.
 
 1. Open the CoinManager script by double-clicking on it.
 
 1. Delete the `Update()` function since we won't need it.
 
-1. Declare the variables we will need
+1. Declare the variables we will need:
 
     ```C# linenums="5"
     private int score;
     private int totalCoins;
     ```
 
-1. Dynamically get the amount of coins
+1. Dynamically get the amount of coins:
 
     ```C# linenums="8" hl_lines="4"
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -437,7 +420,7 @@ Before hitting _Play_, we have to assign a value to the `Rigidbody2D` variable
 
 1. Save your Unity project by pressing ++ctrl+s++.
 
-## Coin script
+## Coin Script
 
 1. Go into your "Scripts" folder in your Project files.
 
@@ -445,7 +428,7 @@ Before hitting _Play_, we have to assign a value to the `Rigidbody2D` variable
 
     > Create > MonoBehavour Script
 
-1. Add the `Coin` script to all the coins. 
+1. Add the `Coin` script to all the coins.
 
     !!! tip
         You can add a component to many objects at once by holding shift when selecting the items and then adding the component.
@@ -454,8 +437,7 @@ Before hitting _Play_, we have to assign a value to the `Rigidbody2D` variable
 
 1. Delete the `Update()` method from `Coin`.
 
-1. Assign the `CoinManager` to `Coin` in the `Start()` method.
-
+1. Assign the `CoinManager` to `Coin` in the `Start()` method:
     ```C# linenums="7"
     void Start()
     {
@@ -463,7 +445,7 @@ Before hitting _Play_, we have to assign a value to the `Rigidbody2D` variable
     }
     ```
 
-1. Add a variable to hold the CoinManager
+1. Add a variable to hold the CoinManager:
 
     ```C# linenums="1" hl_lines="5"
     using UnityEngine;
@@ -480,7 +462,7 @@ Before hitting _Play_, we have to assign a value to the `Rigidbody2D` variable
     }
     ```
 
-1. Add a function to add to score in the `CoinManager` script
+1. Add a function to add to score in the `CoinManager` script:
 
     ```C# linenums="14"
     public void addToScore(int add = 1)
@@ -490,7 +472,7 @@ Before hitting _Play_, we have to assign a value to the `Rigidbody2D` variable
     }
     ```
 
-1. Create an `OnTriggerEnter2D` function
+1. Create an `OnTriggerEnter2D` function:
 
     ```C# linenums="12"
     private void OnTriggerEnter2D(Collider2D collision)
@@ -499,7 +481,7 @@ Before hitting _Play_, we have to assign a value to the `Rigidbody2D` variable
     }
     ```
 
-1. When the player enters the coin trigger, increase the score in `CoinManager` and kill the coin.
+1. When the player enters the coin trigger, increase the score in `CoinManager` and remove the coin:
 
     ```C# linenums="12" hl_lines="3-4"
     private void OnTriggerEnter2D(Collider2D collision)
@@ -509,7 +491,7 @@ Before hitting _Play_, we have to assign a value to the `Rigidbody2D` variable
     }
     ```
 
-1. Save your changes by pressing ++ctrl+s++
+1. Save your changes by pressing ++ctrl+s++. 
 
     !!! success
         Completed coin script:
@@ -593,7 +575,7 @@ Now your game can be won! Let's update the UI to show the score.
     public TextMeshProUGUI scoreLabel;
     ```
 
-1. Update the addScore function to update the score.
+1. Update the `addScore` function to update the score.
 
     ```C# linenums="16" hl_lines="4"
     public void addToScore(int add = 1)
@@ -643,7 +625,7 @@ Now your game can be won! Let's update the UI to show the score.
 
 1. Minimize Visual Studio.
 
-1. Drag and drop the text label in your scene's canvas into the "Score Label" slot in the `CoinManager` component, in the **Inspector** window.
+1. Drag and drop the text label in your scene's canvas into the `Score Label` slot in the `CoinManager` component, in the **Inspector** window.
 
 
     !!! success
@@ -658,11 +640,19 @@ Now your game can be won! Let's update the UI to show the score.
 
 
 <!-- Glossary -->
-*[Collider]: Bounds around an object that prevent other bounds from intersecting with it.
+[canvas-glossary]: glossary.md#canvas
+[collider-glossary]: glossary.md#collider
+[rb2d-glossary]: glossary.md#rigidbody2d
+[prefab-glossary]: glossary.md#prefab
 
 
 
 <!-- Hyperlinks -->
+[Monobehaviour-glossary]: glossary.md
+[trigger-glossary]: glossary.md
+[z-rotation-glossary]: glossary.md
+[textmesh-glossary]: glossary.md
+[canvas-glossary]: glossary.md
 
 <!-- Images -->
 [platforms-and-walls-image]: assets/make-game/platforms-walls-scene.png
