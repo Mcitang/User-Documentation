@@ -1,6 +1,6 @@
 # Setting Up Your First Project
 
-This page will take you through setting up a project in Unity for the first time. You will install the Unity Editor, which is what you will be using to add elements to your game. You will also create a new game project and add a player character to your game.
+This page will take you through setting up a project in Unity for the first time. You will install the Unity Editor, which is what you will be using to add elements to your game. You will also create a new game project and add a player character and a floor to your game.
 
 ## Install the Editor
 The Unity Editor is where you will assemble your game. This tutorial will use Unity 6.3 LTS (6000.3.12f1), but this should work on any version of Unity 6+.
@@ -9,7 +9,7 @@ The Unity Editor is where you will assemble your game. This tutorial will use Un
 
 2. Navigate to the **Installs** tab on the left side.
 
-3. Click **Install Editor**.
+3. Click **Install Editor** on the right side.
 
 4. Install Unity 6.3 LTS under the tab **Official Releases**.
 
@@ -30,13 +30,13 @@ The Unity Editor is where you will assemble your game. This tutorial will use Un
 
     1. Click **Continue**.
 
-    1. Wait for Visual Studio to popup asking for which Workloads you want to install with it.
+    1. Wait for Visual Studio to ask which Workloads you want to install with it.
 
     1. Scroll down and ensure that _Game Development with Unity_ addon is checked under the **Workloads** tab.
 
         ![Game Development with Unity workload checked][vs-unity-workload]
 
-    1. Press the install button.
+    1. Press the **install** button.
 
     1. Wait for Editor and Visual Studio downloads to complete.
 
@@ -64,35 +64,35 @@ The Unity Editor is where you will assemble your game. This tutorial will use Un
     1. After the changes apply, close Visual Studio.
 
 !!! success
-    When the install completes, you should see the editor in the **Installs** tab
+    When the install completes, you should see the editor in the **Installs** tab.
 
     ![Editor in the Installs tab][install-success]
 
 
 ## Create a Project
-Great! Now that you have the Editor and Visual Studio installed, we can begin creating your first Unity project.
+Great! Now that you have the Editor and Visual Studio installed, we can begin creating your first Unity project which will be a simple platform game.
 
-1. Go to the **Projects** tab on the right side of your Unity Hub window
+1. Go to the **Projects** tab on the left side of your Unity Hub window.
    
-1. Click **+New Project**
+1. Click **+New Project**.
      <!-- ![new-project] -->
 
-1. Select the **Universal 2D Core Template** under the **Core** tab
+1. Select the **Universal 2D Core Template** under the **Core** tab.
 
-1. Name your project
+1. Name your project.
 
-1. Choose project location
+1. Choose project location.
 
-1. Click **+Create Project**
+1. Click **+Create Project**.
 
     ![GIF for Creating a 2D Unity project][create-project-gif]
 
 !!! success
-    You should now see the Unity Editor creating your project
+    You should now see the Unity Editor creating your project.
 
     ![Unity Editor creating project loading bar][project-creation-loading-image]
 
-Once it loads, you will see the Unity Editor open up
+Once it loads, you will see the Unity Editor open up.
 
 !!! success
     ![Image of the Unity Editor][default-unity-editor-image]
@@ -103,15 +103,16 @@ There is one more thing we need to do before adding anything. We will activate t
 !!! warning
     The legacy input system is easier to use for beginners, but it will be deprecated in future versions. Once you get more comfortable with the engine, switching to the new input system is strongly recommended.
 
-1. In the menu bar, select **Edit > Project Settings**.
+1. In the menu bar, select **Project Settings**.
+> Edit > Project Settings
 
-1. Using the searchbar in the top-right corner of the **Project Settings**, search for "Input".
+1. Search for "Input" using the searchbar in the top-right corner of **Project Settings**.
 
 1. In the left-hand sidebar of the **Project Settings** window, select the **Player** category.
 
 1. Scroll down and open the **Other Settings** dropdown.
 
-1. Find Active Input Handling: Scroll down to the Other Settings section (you may need to expand it).
+1. Scroll down to the **Other Settings** section to find the section labeled as Active Input Handling.
 
 1. Look for the Configuration subheading to find the Active Input Handling dropdown menu.
 
@@ -121,33 +122,6 @@ There is one more thing we need to do before adding anything. We will activate t
 
 1. Click _Apply_ to restart the editor.
 
-    {++Add gif++}
-
-
-The _Project Files_ at the bottom of the screen is a window that is the central hub for navigating, organizing and managing all files, assets and folders in the game project.
-
-![project-files]
-
-The _Scene View_ at the center of the screen is an interactive sandbox used to help you construct, arrange and edit the game world.
-![scene-view]
-
-The _Game View++_ tab when selected, appears at the center of the screen and is the window that simulates and renders the final output of the project, showing what a player will see when the game is played. It currently shows a blue screen which is expected.
-![game-view]
-
-## Switch to Old Input System
-There is one more thing we need to do before adding anything. We will switch to the old input system, which is easier and more straight forward to use for simple games compared to the newer input system.
-
-1. Go to the top menu and select **Edit > Project Settings.**
-2. In the left-hand sidebar of the **Project Settings** window, select the **Player** category.
-3. Scroll down to the **Other Settings** section.
-4. Look for the Configuration subheading to find the **Active Input Handling** dropdown menu.
-5. Click the dropdown and select **Input Manager (Old)**.
-6. Restart the Editor: Unity will prompt you to restart the editor to apply these changes. Click Yes.
-
-!!! warning
-    Unity may ask you if you want to enable backends. Click no??? also need to replace screenshot
-
-![backends-warning]
 ## Create the Player and Floor
 Now we can start adding objects. This section will guide you through shapes to your game. You will add 2 squares, one representing the player, and another representing the floor. Ensure that the editor is on the **Scene** view instead of the **Game** view. We will start with the player first.
 
@@ -155,7 +129,7 @@ Now we can start adding objects. This section will guide you through shapes to y
 ## Create Player
 
 
-1. Add a square sprite to the scene from the Hierarchy tab's **+** button.
+1. Add a square [sprite] [sprite-glossary] to the scene from the **Hierarchy** tab's **+** button:
 > 2D Objects > Sprites > Square
 
     ![add-square-sprite]
@@ -172,7 +146,7 @@ Now we can start adding objects. This section will guide you through shapes to y
 ## Create the Floor
 Now that we have a player character, we will add a floor for them to stand on.
 
-4. Add another square sprite to the scene
+4. Add another square sprite to the scene.
 > 2D Objects > Sprites > Square
 
 5. Name the second sprite "_Floor_" in the **Inspector** tab.
@@ -192,6 +166,7 @@ Now that we have a player character, we will add a floor for them to stand on.
 
 <!-- Hyperlinks -->
 [itch-assets-url]: https://itch.io
+[sprite-glossary]: glossary.md
 
 <!-- Images -->
 [vs-studio-installer]: assets/project-setup/vs-studio-installer.png
