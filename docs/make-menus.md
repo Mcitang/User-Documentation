@@ -4,17 +4,17 @@ We now have the core parts of our game. Let's make some menus for the player to 
 
 ## Setup
 
-1. Open the "Scenes" folder in your Project files.
+1. Open the "Scenes" folder in your Project Files.
 
-1. Rename the current scene from "_SampleScene_" to "_Game_".
+1. Rename the current scene from `SampleScene` to `Game`.
 
-1. Right click anywhere in your Project files and Create a new Scene called "_Main Menu_".
+1. Right click anywhere in your Project files and Create a new Scene called "_Main Menu_":
 
     > Create > Scene > Scene
 
 1. Open your main menu scene by double-clicking it in the Project Files.
 
-1. Add a label through right clicking in the **Hierarchy** window.
+1. Add a label through right clicking in the **Hierarchy** window:
 
     > UI (Canvas) > Text - TextMeshPro
 
@@ -50,7 +50,7 @@ We now have the core parts of our game. Let's make some menus for the player to 
 
         !["Main Menu" Label][main-menu-label-image]{ .center }
 
-1. Add a button
+1. Add a button:
 
     > UI (Canvas) > Button - TextMeshPro
 
@@ -75,16 +75,16 @@ We now have the core parts of our game. Let's make some menus for the player to 
 
 ## Create Scene Transition System
 
-1. Open your "Scripts" folder in the Project files.
+1. Open your `Scripts` folder in the Project files.
 
-1. Create a new MonoBehaviour script called "SceneLoader".
+1. Create a new MonoBehaviour script called "SceneLoader":
     
     > Create > MonoBehavour Script.
 
-1. Create a new empty object.
+1. Create a new empty object:
     > Create Empty
 
-1. Name it "SceneLoader".
+1. Name it `SceneLoader`.
 
 1. Add the `SceneLoader` script to the SceneLoader game object.
 
@@ -94,7 +94,7 @@ We now have the core parts of our game. Let's make some menus for the player to 
 
 To do scene transitions, you must use the `UnityEngine.SceneManagement` package. Visual Studio will import a package automatically whenever you use a function the requires it.
 
-1. Create a `GoToScene` function that takes in an `int`.
+1. Create a `GoToScene` function that takes in an `int`:
 
     ```C# linenums="6"
     public void GoToScene(int sceneIndex)
@@ -103,7 +103,7 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
     }
     ```
     
-1. Overload the `GoToScene` with a function that takes in a `string`.
+1. Overload the `GoToScene` with a function that takes in a `string`:
 
     ```C# linenums="6"
     public void GoToScene(string sceneName)
@@ -112,7 +112,7 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
     }
     ```
 
-1. Save your changes by pressing ++ctrl+s++
+1. Save your changes by pressing ++ctrl+s++.
 
     !!! success
     
@@ -138,7 +138,7 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 
 1. Minimize Visual Studio.
 
-1. Select your play button and scroll down in the inspector.
+1. Select your play button and scroll down in the **Inspector**.
 
     At the very bottom of the `Button` component, you'll see an empty list with the header "On Click ()".
     This is an event. You give it a list of functions that will execute when the `OnClick()` event occurs.
@@ -149,7 +149,7 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 
     You will see a dropdown that says "No Function".
 
-1. Open the dropdown and select your `GoToScene` function that takes in a string.
+1. Open the dropdown and select your `GoToScene` function that takes in a string:
 
     > Scene Loader > GoToScene (string)
 
@@ -209,13 +209,13 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 
 1. Name it "WinScreen".
 
-1. Right-click the WinScreen object and add an Image object.
+1. Right-click the WinScreen object and add an Image object:
 
     > UI (Canvas) > Image
 
-1. Change the image color to black.
+1. Change the image color to black in the **Inspector** tab.
 
-1. Right-click the WinScreen object again and add a Text object.
+1. Right-click the WinScreen object again and add a Text object:
 
     > UI (Canvas) > Text - TextMeshPro
 
@@ -237,7 +237,7 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 
         ![Win Screen in the hierarchy][win-screen-hierarchy-image]{ .center}
 
-1. Right-click WinScreen and create a Button.
+1. Right-click WinScreen and create a Button:
 
     > UI (Canvas) > Button - TextMeshPro
 
@@ -279,7 +279,7 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 
 ### Set up SceneLoader
 
-1. Create an empty object.
+1. Create an empty object in the **Hierarchy** tab:
     
     > Create Empty
 
@@ -298,13 +298,13 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 
 1. Open your `CoinManager` script.
 
-1. Add a reference to the WinScreen GameObject.
+1. Add a reference to the WinScreen GameObject:
 
     ```C# linenums="6"
     public GameObject winScreen;
     ```
 
-1. Hide the win screen on Start.
+1. Hide the win screen on Start:
 
     ```C# linenums="12" hl_lines="4"
     void Start()
@@ -314,7 +314,7 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
     }
     ```
 
-1. Show win screen when the player wins.
+1. Show win screen when the player wins:
 
     ```C# linenums="18" hl_lines="8"
     public void addToScore(int add = 1)
@@ -365,7 +365,7 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 1. Test it.
 
     !!! success
-        You are able to go from the Main Menu to the Game, and when you win you can go back to the Main Menu
+        You are able to go from the Main Menu to the Game, and when you win you can go back to the Main Menu.
 
         ![Main menu to Game then back to Main Menu][game-loop-gif]
 
@@ -417,11 +417,11 @@ Finally we should add a quit button so people can stop playing the game
         }
         ```
 
-1. Go to your quit button's _On Click ()_ list.
+1. Go to your quit button's `On Click ()` list.
 
     It should have the `GoToScene` function from `SceneLoader`
 
-1. Click the function dropdown and change it from `GoToScene` to `QuitGame`.
+1. Click the function dropdown and change it from `GoToScene` to `QuitGame`:
 
     > Scene Loader > QuitGame ()
 
