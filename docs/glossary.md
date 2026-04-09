@@ -2,12 +2,10 @@
 
 | **Term**      |  **Definition** <br id="glossary">    |
 |-----------    |------------------------------------   |
-| LTS           |   Stands for Long-Term Support. It is a stable version maintained for an extended period of time with minimal changes.  |
-| User Interface (UI)   |   UI, or User Interface, is the space where users interact with a device or software, including elements like screens, buttons, and menus.    |
-| Menu Bar      |   A UI element usually located at the top of an application window that provides access to various functions and commands through drop-down menus. It typically includes options like File, Edit, and Help.   |
+| Canvas           |   Area where all visible elements are located.  |
 | Context Menu  |   A pop-up menu that appears typically by right-clicking.    |
 | Dedicated Graphics Card |   A separate component installed in a computer that handles all visual processing tasks, providing better performance for graphic-intensive applications compared to integrated graphics.    |
-| Canvas           |   Area where all visible elements are located.  |
+| LTS           |   Stands for Long-Term Support. It is a stable version maintained for an extended period of time with minimal changes.  |
 | [MonoBehaviour][monobehaviour-url]    |   A base class in Unity used to create scripts that can be attached to GameObjects.   |
 | Sprite        |   A 2D image or animation computer graphic.    |
 | Trigger        |  A specialized collider component that allows objects to pass through it while triggering events or gameplay actions. |
