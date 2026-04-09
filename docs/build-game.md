@@ -8,7 +8,7 @@
 
 1. Rearrange your scenes so the Main Menu is at the top.
 
-    ???+ info
+    !!! info
         We put the Main Menu at the top, because that is the scene Unity opens when the game is run.
 
     !!! success
@@ -50,7 +50,7 @@
 
 1. Set "Kind of Project" to **Downloadable**.
 
-    ???+ info "About Web Builds"
+    !!! info "About Web Builds"
         For games meant to be played in browser, you should select _HTML_ instead of _Downloadable_.
 
 1. Press upload files and select your build zip folder.

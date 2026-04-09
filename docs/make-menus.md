@@ -425,7 +425,7 @@ Finally we should add a quit button so people can stop playing the game
 
     > Scene Loader > QuitGame ()
 
-    ???+ info "Testing the Quit Button"
+    !!! info "Testing the Quit Button"
         Testing the quit button will do nothing in the Unity Editor, it only works in the game build.
 
     !!! warning

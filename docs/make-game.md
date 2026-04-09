@@ -36,7 +36,7 @@ Unity has a built-in 2D physics system. We can use it to control the player thro
 
         ![Adding a component][add-component-gif]{ style="width: 650px;", .center }
 
-1. Check the player's **Freeze Rotation Z** checkbox in the Rigidbody2D component settings.
+1. Check the player's [**Freeze Rotation Z**][z-rotation-glossary] checkbox in the Rigidbody2D component settings.
 
     > Rigidbody2D > Constraints > Freeze Rotation > :white_check_mark: Z
 
@@ -294,7 +294,7 @@ Every game has a goal or victory condition that means the player has won once th
 
     > UI (Canvas) > Text - TextMeshPro
 
-    You will get a pop-up to download TextMeshPro (TMP) essentials.
+    You will get a pop-up to download [TextMeshPro (TMP)] [textmesh-glossary] essentials.
 
 1. Click **Import TMP Essentials**.
 
@@ -318,7 +318,7 @@ Every game has a goal or victory condition that means the player has won once th
 
 1. Change back to **Scene** view
 
-1. Click the **Canvas** button in the **Hierarchy** window.
+1. Click the [**Canvas**][canvas-glossary] button in the **Hierarchy** window.
 
 1. Find the `Canvas Scaler` component in the **Inspector** window.
 
@@ -352,7 +352,7 @@ Every game has a goal or victory condition that means the player has won once th
     !!! tip
         You can add a component to many objects at once by holding shift when selecting the items and then adding the component. 
 
-1. Turn the collider into a Trigger by checking the **Is Trigger** box in all the coins' `BoxCollider2D` component settings.
+1. Turn the collider into a [Trigger][trigger-glossary] by checking the **Is Trigger** box in all the coins' `BoxCollider2D` component settings.
 
     ![Trigger BoxCollider2D][trigger-image]
 
@@ -646,6 +646,10 @@ Now your game can be won! Let's update the UI to show the score.
 
 <!-- Hyperlinks -->
 [Monobehaviour-glossary]: glossary.md
+[trigger-glossary]: glossary.md
+[z-rotation-glossary]: glossary.md
+[textmesh-glossary]: glossary.md
+[canvas-glossary]: glossary.md
 
 <!-- Images -->
 [platforms-and-walls-image]: assets/make-game/platforms-walls-scene.png
