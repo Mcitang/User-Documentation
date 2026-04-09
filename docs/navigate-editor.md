@@ -1,6 +1,6 @@
 # Navigate The Editor
 
-This section will explain a few of the most important elements of the Editor's user interface.
+This section will explain a few of the most important elements of the Editor's user interface. {++More intro++}
 
 ### Hierarchy
 
@@ -46,6 +46,8 @@ At the top of the Hierarchy section is the Menu Bar which gives you access to sp
 ### Console
 
 The _Console_ is at the bottom of the screen is where all errors, warnings and logs are displayed. It shares its space with the _Project Files_ window.
+
+<!-- No conclusion -->
 
 
 
