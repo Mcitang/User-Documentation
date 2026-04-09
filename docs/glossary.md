@@ -2,13 +2,16 @@
 
 | **Term**                  |  **Definition** <br id="glossary">    |
 |-----------                |------------------------------------   |
+| Assets                    |   {++Add definition++}    |
 | [Canvas][canvas-url]      |   Area where all visible elements are located.  |
-| [Collider][collider-url]    |   An invisible shape that defines the physical boundaries of a GameObject for the purpose of collisions. It allows the physics engine to calculate when objects touch or overlap.
+| [Collider][collider-url]    |   An invisible shape that defines the physical boundaries of a GameObject for the purpose of collisions. It allows the physics engine to calculate when objects touch or overlap.   |
+| Component                 |   {++Add definition++}
 | Context Menu              |   A pop-up menu that appears typically by right-clicking.    |
 | Dedicated Graphics Card   |   A separate component installed in a computer that handles all visual processing tasks, providing better performance for graphic-intensive applications compared to integrated graphics. |
+| GameObject                | {++Add definition++}
 | LTS                       |   Stands for Long-Term Support. It is a stable version maintained for an extended period of time with minimal changes.  |
 | [MonoBehaviour][monobehaviour-url]    |   A base class in Unity used to create scripts that can be attached to GameObjects.   |
-| Prefab
+| Prefab                    |   {++Add definition++}    |
 | [Render Pipeline][render-pipelines-url]   |   A series of operations that take the contents of a Scene and display them on a screen. Unity provides several pipelines to balance visual fidelity with performance.    |
 | [Rigidbody2D][rigidbody2d-url]    |   A component that puts a GameObject under the control of Unity's physics engine, allowing it to respond to gravity and forces.   |
 | Scene                     |   A container that holds a specific part of your game, such as a level, a main menu, or a loading screen. |
