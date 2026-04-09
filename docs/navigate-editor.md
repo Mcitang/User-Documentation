@@ -1,4 +1,4 @@
-# Setting Up Your First Project
+    # Navigate The Editor
 
 This section will explain a few of the most important elements of the Editor's user interface.
 
