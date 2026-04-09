@@ -68,7 +68,6 @@ The Unity Editor is where you will assemble your game. This tutorial will use Un
 
     ![Editor in the Installs tab][install-success]
 
-
 ## Create a Project
 Great! Now that you have the Editor and Visual Studio installed, we can begin creating your first Unity project which will be a simple platform game.
 
