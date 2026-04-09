@@ -11,9 +11,9 @@ This documentation is designed for users who want to start learning basic game d
 All examples and instructions are designed for Windows and have not been tested with Mac or Linux. A dedicated graphics card is strongly recommended, but not required.
 
 ## Prerequisite Knowledge
-Working knowledge of programming data types strings, ints and floats. You are expected to know what these data types are, and what they represent in programming languages.
+- Working knowledge of programming data types strings, ints and floats - you are expected to know what these data types are, and what they represent in programming languages.
 
-Experience with statically typed programming languages.
+- Experience with statically typed programming languages such as Java or C - you are expected to know how to write a small class with a name, fields, a constructor and methods.
 
 ## Software Requirements
 Before beginning, please ensure you have the following accounts and programs:
@@ -37,16 +37,17 @@ Before beginning, please ensure you have the following accounts and programs:
 
 ## Typographical Conventions
 
-### Abbreviation
-Unity uses C# which uses Object Oriented Programming (OOP)
+| **Convention**      |  **Example**   |
+|-----------    |------------------------------------   |
+| Hover over underlined words for further explanation |   context menu |
+| Menu and Button Sequence. The > symbol indicates the flow of menu or button click actions. | > 2D Object > Sprites > Square |
+| Clickable buttons and sections within Unity are bolded |    **Hierarchy** window |
+| Commands and file names are formatted in monospace font | `Canvas Scaler` |
+| Glossary defined terms have a link to the glossary page | [sprite] [sprite-glossary] |
 
-### Context Menu
-For words that are underlined with dots, you can hover over them and an explanation of the word will pop up. This is an example of that: context menu.
+- Terms that are defined in the glossary will have a link
 
-For example: Right-click on the hierarchy and create a square
-> 2D Object > Sprites > Square
-
-### Code block
+### Code Blocks
 This syntax denotes a section of code that would be put into the Unity editor.
 
 ```C#
@@ -75,29 +76,8 @@ void start()
 ### Keyboard shortcuts
 ++ctrl+shift+s++
 
-### Alternates
-=== "C Script"
-    ```js
-    int main() {
-        printf("Hello World");
-        return 0;
-    }
-    ```
-
-=== "Python File"
-    ```py
-    def main():
-        print("Hello World")
-    ```
-
-### Image
-![Unity Hub Image][]
-
 ## Notes and Warning Messages
-We will use message blocks to inform you of additional relevant information. Here are each possible message block, from most important to least important. 
-
-!!! danger
-    Indicates an action that could cause an error or application to crash
+We will use message blocks to inform you of additional relevant information. Here are each possible message block.
 
 !!! warning
     Indicates specific information that should be read before proceeding
@@ -117,12 +97,6 @@ We will use message blocks to inform you of additional relevant information. Her
 !!! bug
     Specifies actions that may cause an error.
 
-???+ note "Collapsible Note"
-    Provides a reminder for something
-
-???+ info "Collapsible Info"
-    Provides additional information on a topic
-
 <!-- Glossary definitions at the bottom -->
 *[OOP]: Object-Oriented Programming
 *[context menu]: A pop-up menu that appears to offer additional information when you hover over them.
@@ -133,6 +107,7 @@ We will use message blocks to inform you of additional relevant information. Her
 [unity-url]: https://unity.com/
 [itch-url]: https://itch.io
 [unity-hub-url]: https://unity.com/products/unity-engine
+[sprite-glossary]: glossary.md
 
 <!-- Images -->
 [Unity Hub Image]: assets/index/empty-unity-hub.png
