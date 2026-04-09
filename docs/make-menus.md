@@ -291,6 +291,9 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 
 1. Type "MainMenu" into the parameter field.
 
+    !!! warning
+        Make sure your scene name matches what you type into the `GoToScene` string parameter. If it doesn't it will be unable to find the scene and it will not work.
+
     ???+ success
         ![On Click () event function call list for the Back To Menu button][menu-button-onclick-image]{ .center }
 
