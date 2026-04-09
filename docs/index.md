@@ -6,14 +6,16 @@ Unity is a game engine that is used to develop 2D, 3D, VR and AR experiences. Wh
 
 
 ## Intended Users
-This documentation is designed for users who want to start learning basic game development in Unity. This guide does not expect you to have any experience in game development.
+This documentation is designed for beginning developers who want to start learning basic game development in Unity. This guide does not expect you to have any experience in game development.
 
-All examples and instructions are designed for Windows and have not been tested with Mac or Linux. A dedicated graphics card is strongly recommended, but not required.
-
-## Prerequisite Knowledge
+## Prerequisites
 - Working knowledge of programming data types strings, ints and floats - you are expected to know what these data types are, and what they represent in programming languages.
 
 - Experience with statically typed programming languages such as Java or C - you are expected to know how to write a small class with a name, fields, a constructor and methods.
+
+- A computer with Windows operating system.
+
+- Knowledge of keyboard and gaming terminologies.
 
 ## Software Requirements
 Before beginning, please ensure you have the following accounts and programs:
@@ -57,7 +59,7 @@ void Start()
 }
 ```
 
-### Code annotation
+### Code Annotation
 The 'plus' symbol at the right of these lines of code denotes an explanation tooltip that will give further information on the line of code. Left-click on it to have the explanation appear.
 
 ```C# linenums="1" hl_lines="5"
@@ -73,7 +75,7 @@ void start()
 2. Explanation tooltip 2
 3. Did you notice the numbered lines?
 
-### Keyboard shortcuts
+### Keyboard Shortcuts
 ++ctrl+shift+s++
 
 ## Notes and Warning Messages
@@ -100,7 +102,6 @@ We will use message blocks to inform you of additional relevant information. Her
 <!-- Glossary definitions at the bottom -->
 *[OOP]: Object-Oriented Programming
 *[context menu]: A pop-up menu that appears to offer additional information when you hover over them.
-
 
 
 <!-- Hyperlinks -->
