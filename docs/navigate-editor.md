@@ -45,6 +45,12 @@ The _Game View_ tab when selected, appears at the center of the screen and is th
 
 
 
+<!-- Glossary -->
+[component-glossary]: glossary.md#Component
+[gameobject-glossary]: glossary.md#GameObject
+
+
+
 <!-- Hyperlinks -->
 [user-interface-glossary]: glossary.md
 
