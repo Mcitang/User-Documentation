@@ -1,34 +1,36 @@
-# Making The Menus
+# Make Menus
+
+We now have the core parts of our game. Let's make some menus for the player to use.
 
 ## Setup
 
-1. Open the "Scenes" folder in your Project files
+1. Open the "Scenes" folder in your Project files.
 
-1. Rename the current scene from "_SampleScene_" to "_Game_"
+1. Rename the current scene from "_SampleScene_" to "_Game_".
 
-1. Right click your Project filesCreate a new Scene, call it "_Main Menu_"
+1. Right click anywhere in your Project files and Create a new Scene called "_Main Menu_".
 
     > Create > Scene > Scene
 
-1. Open your main menu scene by double-clicking it in the Project Files
+1. Open your main menu scene by double-clicking it in the Project Files.
 
-1. Add a label
+1. Add a label through right clicking in the **Hierarchy** window.
 
     > UI (Canvas) > Text - TextMeshPro
 
-1. Double-click your Canvas in the hierarchy.
+1. Double-click the canvas button in the **Hierarchy** window.
 
-    This will zoom you out to where you can see your canvas
+    This will zoom you out to where you can see the whole of the canvas.
 
-1. Click your canvas
+1. Click your canvas.
 
-1. Find the `Canvas Scaler` component
+1. Find the `Canvas Scaler` component.
 
-1. Change the UI Scale Mode to _Scale With Screen Size_
+1. Change the UI Scale Mode to _Scale With Screen Size_.
 
-1. Set your reference resolution to X=1920, Y=1080
+1. Set your reference resolution to X=1920, Y=1080.
 
-1. Change these settings for the text object
+1. Change these settings for the text object.
 
     | Rect Transform    |           |
     | ---------     | ------    |
@@ -42,7 +44,7 @@
     | Text          | Main Menu |
     | Font Size     | 80px      |
     | Font Style    | **Bold**      |
-    | Alignment     | Justify center<br>Vertical align center |
+    | Alignment     | Center|
     
     ???+ success
 
@@ -52,7 +54,9 @@
 
     > UI (Canvas) > Button - TextMeshPro
 
-1. Change these settings for the button object
+    This will be the play button on the opening menu.
+
+1. Change these settings for the button object:
 
     | Rect Transform    |           |
     | ---------     | ------    |
@@ -61,7 +65,7 @@
     | Width         | 400       |
     | Height        | 100       |
 
-1. Change these settings for the button's text child object
+1. Change these settings for the button's text:
 
     | TextMeshPro - Text    |   |
     | ---------     | ------    |
@@ -69,28 +73,28 @@
     | Font Size     | 60px      |
     | Font Style    | **Bold**      |
 
-## Create scene transition system
+## Create Scene Transition System
 
-1. Open your "Scripts" folder in the Project files
+1. Open your "Scripts" folder in the Project files.
 
-1. Create a new MonoBehaviour script called "SceneLoader"
+1. Create a new MonoBehaviour script called "SceneLoader".
     
-    > Create > MonoBehavour Script
+    > Create > MonoBehavour Script.
 
-1. Create a new empty object
+1. Create a new empty object.
     > Create Empty
 
-1. Name it "SceneLoader"
+1. Name it "SceneLoader".
 
-1. Add the `SceneLoader` script to the SceneLoader game object
+1. Add the `SceneLoader` script to the SceneLoader game object.
 
-1. Open the `SceneLoader` script
+1. Open the `SceneLoader` script.
 
 ### Scene Transition
 
 To do scene transitions, you must use the `UnityEngine.SceneManagement` package. Visual Studio will import a package automatically whenever you use a function the requires it.
 
-1. Create a `GoToScene` function that takes in an `int`
+1. Create a `GoToScene` function that takes in an `int`.
 
     ```C# linenums="6"
     public void GoToScene(int sceneIndex)
@@ -99,7 +103,7 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
     }
     ```
     
-1. Overload the `GoToScene` with a function that takes in a `string`
+1. Overload the `GoToScene` with a function that takes in a `string`.
 
     ```C# linenums="6"
     public void GoToScene(string sceneName)
@@ -130,20 +134,20 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
         }
         ```
 
-### Linking buttons
+### Linking Buttons
 
-1. Minimize Visual Studio
+1. Minimize Visual Studio.
 
-1. Select your play button and scroll down in the inspector
+1. Select your play button and scroll down in the inspector.
 
     At the very bottom of the `Button` component, you'll see an empty list with the header "On Click ()".
     This is an event. You give it a list of functions that will execute when the `OnClick()` event occurs.
 
-1. Hit the "+" button under the list
+1. Hit the "+" button under the list.
 
-1. Drag and drop your SceneLoader object into the empty `GameObject` slot
+1. Drag and drop your SceneLoader object into the empty `GameObject` slot.
 
-    You will see a dropdown that says "No Function"
+    You will see a dropdown that says "No Function".
 
 1. Open the dropdown and select your `GoToScene` function that takes in a string.
 
@@ -154,45 +158,45 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 1. Type "Game" into the parameter field
 
     !!! warning
-        Strings are case-sensitive, make sure you write "Game" exactly like that
+        Strings are case-sensitive, make sure you write "Game" exactly like that.
 
     ???+ success
         ![On Click () event function call list for the Play button][play-button-onclick-image]{ .center }
 
-1. Save your Unity project by pressing ++ctrl+s++
+1. Save your Unity project by pressing ++ctrl+s++.
         
 
-### Add scenes to your build's scene list
+### Add Scenes to Scene List
 
-1. Open your Build Profiles
+1. Open your Build Profiles.
 
     > File > Build Profiles
     
-    or hit ++ctrl+shift+b++
+    or hit ++ctrl+shift+b++.
 
     ???+ success
         ![The Build Profiles menu][build-profiles-image]
 
-1. Press _Open Scene List_
+1. Press _Open Scene List_.
 
-1. Drag and drop all the scenes from your Project files into the Scene List
+1. Drag and drop all the scenes from your Project files into the Scene List.
 
     !!! tip
-        To select multiple things at a time, hold ++shift++ while selecting each of them
+        To select multiple things at a time, hold ++shift++ while selecting each of them.
 
     ![Scene List with Main Menu and Game][scene-list-gif]
 
-1. Close the Build Profiles menu
+1. Close the Build Profiles menu.
 
-1. Save your Unity project by pressing ++ctrl+s++
+1. Save your Unity project by pressing ++ctrl+s++.
 
-1. Test your menu
+1. Hit the play button to test your menu and ensure that you can proceed to the game after the menu screen. 
 
-## Return to Main Menu after winning
+## Return to Main Menu After Winning
 
-1. Go back to the Game scene by double-clicking it in the Project Files
+1. Go back to the Game scene by double-clicking it in the Project Files.
 
-1. Right-click the Canvas and create an Empty Game Object
+1. Right-click the Canvas in the **Hierarchy** window and create an Empty Game Object.
 
     > Create Empty
 
@@ -203,41 +207,41 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 
         ![Rect Transform][rect-transform-image]{ .center}
 
-1. Name it "WinScreen"
+1. Name it "WinScreen".
 
-1. Right-click the WinScreen object and add an Image object
+1. Right-click the WinScreen object and add an Image object.
 
     > UI (Canvas) > Image
 
-1. Change the image color to black
+1. Change the image color to black.
 
-1. Right-click the WinScreen object again and add a Text object
+1. Right-click the WinScreen object again and add a Text object.
 
     > UI (Canvas) > Text - TextMeshPro
 
-1. Select the text object, image object and WinScreen at the same time
+1. Select the text object, image object and WinScreen at the same time.
 
-1. In the rect transform, click the Anchor Presets in the left side of the component
+1. In the rect transform, click the Anchor Presets in the left side of the component.
 
-1. Hold ++alt+shift++ to set the pivot and position as well, then select furthest bottom right preset
+1. Hold ++alt+shift++ to set the pivot and position as well, then select furthest bottom right preset.
 
     ![Set Rect Transform anchors][rect-transform-anchor-gif]{ .center}
 
     !!! success
-        Your game view should be covered by the black image, with text in the top-left corner
+        Your game view should be covered by the black image, with text in the top-left corner.
 
         ![Win Screen Skeletopn game view][win-screen-skeleton-view-image]{ .center}
 
     ???+ failure "I can't see the text"
-        If you can't see the text, your image is most likely covering it. Make sure the items inside WinScreen are in this exact order from top to bottom
+        If you can't see the text, your image is most likely covering it. Make sure the items inside WinScreen are in this exact order from top to bottom.
 
         ![Win Screen in the hierarchy][win-screen-hierarchy-image]{ .center}
 
-1. Right-click WinScreen and create a Button
+1. Right-click WinScreen and create a Button.
 
     > UI (Canvas) > Button - TextMeshPro
 
-1. Change these settings for the text inside WinScreen
+1. Change these settings for the text inside WinScreen:
 
     | TextMeshPro - Text    |   |
     | ---------     | ------    |
@@ -247,7 +251,7 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
     | Vertex Color  | Yellow    |
     | Alignment     | Justify center<br>Vertical align center |
 
-1. Change these settings for the button in WinScreen 
+1. Change these settings for the button in WinScreen:
 
     | Transform     |           |
     | ---------     | ------    |
@@ -256,7 +260,7 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
     | Width         | 400       |
     | Height        | 75        |
     
-1. Change these settings for the text inside the button in WinScreen
+1. Change these settings for the text inside the button in WinScreen:
 
     | TextMeshPro - Text    |   |
     | ---------     | ------    |
@@ -264,43 +268,43 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
     | Font Size     | 40px      |
     | Font Style    | **Bold**      |
 
-1. Change these settings for the image in WinScreen
+1. Change these settings for the image in WinScreen:
 
     | Image     |           |
     | ---------     | ------    |
     | Color         | Alpha (A): 200    |
 
 
-## Win screen logic
+## Win Screen Logic
 
 ### Set up SceneLoader
 
-1. Create an empty object
+1. Create an empty object.
     
     > Create Empty
 
-1. Rename it to "SceneLoader"
+1. Rename it to "SceneLoader".
 
-1. Add the `SceneLoader` component
+1. Add the `SceneLoader` component.
 
-1. Add the `GoToScene` function that takes in a string to the "Back To Menu" button's On Click () function list
+1. Add the `GoToScene` function that takes in a string to the "Back To Menu" button's On Click () function list.
 
-1. Type "MainMenu" into the parameter field
+1. Type "MainMenu" into the parameter field.
 
     ???+ success
         ![On Click () event function call list for the Back To Menu button][menu-button-onclick-image]{ .center }
 
-### Show win screen on win
+### Show Win Screen If All Coins are Collected
 
-1. Open your `CoinManager` script
+1. Open your `CoinManager` script.
 
-1. Add a reference to the WinScreen GameObject
+1. Add a reference to the WinScreen GameObject.
 
     ```C# linenums="6"
     public GameObject winScreen;
     ```
 
-1. Hide the win screen on Start
+1. Hide the win screen on Start.
 
     ```C# linenums="12" hl_lines="4"
     void Start()
@@ -310,7 +314,7 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
     }
     ```
 
-1. Show win screen when the player wins
+1. Show win screen when the player wins.
 
     ```C# linenums="18" hl_lines="8"
     public void addToScore(int add = 1)
@@ -358,7 +362,7 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
         }
         ```
 
-1. Test it
+1. Test it.
 
     !!! success
         You are able to go from the Main Menu to the Game, and when you win you can go back to the Main Menu
@@ -367,19 +371,19 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
 
 Finally we should add a quit button so people can stop playing the game
 
-### Quit button
+### Add Quit Button
 
-1. Go to the main menu
+1. Go to the main menu.
 
-1. Duplicate your play button by selecting it and pressing ++ctrl+d++
+1. Duplicate your play button by selecting it and pressing ++ctrl+d++.
 
-1. Drag it down in the scene view or set its Y position to -150 so it is visible
+1. Drag it down in the scene view or set its Y position to -150 so it is visible.
 
-1. Change its text to say "Quit"
+1. Change its text to say "Quit".
 
-1. Open your `SceneLoader` script
+1. Open your `SceneLoader` script.
 
-1. Write this quit function
+1. Write this quit function:
 
     ```C# linenums="16"
     public void QuitGame()
@@ -413,16 +417,16 @@ Finally we should add a quit button so people can stop playing the game
         }
         ```
 
-1. Go to your quit button's _On Click ()_ list
+1. Go to your quit button's _On Click ()_ list.
 
     It should have the `GoToScene` function from `SceneLoader`
 
-1. Click the function dropdown and change it from `GoToScene` to `QuitGame`
+1. Click the function dropdown and change it from `GoToScene` to `QuitGame`.
 
     > Scene Loader > QuitGame ()
 
     ???+ info "Testing the Quit Button"
-        Testing the quit button will do nothing in the Unity Editor, it only works in the game build
+        Testing the quit button will do nothing in the Unity Editor, it only works in the game build.
 
     !!! warning
         Make sure you change the _On Click ()_ function for the quit button and not the play button. Since the inspector looks the same for both buttons, it will be easy to get confused.
