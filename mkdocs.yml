@@ -4,6 +4,8 @@ site_url: https://mcitang.github.io/User-Documentation/
 # Using it to override the page order
 nav:
  - Home: "index.md"
+ - Install Unity Editor: "install-editor.md"
+ - Navigate Editor: "navigate-editor.md"
  - Set Up Unity Project: "setup-project.md"
  - Navigate The Editor: "navigate-editor.md"
  - Create A Simple 2D Game: "make-game.md"
