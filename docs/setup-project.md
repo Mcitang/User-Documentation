@@ -175,11 +175,6 @@ Now that we have a player character, we will add a floor for them to stand on.
 [vs-install-success]: assets/project-setup/vs-install-success.png
 [install-success]: assets/project-setup/install-success.png
 [new-project]: assets/project-setup/new-project.png
-[hierarchy]: assets/project-setup/hierarchy.png
-[inspector]: assets/project-setup/inspector.png
-[project-files]: assets/project-setup/project-files.png
-[scene-view]: assets/project-setup/scene-view.png
-[game-view]: assets/project-setup/game-view.png
 [backends-warning]: assets/project-setup/backends-warning.png
 [add-square-sprite]: assets/project-setup/add-square-sprite.png
 
