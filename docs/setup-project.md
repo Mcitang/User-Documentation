@@ -3,7 +3,7 @@
 This page will take you through setting up a project in Unity for the first time. You will install the Unity Editor, which is what you will be using to add elements to your game. You will also create a new game project and add a player character and a floor to your game.
 
 ## Install the Editor
-The Unity Editor is where you will assemble your game. This tutorial will use Unity 6.3 LTS (6000.3.12f1), but this should work on any version of Unity 6+.
+The Unity Editor is where you will assemble your game. This tutorial will use Unity 6.3 [LTS][lts-glossary] (6000.3.12f1), but this should work on any version of Unity 6+.
 
 1. Open the Unity app.
 
@@ -11,7 +11,7 @@ The Unity Editor is where you will assemble your game. This tutorial will use Un
 
 3. Click **Install Editor** on the right side.
 
-4. Install Unity 6.3 LTS under the tab **Official Releases**.
+4. Install Unity 6.3 [LTS][lts-glossary] under the tab **Official Releases**.
 
 !!! info "Version"
     Any official release of Unity 6 will work. The Unity Hub will recommend version 6.4 (6000.4.1f1), but this tutorial will use Unity 6.3 LTS (6000.3.12f1) since it is more stable and will be supported for longer.
@@ -136,7 +136,7 @@ Now we can start adding objects. This section will guide you through shapes to y
 
 2. Rename the square to "_Player_" in the **Inspector** tab on the right.
 
-3. Change the sprite's color to <span style="color: red">red</span> in the **Inspector** tab.
+3. Change the sprite's color to red in the **Inspector** tab.
 
     !!! success
         ![The player object's inspector tab][player-inspector-image]
@@ -158,9 +158,11 @@ Now that we have a player character, we will add a floor for them to stand on.
 !!! success
     ![What your editor should look like after completing the project setup][setup-complete-image]
 
+
+
 <!-- Glossary -->
 *[LTS]: Long-Term Support, meaning it is a stable version maintained for an extended period with minimal changes.
-*[context menu]: A pop-up menu that appears typically by right-clicking
+[lts-glossary]: glossary.md#LTS
 
 
 
