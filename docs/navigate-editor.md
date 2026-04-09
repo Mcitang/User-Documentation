@@ -1,10 +1,10 @@
 # Setting Up Your First Project
 
-This section will explain a few of the most important elements of the Editor's user interface. 
+This section will explain a few of the most important elements of the Editor's user interface.
 
 ## Hierarchy
 
-The _Hierarchy_ section on the left of the screen is a dedicated window that displays every _GameObject_ currently present in the active _Scene_. It allows you to organize your objects and control how they interact with each other. At the top of the Hierarchy section is the Menu Bar which gives you access to speicfic
+The _Hierarchy_ section on the left of the screen is a dedicated window that displays every _GameObject_ currently present in the active _Scene_. It allows you to organize your objects and control how they interact with each other. At the top of the Hierarchy section is the Menu Bar which gives you access to specific Unity functions.
 
 ![hierarchy] 
 
@@ -48,6 +48,7 @@ The _Game View_ tab when selected, appears at the center of the screen and is th
 
 
 <!-- Hyperlinks -->
+[user-interface-glossary]: glossary.md
 
 <!-- Images -->
 [hierarchy]: assets/project-setup/hierarchy.png
