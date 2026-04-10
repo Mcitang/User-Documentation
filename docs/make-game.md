@@ -643,7 +643,7 @@ Now your game can be won! Let's update the UI to show the score.
 [canvas-glossary]: glossary.md#canvas
 [collider-glossary]: glossary.md#collider
 [rb2d-glossary]: glossary.md#rigidbody2d
-[prefab-glossary]: glossary.md#prefab
+[sprite-glossary]: glossary.md#sprite
 
 
 

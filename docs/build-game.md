@@ -96,6 +96,8 @@ You should now have two files: a `Build` folder, and a `Build` zip file.
 And you're done! You can leave every other field blank. Feel free to upload a cover image for the game if you would like. 
 You can share the URL that was generated with whoever you want and they will be able to download from [itch.io][itch-url] and play it. 
 
+
+
 <!-- Glossary -->
 
 
