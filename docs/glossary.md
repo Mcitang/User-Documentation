@@ -4,7 +4,7 @@
 |-----------                |------------------------------------   |
 | 2D { #2d }        |   Stands for two dimensions. A flat coordinate system using only the [X](#x) and [Y](#y) axis. Shapes are flat and have only two dimensions: length and width, with no thickness.     |
 | 3D { #3d }        |   Stands for three dimensions. A coordinate system using [X](#x), [Y](#y), and Z axes. Objects have length, width, and depth.     |
-| Assets { #assets }        |   Files used in a project, such as [Sprite](#sprite), audio, scripts, and models that make up the game.       |
+| Assets { #assets }        |   Files used in a project, such as [sprites](#sprite), audio files, scripts, and models that make up the game.    |
 | [Canvas][canvas-url] { #canvas }      |   Area where all visible elements are located.    |
 | [Collider][collider-url] { #collider }        |   An invisible shape that defines the physical boundaries of a [GameObject](#gameobject) for the purpose of collisions. It allows the physics engine to calculate when objects touch or overlap.      |
 | Component { #component }      |   A modular piece of functionality that can be attached to a [GameObject](#gameobject) to define its behavior or properties   |
@@ -26,7 +26,7 @@
 | X { #x }      |   Refers to the horizontal axis.  |
 | Y { #y }      |   Refers to the vertical axis.    |
 | Z { #z }      |   Refers to the depth axis.   |
-| Z Rotation { #z-rotation }        |   Rotation of an object around the Z-axis in a [3D](#3d) coordinate system.       |
+| Z Rotation { #z-rotation }        |   Rotation of an object around the Z-axis.    |
 
 <!-- Hyperlinks -->
 [canvas-url]: https://docs.unity3d.com/2022.1/Documentation/Manual/class-Canvas.html
