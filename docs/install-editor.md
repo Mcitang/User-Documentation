@@ -44,7 +44,7 @@ The Unity Editor is where you will assemble your game. This tutorial will use Un
 
 === "If you have Visual Studio 2022 installed"
     Since you already have Visual Studio 2022 installed, Unity will not install it for you. However, you must check if you have the **Game Development with Unity** workload installed. This is an essential addon
-    that will let help you debug and test your game code. 
+    that will help you debug and test your game code.
 
     1. Open the Visual Studio Installer.
 
