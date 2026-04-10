@@ -33,7 +33,7 @@ Now you can start adding objects. This section will guide you through adding sha
 
 ### Player
 
-1. Add a square [sprite] [sprite-glossary] to the scene from the **Hierarchy** tab's **+** button:
+1. Add a square [sprite][sprite-glossary] to the scene from the **Hierarchy** tab's **+** button:
 > 2D Objects > Sprites > Square
 
     ![add-square-sprite]
