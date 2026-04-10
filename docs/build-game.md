@@ -1,6 +1,6 @@
 # Building and Uploading Your Game
 
-{++Add intro here++}
+You have now completed your game! What if you wanted to share it with others? This section will take you through uploading your beautiful game to the internet through itch.io so anyone can access and download your game.  
 
 1. Open the **Build menu**:
 
@@ -90,12 +90,16 @@ You should now have two files: a `Build` folder, and a `Build` zip file.
 
 1. Press **Save**.
 
-    !!! success
-        ![Itch.io game page][game-page]
+And you're done! You can leave every other field blank. Feel free to upload a cover image for the game if you would like.
+You can share the URL that was generated with whoever you want and they will be able to download from [itch.io][itch-url] and play it.
 
-And you're done! You can leave every other field blank. Feel free to upload a cover image for the game if you would like. 
-You can share the URL that was generated with whoever you want and they will be able to download from [itch.io][itch-url] and play it. 
 
+## Conclusion
+Congratulations on making it through this tutorial! You now know how to build a simple game in Unity with shapes and components, make small scripts for the player to win the game, make menus for the player to navigate through the game, and how to upload the finished game so that others can play it.
+
+See below for what your page should look like if you copy and paste the URL that itch.io generated for you when you uploading your project:
+   !!! success
+     ![Itch.io game page][game-page]
 
 
 <!-- Glossary -->
