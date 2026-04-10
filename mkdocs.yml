@@ -7,13 +7,12 @@ nav:
  - Install Unity Editor: "install-editor.md"
  - Navigate Editor: "navigate-editor.md"
  - Set Up Unity Project: "setup-project.md"
- - Navigate The Editor: "navigate-editor.md"
  - Create A Simple 2D Game: "make-game.md"
  - Create A Menu & Set Up Transitions: "make-menus.md"
  - Build And Upload Your Game: "build-game.md"
  - Troubleshooting: "troubleshooting.md"
  - Glossary: "glossary.md"
- - Styleguide (REMOVE BEFORE DUE DATE): "styleguide.md"
+#  - Styleguide (REMOVE BEFORE DUE DATE): "styleguide.md"
 
 repo_url: https://github.com/Mcitang/User-Documentation
 repo_name: Mcitang/User-Documentation
@@ -30,7 +29,7 @@ theme:
     - navigation.top 
 
     # Integrates floating right table of contents to the headers floating left
-    # - toc.integrate
+    - toc.integrate
 
     # Allow for us to annotate code like // (1) and // (2)
     - content.code.annotate
@@ -39,7 +38,7 @@ theme:
     - content.code.copy
 
     # Stops the page from fully reloading
-    - navigation.instant
+    # - navigation.instant
 
     # Adds a next page and previous page footer
     - navigation.footer
@@ -76,7 +75,7 @@ markdown_extensions:
   # Overrides the TOC div header and controls which header numbers to include
   - toc:
       title: In this page
-      toc_depth: 2
+      toc_depth: 3
 
   # Allows customizing CSS by using {: #id, .class, style="property: value;" }
   - attr_list
@@ -116,5 +115,9 @@ extra_css:
   - stylesheets/util.style.css
   # Pages
   - stylesheets/pages/glossary.style.css
+
+# # JavaScript
+# extra_javascript:
+#   - scripts/glossary.js
 
 copyright: Copyright &copy; 2026 - Matthew Tang, Gustavo Rodriguez

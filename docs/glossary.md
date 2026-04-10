@@ -1,33 +1,32 @@
-# Glossary { #glossary }
+# Glossary
 
-| **Term**                  |  **Definition** <br id="glossary">    |
+| **Term**                  |  **Definition** <gusmadeupthiselementjusttoaddthisidforCSSstylepurposes id="glossary">    |
 |-----------                |------------------------------------   |
-| 2D                        |   Stands for two dimensions. 2D shapes are flat and have only two dimensions: length and width, with no depth or thickness.    |
-| 3D                        |   {++Add definition++}    |
-| AR                        |   {++Add definition++}    |
-| Assets                    |   {++Add definition++}    |
-| [Canvas][canvas-url]      |   Area where all visible elements are located.  |
-| [Collider][collider-url]    |   An invisible shape that defines the physical boundaries of a GameObject for the purpose of collisions. It allows the physics engine to calculate when objects touch or overlap.   |
-| Component                 |   {++Add definition++}
-| Context Menu              |   A pop-up menu that appears typically by right-clicking.    |
-| Dedicated Graphics Card   |   A separate component installed in a computer that handles all visual processing tasks, providing better performance for graphic-intensive applications compared to integrated graphics. |
-| GameObject                |   {++Add definition++}
-| LTS                       |   Stands for Long-Term Support. It is a stable version maintained for an extended period of time with minimal changes.  |
-| Menu Bar                  |   {+Add definition (its the thing that says "File, Edit, View, etc)++} |
-| [MonoBehaviour][monobehaviour-url]    |   A base class in Unity used to create scripts that can be attached to GameObjects.   |
-| Prefab                    |   {++Add definition++}    |
-| [Render Pipeline][render-pipelines-url]   |   A series of operations that take the contents of a Scene and display them on a screen. Unity provides several pipelines to balance visual fidelity with performance.    |
-| [Rigidbody2D][rigidbody2d-url]    |   A component that puts a GameObject under the control of Unity's physics engine, allowing it to respond to gravity and forces.   |
-| Scene                     |   A container that holds a specific part of your game, such as a level, a main menu, or a loading screen. |
-| Sprite                    |   A 2D image or animation computer graphic.    |
-| Trigger                   |   A specialized collider component that allows objects to pass through it while triggering events or gameplay actions. |
-| [TextMeshPro][tmp-url]    |   An easy-to-use system for high-quality text and UI included with the Unity Editor.   |
-| [Universal Render Pipeline (URP)][urp-url]    |   A multi-platform Render Pipeline that allows for high-quality graphics and fast performance across a wide range of devices, from mobile phones to high-end consoles.    |
-| [Vector2][vector2-url]    |   Used to represent 2D vectors and points, consisting of two values: X and Y.  |
-| VR                        |   {++Add definition++}    |
-| X                         |   Refers to the horizontal axis.  |
-| Y                         |   Refers to the vertical axis.    |
-| Z Rotation                |   Rotation of an object around the Z-axis in a 3D coordinate system.  |
+| 2D { #2d }        |   Stands for two dimensions. A flat coordinate system using only the [X](#x) and [Y](#y) axis. Shapes are flat and have only two dimensions: length and width, with no thickness.     |
+| 3D { #3d }        |   Stands for three dimensions. A coordinate system using [X](#x), [Y](#y), and Z axes. Objects have length, width, and depth.     |
+| Assets { #assets }        |   Files used in a project, such as [Sprite](#sprite), audio, scripts, and models that make up the game.       |
+| [Canvas][canvas-url] { #canvas }      |   Area where all visible elements are located.    |
+| [Collider][collider-url] { #collider }        |   An invisible shape that defines the physical boundaries of a [GameObject](#gameobject) for the purpose of collisions. It allows the physics engine to calculate when objects touch or overlap.      |
+| Component { #component }      |   A modular piece of functionality that can be attached to a [GameObject](#gameobject) to define its behavior or properties   |
+| Context Menu { #context-menu }        |   A pop-up menu that appears typically by right-clicking.     |
+| Dedicated Graphics Card { #dedicated-graphics-card }      |   A separate component installed in a computer that handles all visual processing tasks, providing better performance for graphic-intensive applications compared to integrated graphics      |
+| GameObject { #gameobject }        |   The fundamental object in Unity that represents anything in a scene. It acts as a container for [Component](#component)s        |
+| LTS { #lts }      |   Stands for Long-Term Support. It is a stable version maintained for an extended period of time with minimal changes.    |
+| Menu Bar { #menu-bar }        |   The top section of the editor window that contains options like File, Edit, View, and other controls        |
+| [MonoBehaviour][monobehaviour-url] { #monobehaviour }     |   A base class in Unity used to create scripts that can be attached to [GameObject](#gameobject)s.    |
+| Prefab { #prefab }        |   A reusable template of a [GameObject](#gameobject) and its [Component](#component)s that can be instantiated multiple times.        |
+| [Render Pipeline][render-pipelines-url] { #render-pipeline }      |   A series of operations that take the contents of a [Scene](#scene) and display them on a screen. Unity provides several pipelines to balance visual fidelity with performance.      |
+| [Rigidbody2D][rigidbody2d-url] { #rigidbody2d }       |   A [Component](#component) that puts a [GameObject](#gameobject) under the control of Unity's physics engine, allowing it to respond to gravity and forces.  |
+| Scene { #scene }      |   A container that holds a specific part of your game, such as a level, a main menu, or a loading screen      |
+| Sprite { #sprite }        |   A 2D image or animation computer graphic used to represent objects in a game.       |
+| Trigger { #trigger }      |   A specialized [Collider](#collider) component that allows objects to pass through it while triggering events or gameplay actions    |
+| [TextMeshPro][tmp-url] { #textmeshpro }       |   An easy-to-use system for high-quality text and UI included with the Unity Editor.  |
+| [Universal Render Pipeline (URP)][urp-url] { #universal-render-pipeline-urp }     |   A multi-platform [Render Pipeline](#render-pipeline) that allows for high-quality graphics and fast performance across a wide range of devices, from mobile phones to high-end consoles.    |
+| [Vector2][vector2-url] { #vector2 }       |   Used to represent 2D vectors and points, consisting of two values: [X](#x) and [Y](#y).     |
+| X { #x }      |   Refers to the horizontal axis.  |
+| Y { #y }      |   Refers to the vertical axis.    |
+| Z { #z }      |   Refers to the depth axis.   |
+| Z Rotation { #z-rotation }        |   Rotation of an object around the Z-axis in a [3D](#3d) coordinate system.       |
 
 <!-- Hyperlinks -->
 [canvas-url]: https://docs.unity3d.com/2022.1/Documentation/Manual/class-Canvas.html
