@@ -11,8 +11,9 @@
 | Component                 |   {++Add definition++}
 | Context Menu              |   A pop-up menu that appears typically by right-clicking.    |
 | Dedicated Graphics Card   |   A separate component installed in a computer that handles all visual processing tasks, providing better performance for graphic-intensive applications compared to integrated graphics. |
-| GameObject                | {++Add definition++}
+| GameObject                |   {++Add definition++}
 | LTS                       |   Stands for Long-Term Support. It is a stable version maintained for an extended period of time with minimal changes.  |
+| Menu Bar                  |   {+Add definition (its the thing that says "File, Edit, View, etc)++} |
 | [MonoBehaviour][monobehaviour-url]    |   A base class in Unity used to create scripts that can be attached to GameObjects.   |
 | Prefab                    |   {++Add definition++}    |
 | [Render Pipeline][render-pipelines-url]   |   A series of operations that take the contents of a Scene and display them on a screen. Unity provides several pipelines to balance visual fidelity with performance.    |

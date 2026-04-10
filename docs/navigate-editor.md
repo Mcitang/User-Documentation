@@ -1,10 +1,10 @@
 # Navigate The Editor
 
-This section will explain a few of the most important elements of the Editor's user interface.
+This section will explain a few of the most important elements of the Editor's user interface. {++More intro++}
 
 ### Hierarchy
 
-The _Hierarchy_ section on the left of the screen is a dedicated window that displays every _GameObject_ currently present in the active _Scene_. It allows you to organize your objects and control how they interact with each other. At the top of the Hierarchy section is the Menu Bar which gives you access to specific Unity functions.
+The _Hierarchy_ section on the left of the screen is a dedicated window that displays every _GameObject_ currently present in the active _Scene_. It allows you to organize your objects and control how they interact with each other.
 
 ![Hierarchy][hierarchy] 
 
@@ -23,10 +23,6 @@ The _Project Files_ at the bottom of the screen is a window that is the central 
 
 ![Project Files][project-files]
 
-### Console
-
-The _Console_ is at the bottom of the screen is where all errors, warnings and logs are displayed. It shares its space with the _Project Files_ window.
-
 ![Console View][console-view]
 
 ### Scene View
@@ -42,6 +38,16 @@ You can left-click on objects to select them, and hold right-click and drag to m
 The _Game View_ tab when selected, appears at the center of the screen and is the window that simulates and renders the final output of the project, showing what a player will see when the game is played. It currently shows a blue screen which is expected.
 
 ![Game View][game-view]
+
+### Menu Bar
+
+At the top of the Hierarchy section is the Menu Bar which gives you access to specific Unity functions. {++ADd more++}
+
+### Console
+
+The _Console_ is at the bottom of the screen is where all errors, warnings and logs are displayed. It shares its space with the _Project Files_ window.
+
+<!-- No conclusion -->
 
 
 
