@@ -1,7 +1,5 @@
 # Navigate The Editor
 
-This section will explain a few of the most important elements of the Editor's user interface. {++More intro++}
-
 This section will explain a few of the most important elements of the Editor's user interface. The interface is designed as a modular workspace, meaning every window can be docked, moved, or resized to fit your specific workflow. 
 
 ### Hierarchy
