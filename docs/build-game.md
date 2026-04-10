@@ -15,7 +15,7 @@ You have now completed your game! What if you wanted to share it with others? Th
         We put the Main Menu at the top, because that is the scene Unity opens when the game is run.
 
     !!! success
-        ![Scene List with Main Menu at the top][rearranged-scene-list]{ .center }
+        ![Scene List with Main Menu at the top][rearranged-scene-list]
 
 1. Go to the **Windows** tab under the Platforms category in the same **Build** window.
 

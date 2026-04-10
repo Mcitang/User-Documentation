@@ -72,7 +72,7 @@ Great! Now that you have the Editor and Visual Studio installed, you can begin c
 1. Go to the **Projects** tab on the left side of your Unity Hub window.
    
 1. Click **+New Project**.
-     <!-- ![new-project] -->
+     <!-- ![+New Project Button][new-project] -->
 
 1. Select the **Universal 2D Core Template** under the **Core** tab.
 
@@ -109,21 +109,14 @@ See below for what your screen should look like after completing this section:
 [sprite-glossary]: glossary.md
 
 <!-- Images -->
-[vs-studio-installer]: assets/project-setup/vs-studio-installer.png
-[vs-unity-workload]: assets/project-setup/vs-unity-workload.png
-[vs-install-check]: assets/project-setup/vs-install-check.png
-[vs-install-success]: assets/project-setup/vs-install-success.png
-[install-success]: assets/project-setup/install-success.png
-[new-project]: assets/project-setup/new-project.png
-[backends-warning]: assets/project-setup/backends-warning.png
-[add-square-sprite]: assets/project-setup/add-square-sprite.png
-
-[project-creation-loading-image]: assets/project-setup/project-creation-loading.png
-
-[default-unity-editor-image]: assets/project-setup/default-unity-editor.png
-[player-inspector-image]: assets/project-setup/player-inspector.png
-[setup-complete-image]: assets/project-setup/setup-complete.png
-
+[vs-studio-installer]: assets/project-setup/vs-studio-installer.png "The visual studio installer"
+[vs-unity-workload]: assets/project-setup/vs-unity-workload.png "Game Development with Unity workload checked"
+[vs-install-check]: assets/project-setup/vs-install-check.png "Visual Studio installation checked box"
+[vs-install-success]: assets/project-setup/vs-install-success.png "Visual Studio installed successfully"
+[install-success]: assets/project-setup/install-success.png "Editor in the Installs tab"
+[new-project]: assets/project-setup/new-project.png "+New Project Button"
+[project-creation-loading-image]: assets/project-setup/project-creation-loading.png "Unity Editor creating project loading bar"
+[default-unity-editor-image]: assets/project-setup/default-unity-editor.png "Image of the Unity Editor"
 <!-- GIFs -->
 [install-editor-gif]: assets/project-setup/install-editor.gif
 [create-project-gif]: assets/project-setup/create-project.gif

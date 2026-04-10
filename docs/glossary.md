@@ -22,7 +22,7 @@
 | [Rigidbody2D][rigidbody2d-url] { #rigidbody2d }   |   A [component](#component) that puts a [GameObject](#gameobject) under the control of Unity's physics engine, allowing it to respond to gravity and forces.  |
 | Scene { #scene }      |   A container that holds a specific part of your game, such as a level, a main menu, or a loading screen      |
 | Script { #script }    |   A file containing code.    |
-| Sprite { #sprite }        |   A [2D](#2d) image or animation computer graphic used to represent objects in a game.       |
+| [Sprite][sprite-url] { #sprite }        |   A [2D](#2d) image or animation computer graphic used to represent objects in a game.       |
 | Trigger { #trigger }      |   A specialized [collider](#collider) component that allows objects to pass through it while triggering events or gameplay actions    |
 | [TextMeshPro][tmp-url] { #textmeshpro }       |   An easy-to-use system for high-quality text and UI included with the Unity Editor.  |
 | UI { #ui }    |   Stands for User Interface. The space where users interact with a device or software, including elements like screens, buttons, and menus.   |
@@ -41,6 +41,7 @@
 [prefab-url]: https://docs.unity3d.com/2023.2/Documentation//Manual/CreatingPrefabs.html
 [render-pipelines-url]: https://docs.unity3d.com/6000.3/Documentation/Manual/render-pipelines.html
 [rigidbody2d-url]: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody2D.html
+[sprite-url]: https://docs.unity3d.com/2022.3/Documentation/ScriptReference/Sprite.html
 [urp-url]: https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@11.0/manual/index.html
 [vector2-url]: https://docs.unity3d.com/6000.3/Documentation/ScriptReference/Vector2.html
 [tmp-url]: https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.2/manual/index.html

@@ -33,10 +33,10 @@ Now you can start adding objects. This section will guide you through adding sha
 
 ### Player
 
-1. Add a square [sprite] [sprite-glossary] to the scene from the **Hierarchy** tab's **+** button:
+1. Add a square [sprite][sprite-glossary] to the scene from the **Hierarchy** tab's **+** button:
 > 2D Objects > Sprites > Square
 
-    ![add-square-sprite]
+    ![Context Menu for adding a square Sprite][add-square-sprite]
 
 2. Rename the square to "_Player_" in the **Inspector** tab on the right.
 
@@ -64,7 +64,7 @@ You have now learned how to add shapes to your project, with the red square repr
 
 See below for what your screen should look like after completing this section:
 !!! success
-    ![What your editor should look like after completing the project setup][setup-complete-image]
+    ![Unity Editor after completing the project setup instructions][setup-complete-image]
 
 
 
@@ -79,20 +79,9 @@ See below for what your screen should look like after completing this section:
 [sprite-glossary]: glossary.md#sprite
 
 <!-- Images -->
-[vs-studio-installer]: assets/project-setup/vs-studio-installer.png
-[vs-unity-workload]: assets/project-setup/vs-unity-workload.png
-[vs-install-check]: assets/project-setup/vs-install-check.png
-[vs-install-success]: assets/project-setup/vs-install-success.png
-[install-success]: assets/project-setup/install-success.png
-[new-project]: assets/project-setup/new-project.png
-[backends-warning]: assets/project-setup/backends-warning.png
-[add-square-sprite]: assets/project-setup/add-square-sprite.png
-
-[project-creation-loading-image]: assets/project-setup/project-creation-loading.png
-
-[default-unity-editor-image]: assets/project-setup/default-unity-editor.png
-[player-inspector-image]: assets/project-setup/player-inspector.png
-[setup-complete-image]: assets/project-setup/setup-complete.png
+[add-square-sprite]: assets/project-setup/add-square-sprite.png "Context Menu for adding a square Sprite"
+[player-inspector-image]: assets/project-setup/player-inspector.png "The player object's inspector tab"
+[setup-complete-image]: assets/project-setup/setup-complete.png "Unity Editor after completing the project setup instructions"
 
 <!-- GIFs -->
 [install-editor-gif]: assets/project-setup/install-editor.gif

@@ -1,3 +1,10 @@
 html {
     scroll-behavior: smooth !important;
 }
+
+img {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+}
