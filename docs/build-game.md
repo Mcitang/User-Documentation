@@ -99,8 +99,8 @@ Congratulations on making it through this tutorial! You now know how to build a 
 
 See below for what your page should look like if you copy and paste the URL that itch.io generated for you when you uploading your project:
 
-    !!! success
-        ![Itch.io game page][game-page]
+!!! success
+    ![Itch.io game page][game-page]
 
 
 <!-- Glossary -->
