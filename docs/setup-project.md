@@ -1,7 +1,8 @@
 # Set Up Project
+Now that you 
 
 ## Enabling the Legacy Input System
-There is one more thing we need to do before adding anything. We will activate the legacy input system.
+First, you need to activate the legacy input system.
 
 !!! warning
     The legacy input system is easier to use for beginners, but it will be deprecated in future versions. Once you get more comfortable with the engine, switching to the new input system is strongly recommended.
