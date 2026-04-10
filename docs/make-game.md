@@ -40,7 +40,7 @@ Unity has a built-in 2D physics system. We can use it to control the player thro
 
     > Rigidbody2D > Constraints > Freeze Rotation > :white_check_mark: Z
 
-    ![freeze-rotation]
+    ![Rigidbody2D Freeze Rotation Z set to true][freeze-rotation]
 
     This will ensure that the player character from rolling or spinning when they collide with objects or move around.
 
@@ -336,7 +336,7 @@ Every game has a goal or victory condition that means the player has won once th
 1. Drag the text object you made (Text-tmp under Canvas in the **Hierarchy** window) to the top-left corner of the canvas.
 
     !!! success
-        This is wat it should look like in the **Game** view.
+        This is whjat it should look like in the **Game** view.
 
         ![The game view with a text label in the top-left corner][canvas-setup-image]
 
@@ -655,16 +655,16 @@ Now your game can be won! Let's update the UI to show the score.
 [canvas-glossary]: glossary.md
 
 <!-- Images -->
-[platforms-and-walls-image]: assets/make-game/platforms-walls-scene.png
-[public-vars-image]: assets/make-game/public-vars.png
-[coins-image]: assets/make-game/coins.png
-[tmp-files-image]: assets/make-game/tmp-files.png
-[canvas-scaler-res-image]: assets/make-game/canvas-scaler-res.png
-[canvas-setup-image]: assets/make-game/canvas-setup.png
-[trigger-image]: assets/make-game/trigger.png
-[coin-manager-image]: assets/make-game/coin-manager.png
-[score-label-image]: assets/make-game/score-label.png
-[freeze-rotation]: assets/make-game/freeze-rotation.png
+[platforms-and-walls-image]: assets/make-game/platforms-walls-scene.png "Game scene with walls and platforms"
+[public-vars-image]: assets/make-game/public-vars.png "PlayerMovement public variables"
+[coins-image]: assets/make-game/coins.png "Coins on each platform"
+[tmp-files-image]: assets/make-game/tmp-files.png "TMP folder in your project files"
+[canvas-scaler-res-image]: assets/make-game/canvas-scaler-res.png "Canvas Scaler component with 1920x1080 reference resolution"
+[canvas-setup-image]: assets/make-game/canvas-setup.png "The game view with a text label in the top-left corner"
+[trigger-image]: assets/make-game/trigger.png "Trigger BoxCollider2D"
+[coin-manager-image]: assets/make-game/coin-manager.png "CoinManager with Coins inside"
+[score-label-image]: assets/make-game/score-label.png "Score Label variable"
+[freeze-rotation]: assets/make-game/freeze-rotation.png "Rigidbody2D Freeze Rotation Z set to true"
 
 <!-- GIFs -->
 [place-platforms-gif]: assets/make-game/place-platforms.gif
