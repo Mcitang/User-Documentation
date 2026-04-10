@@ -27,7 +27,7 @@ The _Project Files_ at the bottom of the screen is a window that is the central 
 
 ### Scene View
 
-The _Scene View_ at the center of the screen is an interactive sandbox used to help you construct, arrange and edit the game world.
+The _Scene View_ at the center of the screen is an interactive sandbox used to help you construct, arrange and edit the game world. This is what the view looks like with objects already added.
 
 You can left-click on objects to select them, and hold right-click and drag to move around the scene.
 
@@ -35,8 +35,9 @@ You can left-click on objects to select them, and hold right-click and drag to m
 
 ### Game View
 
-The _Game View_ tab when selected, appears at the center of the screen and is the window that simulates and renders the final output of the project, showing what a player will see when the game is played. It currently shows a blue screen which is expected.
-
+The _Game View_ tab when selected, appears at the center of the screen and is the window that simulates and renders the final output of the project, showing what a player will see when the game is played. 
+!!! info 
+    If there are no objects added to the game yet, the game view will show an empty blue screen.
 ![Game View][game-view]
 
 ### Menu Bar
