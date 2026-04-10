@@ -7,7 +7,7 @@
     > File > Build Profiles
 
 1. Open your **Scene List**.
-    ![scene-list]
+    ![Scene List in Build Profile][scene-list]
 
 1. Rearrange your scenes so the Main Menu is at the top.
 
@@ -19,7 +19,7 @@
 
 1. Go to the **Windows** tab under the Platforms category in the same **Build** window.
 
-    ![windows]
+    ![Windows tab in Build Profile][windows]
 
     !!! warning
         Windows is the default target platform when building. If for some reason it is not active, change your target platform to Windows.
@@ -39,13 +39,13 @@
 
     Proceed when the build is complete.
 
-1. Test your build by double clicking the `test` executable in the folder.
+1. Test your build by double clicking the executable with the same name as your project in the folder.
 
     !!! success
-        ![build-files]
+        ![Project Build files][build-files]
     
     !!! success
-        ![game-start]
+        ![Main Menu from the build][game-start]
 
 
 
@@ -62,7 +62,7 @@ You should now have two files: a `Build` folder, and a `Build` zip file.
 
 1. Select "Upload New Project".
     
-    ![upload-project]
+    ![Upload New Project button][upload-project]
 
 1. Give your game any title you want.
 
@@ -73,7 +73,7 @@ You should now have two files: a `Build` folder, and a `Build` zip file.
 
 1. Press **Upload files** and select your build zip folder.
 
-    ![upload-build]
+    ![Uploaded build file][upload-build]
 
 1. Check the box next to the Windows logo so others know the target platform.
 
@@ -91,7 +91,7 @@ You should now have two files: a `Build` folder, and a `Build` zip file.
 1. Press **Save**.
 
     !!! success
-        ![game-page]
+        ![Itch.io game page][game-page]
 
 And you're done! You can leave every other field blank. Feel free to upload a cover image for the game if you would like. 
 You can share the URL that was generated with whoever you want and they will be able to download from [itch.io][itch-url] and play it. 
@@ -106,13 +106,13 @@ You can share the URL that was generated with whoever you want and they will be 
 [itch-url]: https://itch.io
 
 <!-- Images -->
-[rearranged-scene-list]: assets/build-game/build-scene-list.png
-[game-page]: assets/build-game/game-page.png
-[upload-build]: assets/build-game/upload-build.png
-[upload-project]: assets/build-game/upload-project.png
-[build-files]: assets/build-game/build-files.png
-[game-start]: assets/build-game/game-start.png
-[scene-list]: assets/build-game/scene-list.png
-[windows]: assets/build-game/windows.png
+[rearranged-scene-list]: assets/build-game/build-scene-list.png "Scene List with Main Menu at the top"
+[game-page]: assets/build-game/game-page.png "Itch.io game page"
+[upload-build]: assets/build-game/upload-build.png "Uploaded build file"
+[upload-project]: assets/build-game/upload-project.png "Upload New Project button"
+[build-files]: assets/build-game/build-files.png "Project Build files"
+[game-start]: assets/build-game/game-start.png "Main Menu from the build"
+[scene-list]: assets/build-game/scene-list.png "Scene List in Build Profile"
+[windows]: assets/build-game/windows.png "Windows tab in Build Profile"
 
 <!-- GIFs -->
