@@ -51,8 +51,9 @@ The > symbol indicates the flow of menu or button click actions.
 > 2D Object > Sprites > Square
 
 ### Tabs
-
-{++Explain tabs here++}
+For instruction sections with multiple tabs, you can select the tab that best fits your situation. See an example of this below.
+=== "If you do not have Visual Studio 2022 installed"
+=== "If you have Visual Studio 2022 installed"
 
 ### Code Blocks
 This syntax denotes a section of code that would be put into the Unity editor.
