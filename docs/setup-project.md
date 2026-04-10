@@ -79,7 +79,7 @@ See below for what your screen should look like after completing this section:
 [sprite-glossary]: glossary.md#sprite
 
 <!-- Images -->
-[vs-studio-installer]: assets/project-setup/vs-studio-installer.png
+[vs-studio-installer]: assets/project-setup/vs-studio-installer.png "
 [vs-unity-workload]: assets/project-setup/vs-unity-workload.png
 [vs-install-check]: assets/project-setup/vs-install-check.png
 [vs-install-success]: assets/project-setup/vs-install-success.png
