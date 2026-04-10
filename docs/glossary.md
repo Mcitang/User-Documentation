@@ -2,7 +2,7 @@
 
 | **Term**                  |  **Definition** <br id="glossary">    |
 |-----------                |------------------------------------   |
-| 2D                        |   {++Add definition++}    |
+| 2D                        |   Stands for two dimensions. 2D shapes are flat and have only two dimensions: length and width, with no depth or thickness.    |
 | 3D                        |   {++Add definition++}    |
 | AR                        |   {++Add definition++}    |
 | Assets                    |   {++Add definition++}    |
@@ -24,7 +24,9 @@
 | [TextMeshPro][tmp-url]    |   An easy-to-use system for high-quality text and UI included with the Unity Editor.   |
 | [Universal Render Pipeline (URP)][urp-url]    |   A multi-platform Render Pipeline that allows for high-quality graphics and fast performance across a wide range of devices, from mobile phones to high-end consoles.    |
 | [Vector2][vector2-url]    |   Used to represent 2D vectors and points, consisting of two values: X and Y.  |
-| VR                        |   {++Add definition++}
+| VR                        |   {++Add definition++}    |
+| X                         |   Refers to the horizontal axis.  |
+| Y                         |   Refers to the vertical axis.    |
 | Z Rotation                |   Rotation of an object around the Z-axis in a 3D coordinate system.  |
 
 <!-- Hyperlinks -->
