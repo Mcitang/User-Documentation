@@ -1,6 +1,6 @@
 # Make Menus
 
-We now have the core parts of our game. Let's make some menus for the player to use.
+The core parts of the game are added now. The player will also a way to start and restart the game and quit if they would like. This section will take you through added in a start menu, a way to restart the game and an option to quit the game.
 
 ## Setup
 
@@ -434,7 +434,12 @@ To do scene transitions, you must use the `UnityEngine.SceneManagement` package.
     !!! warning
         Make sure you change the _On Click ()_ function for the quit button and not the play button. Since the inspector looks the same for both buttons, it will be easy to get confused.
 
-And we are done!
+## Conclusion
+Awesome! You should now have a start menu, a way to restart the game and an option to quit the game.
+
+See below for what your screen should look like after completing this section:
+
+{++Gus add success block image here?++}
 
 
 
