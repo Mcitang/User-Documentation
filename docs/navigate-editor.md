@@ -5,8 +5,8 @@ This section will give a brief overview of a few of the most important elements 
 ### Hierarchy
 
 The _Hierarchy_ section on the left of the screen is a dedicated window that displays every _GameObject_ currently present in the active _Scene_. It allows you to organize your objects and control how they interact with each other.
-+
-![Hierarchy][hierarchy]
+
+![Hierarchy][hierarchy-image]
 
 ### Inspector
 
@@ -15,15 +15,15 @@ The _Inspector_ section on the right of the screen is a panel that is used to vi
 !!! tip
     To find an object in your scene quickly, select the object in your hierarchy by pressing left-click, then press <kbd>F</kbd> to find it in the _Scene View_.
 
-![Inspector][inspector]
+![Inspector][inspector-image]
 
 ### Project Files
 
 The _Project Files_ at the bottom of the screen is a window that is the central hub for navigating, organizing and managing all files, assets and folders in the game project.
 
-![Project Files][project-files]
+![Project Files][project-files-image]
 
-![Console View][console-view]
+![Console View][console-view-image]
 
 ### Scene View
 
@@ -31,13 +31,13 @@ The _Scene View_ at the center of the screen is an interactive sandbox used to h
 
 You can left-click on objects to select them, and hold right-click and drag to move around the scene.
 
-![Scene View][scene-view]
+![Scene View][scene-view-image]
 
 ### Game View
 
 The _Game View_ tab when selected, appears at the center of the screen and is the window that simulates and renders the final output of the project, showing what a player will see when the game is played. It currently shows a blue screen which is expected.
 
-![Game View][game-view]
+![Game View][game-view-image]
 
 ### Menu Bar
 
@@ -54,17 +54,18 @@ The _Console_ is at the bottom of the screen is where all errors, warnings and l
 <!-- Glossary -->
 [component-glossary]: glossary.md#component
 [gameobject-glossary]: glossary.md#gameobject
+[user-interface-glossary]: glossary.md#ui
 
 
 
 <!-- Hyperlinks -->
-[user-interface-glossary]: glossary.md
 
 <!-- Images -->
-[hierarchy]: assets/navigate-editor/hierarchy.png
-[inspector]: assets/navigate-editor/inspector.png
-[project-files]: assets/navigate-editor/project-files.png
-[scene-view]: assets/navigate-editor/scene-view.png
-[game-view]: assets/navigate-editor/game-view.png
-[console-view]: assets/navigate-editor/console-view.png
+[hierarchy-image]: assets/navigate-editor/hierarchy.png "Unity Editor Hierarchy Window"
+[inspector-image]: assets/navigate-editor/inspector.png "Unity Editor Inspector Window"
+[project-files-image]: assets/navigate-editor/project-files.png "Unity Editor Project Files Window"
+[scene-view-image]: assets/navigate-editor/scene-view.png "Unity Editor Scene View"
+[game-view-image]: assets/navigate-editor/game-view.png "Unity Editor Game View"
+[console-view-image]: assets/navigate-editor/console-view.png "Unity Editor Console Window"
+
 <!-- GIFs -->
