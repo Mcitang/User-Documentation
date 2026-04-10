@@ -1,6 +1,6 @@
 # Building and Uploading Your Game
 
-You have now completed your game! What if you wanted to share it with others? This section will take you through uploading your beautiful game to the internet through itch.io so anyone can access and download your game.  
+You have now completed your game! What if you wanted to share it with others? Itch.io is a website that hosts video games from independent creators. This section will take you through uploading your beautiful game to [itch.io][itch-url] so anyone can access and download your game.
 
 1. Open the **Build menu**:
 
