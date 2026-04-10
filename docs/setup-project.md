@@ -71,7 +71,7 @@ Now that we have a player character, we will add a floor for them to stand on.
 
 <!-- Hyperlinks -->
 [itch-assets-url]: https://itch.io
-[sprite-glossary]: glossary.md
+[sprite-glossary]: glossary.md#sprite
 
 <!-- Images -->
 [vs-studio-installer]: assets/project-setup/vs-studio-installer.png

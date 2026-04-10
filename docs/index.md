@@ -41,11 +41,14 @@ Before beginning, please ensure you have the following accounts and programs:
 
 | **Convention**      |  **Example**   |
 |-----------    |------------------------------------   |
-| Hover over underlined words for further explanation |   context menu |
-| Menu and Button Sequence. The > symbol indicates the flow of menu or button click actions. | > 2D Object > Sprites > Square |
 | Clickable buttons and sections within Unity are bolded |    **Hierarchy** window |
 | Commands, functions and file names are formatted in monospace font | `Canvas Scaler` |
 | Glossary defined terms have a link to the glossary page | [sprite] [sprite-glossary] |
+<!-- | Hover over underlined words for further explanation |    [context menu][context-menu-glossary]   | -->
+
+### Menu and Button Sequence
+The > symbol indicates the flow of menu or button click actions.
+> 2D Object > Sprites > Square
 
 ### Tabs
 
@@ -101,9 +104,12 @@ We will use message blocks to inform you of additional relevant information. Her
 !!! bug
     Specifies actions that may cause an error.
 
+
+
 <!-- Glossary definitions at the bottom -->
-*[OOP]: Object-Oriented Programming
-*[context menu]: A pop-up menu that appears to offer additional information when you hover over them.
+[oop-glossary]: glossary.md#oop
+[context-menu-glossary]: glossary.md#context-menu
+
 
 
 <!-- Hyperlinks -->

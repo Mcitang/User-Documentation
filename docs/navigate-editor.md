@@ -47,13 +47,13 @@ At the top of the Hierarchy section is the Menu Bar which gives you access to sp
 
 The _Console_ is at the bottom of the screen is where all errors, warnings and logs are displayed. It shares its space with the _Project Files_ window.
 
-<!-- No conclusion -->
+<!-- No conclusion since no instructions -->
 
 
 
 <!-- Glossary -->
-[component-glossary]: glossary.md#Component
-[gameobject-glossary]: glossary.md#GameObject
+[component-glossary]: glossary.md#component
+[gameobject-glossary]: glossary.md#gameobject
 
 
 
