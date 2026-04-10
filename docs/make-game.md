@@ -1,4 +1,7 @@
 # Make A 2D Game Scene
+You now have a player character and the floor. This section will continue adding elements to the game scene, such as platforms and walls. You will learn how to add movement to the player character, allowing the player to jump and move around. 
+
+You will also add a goal for the player to achieve, which will be collecting coins on the platforms. Finally, you will learn how to write small scripts so the coins can be collected and so that the total amount of coins collected will be displayed at the top left of the screen.
 
 ## Prepare the Stage
 
@@ -637,7 +640,12 @@ Now your game can be won! Let's update the UI to show the score.
 
     Once you collect all the coins, the console tab at the bottom should say "You win!".
 
+## Conclusion
+You should now have platforms and walls for your game scene, with coins on each of the platforms. The player character should be able to move around and jump, and the score at the top left should keep track of how many coins you have. The console log should also print out a message when the player has collected all the coins.
 
+See below for what your game view should look like after completing this section:
+!!! success
+    ![Game View][game-view]
 
 <!-- Glossary -->
 [canvas-glossary]: glossary.md#canvas
@@ -665,6 +673,7 @@ Now your game can be won! Let's update the UI to show the score.
 [coin-manager-image]: assets/make-game/coin-manager.png "CoinManager with Coins inside"
 [score-label-image]: assets/make-game/score-label.png "Score Label variable"
 [freeze-rotation]: assets/make-game/freeze-rotation.png "Rigidbody2D Freeze Rotation Z set to true"
+[game-view]: assets/navigate-editor/game-view.png "Game view at end of section"
 
 <!-- GIFs -->
 [place-platforms-gif]: assets/make-game/place-platforms.gif
