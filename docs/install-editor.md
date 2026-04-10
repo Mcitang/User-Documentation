@@ -67,7 +67,7 @@ The Unity Editor is where you will assemble your game. This tutorial will use Un
 
 
 ## Create a Project
-Great! Now that you have the Editor and Visual Studio installed, we can begin creating your first Unity project which will be a simple platform game.
+Great! Now that you have the Editor and Visual Studio installed, you can begin creating your first Unity project which will be a simple platform game.
 
 1. Go to the **Projects** tab on the left side of your Unity Hub window.
    
@@ -92,7 +92,9 @@ Great! Now that you have the Editor and Visual Studio installed, we can begin cr
 Once it loads, you will see the Unity Editor open up.
 
 ## Conclusion
-Great! You should now have the Unity Editor installed. See below for what your screen should look like if you have completed all the steps in this section properly:
+Great! You should now have the Unity Editor installed.
+
+See below for what your screen should look like after completing this section:
 
 !!! success
     ![Image of the Unity Editor][default-unity-editor-image]
