@@ -63,14 +63,13 @@ Now that you have a player character, you will add a floor for them to stand on.
 You have now learned how to add shapes to your project, with the red square representing the player character and the white rectangle at the bottom representing the floor.
 
 See below for what your screen should look like after completing this section:
+
 !!! success
     ![Unity Editor after completing the project setup instructions][setup-complete-image]
 
 
 
 <!-- Glossary -->
-*[LTS]: Long-Term Support, meaning it is a stable version maintained for an extended period with minimal changes.
-[lts-glossary]: glossary.md#LTS
 
 
 

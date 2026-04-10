@@ -98,8 +98,9 @@ You can share the URL that was generated with whoever you want and they will be 
 Congratulations on making it through this tutorial! You now know how to build a simple game in Unity with shapes and components, make small scripts for the player to win the game, make menus for the player to navigate through the game, and how to upload the finished game so that others can play it.
 
 See below for what your page should look like if you copy and paste the URL that itch.io generated for you when you uploading your project:
-   !!! success
-     ![Itch.io game page][game-page]
+
+    !!! success
+        ![Itch.io game page][game-page]
 
 
 <!-- Glossary -->

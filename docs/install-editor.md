@@ -98,8 +98,11 @@ See below for what your screen should look like after completing this section:
 
 !!! success
     ![Image of the Unity Editor][default-unity-editor-image]
+
+
+
 <!-- Glossary -->
-*[LTS]: Long-Term Support, meaning it is a stable version maintained for an extended period with minimal changes.
+<!-- *[LTS]: Long-Term Support, meaning it is a stable version maintained for an extended period with minimal changes. -->
 [lts-glossary]: glossary.md#LTS
 
 
