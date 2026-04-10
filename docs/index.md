@@ -1,12 +1,12 @@
 # Intro
-Hey! :wave: This documentation will guide you through setting up a project in the [Unity Game Engine][unity-url]. You will learn how to navigate through some of Unity's basic functions and use those functions to setup your first game.
+Hey! :wave: This documentation will guide you through setting up a project in the [Unity Game Engine][unity-url]. You will learn how to navigate through some of Unity's basic functions and use those functions to setup your first game and upload it online.
 
 ## What is Unity?
 Unity is a game engine that is used to develop two-dimensional [(2D)][glossary], 3-dimensional [(3D)][glossary] , Virtual Reality [(VR)][glossary] and Alternative Reality [(AR)][glossary] experiences. While mainly used for game development, it is also widely used in the film, automotive design and architecture industries. This guide will focus on the gaming functionalities of Unity.
 
 
 ## Intended Users
-This documentation is designed for beginning developers who want to start learning basic game development in Unity. This guide does not expect you to have any experience in game development.
+This documentation is designed for beginner developers who want to start learning basic game development in Unity. This guide does not expect you to have any experience in game development.
 
 ## Prerequisites
 - Working knowledge of programming data types strings, ints and floats - you are expected to know what these data types are, and what they represent in programming languages.
