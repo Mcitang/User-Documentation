@@ -95,3 +95,36 @@ Once it loads, you will see the Unity Editor open up.
 
 !!! success
     ![Image of the Unity Editor][default-unity-editor-image]
+
+
+
+<!-- Glossary -->
+*[LTS]: Long-Term Support, meaning it is a stable version maintained for an extended period with minimal changes.
+[lts-glossary]: glossary.md#LTS
+
+
+
+<!-- Hyperlinks -->
+[itch-assets-url]: https://itch.io
+[sprite-glossary]: glossary.md
+
+<!-- Images -->
+[vs-studio-installer]: assets/project-setup/vs-studio-installer.png
+[vs-unity-workload]: assets/project-setup/vs-unity-workload.png
+[vs-install-check]: assets/project-setup/vs-install-check.png
+[vs-install-success]: assets/project-setup/vs-install-success.png
+[install-success]: assets/project-setup/install-success.png
+[new-project]: assets/project-setup/new-project.png
+[backends-warning]: assets/project-setup/backends-warning.png
+[add-square-sprite]: assets/project-setup/add-square-sprite.png
+
+[project-creation-loading-image]: assets/project-setup/project-creation-loading.png
+
+[default-unity-editor-image]: assets/project-setup/default-unity-editor.png
+[player-inspector-image]: assets/project-setup/player-inspector.png
+[setup-complete-image]: assets/project-setup/setup-complete.png
+
+<!-- GIFs -->
+[install-editor-gif]: assets/project-setup/install-editor.gif
+[create-project-gif]: assets/project-setup/create-project.gif
+[add-floor]: assets/project-setup/add-floor.gif
