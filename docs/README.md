@@ -29,9 +29,9 @@ In addition to built-in markdown features, MkDocs allowed us to further increase
 
 Admonitions like the ones shown below allowed us to highlight information to the reader.
 
-![Admonition example showing success](./docs/assets/readme-admonition-1.png "Admonition example showing success")
+![success-admonition]
 
-![Admonition example showing warning](./docs/assets/readme-admonition-2.png "Admonition example showing warning")
+![warning-admonition]
 
 ## Conclusion
 Completing this documentation gave us the opportunity to write in Markdown, explore new software (MkDocs), and rehearse our understanding of writing for a targeted audience.
@@ -45,3 +45,7 @@ Thank you for your interest in our Unity User Documentation.
 
 ## Documentation Link
 https://mcitang.github.io/User-Documentation/
+
+<!-- Images -->
+[success-admonition]: assets/readme/admonition-success.png "Admonition example showing success"
+[warning-admonition]: assets/readme/admonition-warning.png "Admonition example showing warning"
