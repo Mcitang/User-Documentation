@@ -116,8 +116,9 @@ extra_css:
   # Pages
   - stylesheets/pages/glossary.style.css
 
-# # JavaScript
-# extra_javascript:
-#   - scripts/glossary.js
+# JavaScript
+extra_javascript:
+  - scripts/style.js
+  # - scripts/glossary.js
 
 copyright: Copyright &copy; 2026 - Matthew Tang, Gustavo Rodriguez

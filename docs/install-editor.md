@@ -92,6 +92,7 @@ Great! Now that you have the Editor and Visual Studio installed, we can begin cr
 Once it loads, you will see the Unity Editor open up.
 
 ## Conclusion
+
 Great! You should now have the Unity Editor installed. See below for what your screen should look like if you have completed all the steps in this section properly:
 
 !!! success

@@ -34,7 +34,7 @@ Unity has a built-in 2D physics system. We can use it to control the player thro
     ???+ question "How to add a component?"
         Click _Add Component_ in the inspector, under the existing components
 
-        ![Adding a component][add-component-gif]{ style="width: 650px;", .center }
+        ![Adding a component][add-component-gif]{ style="width: 650px;" }
 
 1. Check the player's [**Freeze Rotation Z**][z-rotation-glossary] checkbox in the **[Rigidbody2D][rb2d-glossary]** component settings.
 
@@ -253,7 +253,7 @@ Before testing the movement, we have to assign a value to the `Rigidbody2D rb` v
 
 1. In the inspector, drag and drop the `[Rigidbody2D][rb2d-glossary]` component to the corresponding field in `PlayerMovement`
 
-    ![Assigning a value to Rigidbody2D rb variable][assign-rb-gif]{ .center }
+    ![Assigning a value to Rigidbody2D rb variable][assign-rb-gif]
 
 1. Hit _Play_ and try moving the player around!
 
@@ -265,7 +265,7 @@ Before testing the movement, we have to assign a value to the `Rigidbody2D rb` v
     !!! tip
         You can change your script variable values directly from the inspector
 
-        ![PlayerMovement public variables][public-vars-image]{ .center }
+        ![PlayerMovement public variables][public-vars-image]
 
  1. Pause the _Play_  button before moving on to the next step.
 
@@ -363,7 +363,7 @@ Every game has a goal or victory condition that means the player has won once th
 1. Drag and drop all coins into the CoinManager object.
 
     !!! success
-        ![CoinManager with Coins inside][coin-manager-image]{ style="height: 250px;", .center }
+        ![CoinManager with Coins inside][coin-manager-image]{ style="height: 250px;" }
 
 ## Create CoinManager Script
 
@@ -629,7 +629,7 @@ Now your game can be won! Let's update the UI to show the score.
 
 
     !!! success
-        ![Score Label variable][score-label-image]{ .center }
+        ![Score Label variable][score-label-image]
 
 1. Save your Unity project by pressing ++ctrl+s++.
 
