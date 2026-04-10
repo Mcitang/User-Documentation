@@ -5,7 +5,7 @@
 | 2D { #2d }        |   Stands for two dimensions. A flat coordinate system using only the [X](#x) and [Y](#y) axis. Objects are flat and have only two dimensions: length and width, with no thickness.     |
 | 3D { #3d }        |   Stands for three dimensions. A coordinate system using [X](#x), [Y](#y), and Z axes. Objects have length, width, and depth.     |
 | Assets { #assets }        |   Files used in a project, such as [sprites](#sprite), audio files, scripts, and models that make up the game.    
-| AR { #AR }      |   Stands for augmented reality. A technology that overlays digital information (images, 3D models) onto the real world using cameras    |
+| AR { #ar }      |   Stands for augmented reality. A technology that overlays digital information (images, 3D models) onto the real world using cameras    |
 | C# { #cs }    |   Unity's scripting language. A general-purpose, high-level, [object-oriented](#oop) language developed by Microsoft.     |
 | [Canvas][canvas-url] { #canvas }      |   Area where all visible elements are located.    |
 | [Collider][collider-url] { #collider }        |   An invisible shape that defines the physical boundaries of a [GameObject](#gameobject) for the purpose of allowing the physics engine to calculate when objects touch or overlap.   |
@@ -28,7 +28,7 @@
 | UI { #ui }    |   Stands for User Interface. The space where users interact with a device or software, including elements like screens, buttons, and menus.   |
 | [Universal Render Pipeline (URP)][urp-url] { #urp }     |   A multi-platform [Render Pipeline](#render-pipeline) that allows for high-quality graphics and fast performance across a wide range of devices, from mobile phones to high-end consoles.    |
 | [Vector2][vector2-url] { #vector2 }       |   Used to represent 2D vectors and points, consisting of two values: [X](#x) and [Y](#y).     |
-| VR { #VR }      |   Stands for virtual reality.  A computer-generated environment with scenes and objects that appear to be real  |
+| VR { #vr }      |   Stands for virtual reality.  A computer-generated environment with scenes and objects that appear to be real  |
 | X { #x }      |   Refers to the horizontal axis.  |
 | Y { #y }      |   Refers to the vertical axis.    |
 | Z { #z }      |   Refers to the depth axis.   |
