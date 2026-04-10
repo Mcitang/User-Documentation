@@ -50,15 +50,15 @@ The Unity Editor is where you will assemble your game. This tutorial will use Un
 
         ![The visual studio installer][vs-studio-installer]
 
-    1. Click _Modify_ for Visual Studio Community 2022.
+    1. Click **Modify** for Visual Studio Community 2022.
     
     1. Scroll down and ensure the _Game Development with Unity_ workload checkbox is checked.
 
         ![Game Development with Unity workload checked][vs-unity-workload]
 
-    1. If you had to check the checkbox, press _Modify_.
+    1. Press **Modify** if you had to check the checkbox.
 
-    1. After the changes apply, close Visual Studio.
+    1. Close Visual Studio after the changes apply.
 
 !!! success
     When the install completes, you should see the editor in the **Installs** tab.
