@@ -2,7 +2,7 @@
 Hey! :wave: This documentation will guide you through setting up a project in the [Unity Game Engine][unity-url]. You will learn how to navigate through some of Unity's basic functions and use those functions to setup your first game.
 
 ## What is Unity?
-Unity is a game engine that is used to develop 2D, 3D, VR and AR experiences. While mainly used for game development, it is also widely used in the film, automotive design and architecture industries. This guide will focus on the gaming functionalities of Unity.
+Unity is a game engine that is used to develop two-dimensional [(2D)][glossary], 3-dimensional [(3D)][glossary] , Virtual Reality [(VR)][glossary] and Alternative Reality [(AR)][glossary] experiences. While mainly used for game development, it is also widely used in the film, automotive design and architecture industries. This guide will focus on the gaming functionalities of Unity.
 
 
 ## Intended Users
@@ -13,17 +13,17 @@ This documentation is designed for beginning developers who want to start learni
 
 - Experience with statically typed programming languages such as Java or C - you are expected to know how to write a small class with a name, fields, a constructor and methods.
 
-- A computer with Windows operating system.
+- A computer with Windows operating system and internet access.
 
 - Knowledge of keyboard and gaming terminologies.
 
-## Software Requirements
+## Account and Program Requirements
 Before beginning, please ensure you have the following accounts and programs:
 
 - A [Unity] [unity-url] account
 - An [itch.io][itch-url] account
 - [Unity Engine Hub][unity-hub-url] downloaded and installed
-- A way to zip and unzip a folder in your computer, such as [7zip][7-zip-url].
+- [7zip][7-zip-url] (or any other way to compress files to zip format)
 
 
 ## Objectives
@@ -109,6 +109,8 @@ We will use message blocks to inform you of additional relevant information. Her
 <!-- Glossary definitions at the bottom -->
 [oop-glossary]: glossary.md#oop
 [context-menu-glossary]: glossary.md#context-menu
+[glossary]: glossary.md
+
 
 
 
