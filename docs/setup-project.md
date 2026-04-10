@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+# Set Up Project
+=======
 # Setting Up Your First Project
 
 This page will take you through setting up a project in Unity for the first time. You will install the Unity Editor, which is what you will be using to add elements to your game. You will also create a new game project and add a player character and a floor to your game.
@@ -95,6 +98,7 @@ Once it loads, you will see the Unity Editor open up.
 
 !!! success
     ![Image of the Unity Editor][default-unity-editor-image]
+>>>>>>> 943133a5c762e764fe7f2f6d06e6ec72ac9297d8
 
 ## Enabling the Legacy Input System
 There is one more thing we need to do before adding anything. We will activate the legacy input system.
@@ -103,7 +107,8 @@ There is one more thing we need to do before adding anything. We will activate t
     The legacy input system is easier to use for beginners, but it will be deprecated in future versions. Once you get more comfortable with the engine, switching to the new input system is strongly recommended.
 
 1. In the menu bar, select **Project Settings**.
-> Edit > Project Settings
+
+    > Edit > Project Settings
 
 1. Search for "Input" using the searchbar in the top-right corner of **Project Settings**.
 
@@ -122,11 +127,10 @@ There is one more thing we need to do before adding anything. We will activate t
 1. Click _Apply_ to restart the editor.
 
 ## Create the Player and Floor
+
 Now we can start adding objects. This section will guide you through shapes to your game. You will add 2 squares, one representing the player, and another representing the floor. Ensure that the editor is on the **Scene** view instead of the **Game** view. We will start with the player first.
 
-
-## Create Player
-
+### Player
 
 1. Add a square [sprite] [sprite-glossary] to the scene from the **Hierarchy** tab's **+** button:
 > 2D Objects > Sprites > Square
@@ -142,7 +146,7 @@ Now we can start adding objects. This section will guide you through shapes to y
 
 4. Add another square sprite to the scene.
 
-## Create the Floor
+### Floor
 Now that we have a player character, we will add a floor for them to stand on.
 
 4. Add another square sprite to the scene.
