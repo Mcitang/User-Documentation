@@ -1,7 +1,8 @@
 # Set Up Project
+Now that you have the editor installed, there are just a few more things to set up before you can add elements to your game.
 
 ## Enabling the Legacy Input System
-There is one more thing we need to do before adding anything. We will activate the legacy input system.
+First, you need to activate the legacy input system.
 
 !!! warning
     The legacy input system is easier to use for beginners, but it will be deprecated in future versions. Once you get more comfortable with the engine, switching to the new input system is strongly recommended.
@@ -28,7 +29,7 @@ There is one more thing we need to do before adding anything. We will activate t
 
 ## Create the Player and Floor
 
-Now we can start adding objects. This section will guide you through shapes to your game. You will add 2 squares, one representing the player, and another representing the floor. Ensure that the editor is on the **Scene** view instead of the **Game** view. We will start with the player first.
+Now you can start adding objects. This section will guide you through adding shapes to your game. You will add 2 squares, one representing the player, and another representing the floor. Ensure that the editor is on the **Scene** view instead of the **Game** view. We will start with the player first.
 
 ### Player
 
@@ -47,7 +48,7 @@ Now we can start adding objects. This section will guide you through shapes to y
 4. Add another square sprite to the scene.
 
 ### Floor
-Now that we have a player character, we will add a floor for them to stand on.
+Now that you have a player character, you will add a floor for them to stand on.
 
 4. Add another square sprite to the scene.
 > 2D Objects > Sprites > Square
@@ -58,6 +59,10 @@ Now that we have a player character, we will add a floor for them to stand on.
 
 ![add-floor]
 
+## Conclusion
+You have now learned how to add shapes to your project, with the red square representing the player character and the white rectangle at the bottom representing the floor.
+
+See below for what your screen should look like after completing this section:
 !!! success
     ![What your editor should look like after completing the project setup][setup-complete-image]
 
