@@ -1,12 +1,12 @@
 # Navigate The Editor
 
-This section will explain a few of the most important elements of the Editor's user interface. The interface is designed as a modular workspace, meaning every window can be docked, moved, or resized to fit your specific workflow. 
+This section will give a brief overview of a few of the most important elements of the Editor's user interface. The interface is designed as a modular workspace, meaning every window can be docked, moved, or resized to fit your specific workflow.
 
 ### Hierarchy
 
 The _Hierarchy_ section on the left of the screen is a dedicated window that displays every _GameObject_ currently present in the active _Scene_. It allows you to organize your objects and control how they interact with each other.
-
-![Hierarchy][hierarchy] 
++
+![Hierarchy][hierarchy]
 
 ### Inspector
 
