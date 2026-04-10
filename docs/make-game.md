@@ -57,6 +57,8 @@ Unity has a built-in 2D physics system. We can use it to control the player thro
 1. Select all your platforms, walls, the floor and the player by holding ++shift++ when you select each of them.
 
 1. Add a **BoxCollider2D** component to all of them.
+
+    {++screenshot++}
     
     Now if you hit *Play* again, the player will fall and land on the floor.
 
@@ -106,7 +108,7 @@ Now lets work on moving the player.
         }
         ```
 
-1. Place these variables before the functions.
+1. Place these variables before the functions:
 
     ```C# linenums="5"
     public Rigidbody2D rb;
@@ -119,7 +121,7 @@ Now lets work on moving the player.
     ```
 
 
-1. Create a function to read the player input.
+1. Create a function to read the player input:
 
     ```C# linenums="1"
     private void GetMovementInput()
@@ -129,7 +131,7 @@ Now lets work on moving the player.
     }
     ```
 
-1. Call your new input function in `Update()`.
+1. Call your new input function in `Update()`:
 
     ```C# linenums="1" hl_lines="4"
     // Update is called once per frame
@@ -139,7 +141,7 @@ Now lets work on moving the player.
     }
     ```
 
-1. Create a function to move the player depending on input.
+1. Create a function to move the player depending on input:
 
     ```C# linenums="1"
     private void MovePlayer()
@@ -151,7 +153,7 @@ Now lets work on moving the player.
 
     1. `rb.linearVelocity` is the velocity of the object
 
-1. Call your new movement function in `FixedUpdate()`.
+1. Call your new movement function in `FixedUpdate()`:
 
     ???+ info "Fixed Update"
         Unity recommends using `FixedUpdate()` whenever we are dealing with the physics system. Unlike `Update()`, which runs every frame possible, `FixedUpdate()` will only run 30 times per second. This function is meant to work alongside `Update()`.
@@ -163,7 +165,7 @@ Now lets work on moving the player.
     }
     ```
 
-1. Create a function to calculate your jump.
+1. Create a function to calculate your jump:
 
     ```C# linenums="1"
     private void Jump()
@@ -175,7 +177,7 @@ Now lets work on moving the player.
     }
     ```
 
-1. Add your new jump function to `Update()`.
+1. Add your new jump function to `Update()`:
     
     ```C# linenums="1" hl_lines="5"
     // Update is called once per frame
@@ -258,7 +260,7 @@ Before testing the movement, we have to assign a value to the `Rigidbody2D rb` v
 
     ![Assigning a value to Rigidbody2D rb variable][assign-rb-gif]
 
-1. Hit _Play_ and try moving the player around!
+1. Hit **Play** and try moving the player around!
 
     !!! info
         Use ++space++ to jump and use the arrow keys or <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> to move around.
@@ -270,7 +272,7 @@ Before testing the movement, we have to assign a value to the `Rigidbody2D rb` v
 
         ![PlayerMovement public variables][public-vars-image]
 
- 1. Pause the _Play_  button before moving on to the next step.
+ 1. Pause the **Play**  button before moving on to the next step.
 
 ## Add a Goal
 Every game has a goal or victory condition that means the player has won once they have achieve that. Let's add that now. We will create coins that players can collect. Once they have collected every coin, they win the game.
