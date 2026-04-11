@@ -439,7 +439,15 @@ Awesome! You should now have a start menu, a way to restart the game and an opti
 
 See below for what your screen should look like after completing this section:
 
-{++Gus add success block image here?++}
+
+!!! success
+    You have a main menu with a working play and quit button.
+
+    ![Main menu][main-menu-image]
+
+    Your game has a win screen that takes you back to the main menu when you collect all coins.
+
+    ![Game win screen][win-screen-image]
 
 
 
@@ -457,6 +465,8 @@ See below for what your screen should look like after completing this section:
 [win-screen-skeleton-view-image]: assets/make-menu/winscreen-skeleton-view.png
 [play-button-onclick-image]: assets/make-menu/play-button-onclick.png
 [menu-button-onclick-image]: assets/make-menu/menu-button-onclick.png
+[main-menu-image]: assets/make-menu/main-menu.png
+[win-screen-image]: assets/make-menu/win-screen.png
 
 <!-- GIFs -->
 [scene-list-gif]: assets/make-menu/scene-list.gif
