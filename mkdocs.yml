@@ -8,7 +8,7 @@ nav:
  - Navigate Editor: "navigate-editor.md"
  - Set Up Unity Project: "setup-project.md"
  - Create A Simple 2D Game: "make-game.md"
- - Create A Main Menu: "make-menus.md"
+ - Create The Main Menu: "make-menus.md"
  - Build And Upload Your Game: "build-game.md"
  - Troubleshooting: "troubleshooting.md"
  - Glossary: "glossary.md"
