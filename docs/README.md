@@ -17,8 +17,6 @@ This documentation is divided into 4 main tasks:
 
 We populated the main structure using knowledge acquired from personal experience and projects, as well as official [Unity](https://docs.unity.com/en-us "Unity documentation page") documentation.
 
- as well as official [Git](https://git-scm.com/docs/git "Git documentation page") and [GitHub](https://docs.github.com/en/get-started/git-basics/about-remote-repositories "GitHub documentation page") documentation.
-
 ### Using Markdown
 We honed our abilities to write in Markdown over the course of writing this documentation, utilizing features like images, tables, and code blocks to increase the readability of this documentation.
 
