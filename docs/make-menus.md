@@ -458,15 +458,15 @@ See below for what your screen should look like after completing this section:
 <!-- Hyperlinks -->
 
 <!-- Images -->
-[main-menu-label-image]: assets/make-menu/main-menu-label.png
-[build-profiles-image]: assets/make-menu/build-profiles.png
-[rect-transform-image]: assets/make-menu/rect-transform.png
-[win-screen-hierarchy-image]: assets/make-menu/win-screen-hierarchy.png
-[win-screen-skeleton-view-image]: assets/make-menu/winscreen-skeleton-view.png
-[play-button-onclick-image]: assets/make-menu/play-button-onclick.png
-[menu-button-onclick-image]: assets/make-menu/menu-button-onclick.png
-[main-menu-image]: assets/make-menu/main-menu.png
-[win-screen-image]: assets/make-menu/win-screen.png
+[main-menu-label-image]: assets/make-menu/main-menu-label.png "Main Menu label"
+[build-profiles-image]: assets/make-menu/build-profiles.png "Build profiles image"
+[rect-transform-image]: assets/make-menu/rect-transform.png "Rect Transform Component"
+[win-screen-hierarchy-image]: assets/make-menu/win-screen-hierarchy.png "Win screen Hierarchy"
+[win-screen-skeleton-view-image]: assets/make-menu/winscreen-skeleton-view.png "Win screen view" 
+[play-button-onclick-image]: assets/make-menu/play-button-onclick.png "Play button on click() section"
+[menu-button-onclick-image]: assets/make-menu/menu-button-onclick.png "Menu button on click() section"
+[main-menu-image]: assets/make-menu/main-menu.png "Main Menu completed"
+[win-screen-image]: assets/make-menu/win-screen.png "Win screen completed"
 
 <!-- GIFs -->
 [scene-list-gif]: assets/make-menu/scene-list.gif
