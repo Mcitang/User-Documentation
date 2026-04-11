@@ -44,7 +44,7 @@ The _Game View_ tab when selected, appears at the center of the screen and is th
 
 ### Menu Bar
 
-At the top of the Hierarchy section is the Menu Bar which gives you access to specific Unity functions. {++ADd more++}
+At the top-left of the Unity Editor is the Menu Bar which gives you access to specific Unity functions under sections such as "File", "Edit", etc.
 
 ### Console
 

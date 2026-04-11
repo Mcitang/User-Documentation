@@ -119,4 +119,4 @@ We will use message blocks to inform you of additional relevant information. Her
 [7-zip-url]: https://www.7-zip.org/download.html
 
 <!-- Images -->
-[Unity Hub Image]: assets/index/empty-unity-hub.png
+[Unity Hub Image]: assets/index/empty-unity-hub.png "The Unity Hub"
