@@ -28,13 +28,10 @@ Before beginning, please ensure you have the following accounts and programs:
 
 ## Objectives
 1. Install Unity Editor
-1. Set up a Unity Project
-1. Create a platformer character
-1. Add a game win condition
-1. Create a main menu
-1. Create a win menu
-1. Build the game for Windows
-1. Upload it to [itch.io][itch-url]
+1. Navigate the Editor
+1. Create a Simple 2D Game
+1. Create a Main Menu
+1. Build and Upload Game to [itch.io][itch-url]
 
 
 ## Typographical Conventions
@@ -122,4 +119,4 @@ We will use message blocks to inform you of additional relevant information. Her
 [7-zip-url]: https://www.7-zip.org/download.html
 
 <!-- Images -->
-[Unity Hub Image]: assets/index/empty-unity-hub.png
+[Unity Hub Image]: assets/index/empty-unity-hub.png "The Unity Hub"
