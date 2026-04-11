@@ -40,7 +40,7 @@ The _Game View_ tab when selected, appears at the center of the screen and is th
 !!! info 
     If there are no objects added to the game yet, the game view will show an empty blue screen.
 
-![Game View][game-view]
+![Game View][game-view-image]
 
 ### Menu Bar
 
