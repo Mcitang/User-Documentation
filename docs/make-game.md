@@ -58,13 +58,13 @@ Unity has a built-in 2D physics system. We can use it to control the player thro
 
 1. Add a **BoxCollider2D** component to all of them.
 
-    {++screenshot++}
+    ![box-collider2D]
     
-    Now if you hit *Play* again, the player will fall and land on the floor.
 
-Now lets work on moving the player.
+Now if you hit *Play* again, the player will fall and land on the floor.
 
 ## Player Movement
+You will now add movement to the player, adding the ability to move and jump.
 
 ### Add Movement
 
@@ -676,6 +676,7 @@ See below for what your game view should look like after completing this section
 [score-label-image]: assets/make-game/score-label.png "Score Label variable"
 [freeze-rotation]: assets/make-game/freeze-rotation.png "Rigidbody2D Freeze Rotation Z set to true"
 [game-view]: assets/navigate-editor/game-view.png "Game view at end of section"
+[box-collider2D]: assets/make-game/box-collider.png "Rectangle BoxCollider2D"
 
 <!-- GIFs -->
 [place-platforms-gif]: assets/make-game/place-platforms.gif
